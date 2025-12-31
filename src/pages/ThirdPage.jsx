@@ -30,14 +30,14 @@ const projects = [
 ];
 
 const products = [
-  { title: "삼중단열 창호", image: "/products/1.jpg", price: "₩3,180,200" },
-  { title: "이중단열 창호", image: "/products/2.jpg", price: "₩3,180,200" },
-  { title: "독일식 시스템 창호", image: "/products/3.jpg", price: "₩3,180,200" },
-  { title: "원목 도어", image: "/products/4.jpg", price: "₩3,180,200" },
-  { title: "독일식 시스템 창호", image: "/products/3.jpg", price: "₩3,180,200" },
-  { title: "이중단열 창호", image: "/products/2.jpg", price: "₩3,180,200" },
-  { title: "독일식 시스", image: "/products/3.jpg", price: "₩3,180,200" },
-  { title: "삼중단열 창호", image: "/products/1.jpg", price: "₩3,180,200" },
+  { title: "삼중단열 창호", image: {}, price: "₩3,180,200" },
+  { title: "이중단열 창호", image: {}, price: "₩3,180,200" },
+  { title: "독일식 시스템 창호", image: {}, price: "₩3,180,200" },
+  { title: "원목 도어", image: {}, price: "₩3,180,200" },
+  { title: "독일식 시스템 창호", image: {}, price: "₩3,180,200" },
+  { title: "이중단열 창호", image: {}, price: "₩3,180,200" },
+  { title: "독일식 시스", image: {}, price: "₩3,180,200" },
+  { title: "삼중단열 창호", image: {}, price: "₩3,180,200" },
 ];
 
 export default function ThirdPage() {
