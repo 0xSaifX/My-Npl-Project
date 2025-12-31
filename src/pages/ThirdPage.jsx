@@ -115,7 +115,7 @@ export default function ThirdPage() {
                 />
               </div>
               <div className="font-medium">{p.title}</div>
-              <div className="text-xs text-gray-400">★ 4.0</div>
+              <div className="text-xs text-orange-400">★ 4.0</div>
             </div>
           ))}
         </div>
