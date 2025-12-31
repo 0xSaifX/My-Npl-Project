@@ -142,7 +142,7 @@ const services = [
            <p className="text-sm text-gray-500 mb-8">
               지역별 프로젝트 사례를 확인해보세요.
            </p>
-           <div className="flex gap-2 mb-10">
+           <div className="flex gap-2 mb-10 text-sm">
           {["서울/수도권", "대전", "전주", "광주", "대구", "부산"].map((c) => (
             <button
               key={c}
