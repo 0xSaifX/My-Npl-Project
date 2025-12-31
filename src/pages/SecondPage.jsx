@@ -1,12 +1,31 @@
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { ChevronDown, Home, KeySquare, Search, WalletCards, } from "lucide-react";
+import image2 from "../assets/image-area(1).jpg";
+import image3 from "../assets/image-area(2).jpg";
+import image4 from "../assets/image-area(3).jpg";
+import image5 from "../assets/image-area(4).jpg";
+import image6 from "../assets/image-area(5).jpg";
+import image7 from "../assets/image-area(6).jpg";
+import image8 from "../assets/image-area(7).jpg";
+import image1 from "../assets/image-area.jpg";
 
 export default function SecondPage() {
   const [emblaRef] = useEmblaCarousel(
     { loop: true, align: "start" },
     [Autoplay({ delay: 3000, stopOnInteraction: false })]
   );
+
+  const projects = [
+  { title: "라이크디자인", image: image1 },
+  { title: "MLP", image: image2 },
+  { title: "다도디자인", image: image3 },
+  { title: "나로디자인", image: image4 },
+  { title: "나로디자인", image: image5 },
+  { title: "다도디자인", image: image6 },
+  { title: "라이크디자인", image: image7 },
+  { title: "라이크디자인", image: image8 },
+];
 
 const services = [
   {
