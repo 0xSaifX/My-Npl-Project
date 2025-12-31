@@ -79,7 +79,7 @@ export default function ThirdPage() {
       {/* PARTNER SLIDER */}
       <section className="relative -mt-24">
         <div className="bg-white rounded-[32px] max-w-[1280px] mx-auto px-12 py-16 shadow-sm">
-          <h2 className="font-bold mb-8">ONLY 풀하우스</h2>
+          <h2 className="font-bold mb-8 ml-20">ONLY 풀하우스</h2>
 
           <div ref={emblaRef} className="overflow-hidden ml-20">
             <div className="flex gap-6">
