@@ -66,7 +66,7 @@ export default function ThirdPage() {
         }}>
         
         <div className="absolute inset-0 bg-black/40" />
-        <div className="relative max-w-[1280px] mx-auto h-full flex flex-col justify-center px-6">
+        <div className="relative max-w-[1280px] mx-auto h-full flex flex-col text-center justify-center px-6">
           <h1 className="text-4xl font-bold text-white mb-3">
             새로운 공간, 새로운 스타일
           </h1>
