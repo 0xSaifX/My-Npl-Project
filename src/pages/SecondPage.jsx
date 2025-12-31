@@ -142,6 +142,16 @@ const services = [
            <p className="text-sm text-gray-500 mb-8">
               지역별 프로젝트 사례를 확인해보세요.
            </p>
+           <div className="flex gap-2 mb-10">
+          {["서울/수도권", "대전", "전주", "광주", "대구", "부산"].map((c) => (
+            <button
+              key={c}
+              className="px-4 py-2 rounded-full border text-sm hover:bg-black hover:text-white"
+            >
+              {c}
+            </button>
+          ))}
+        </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {projects.map((p, i) => (
