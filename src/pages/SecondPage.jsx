@@ -153,12 +153,17 @@ const services = [
           ))}
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {Array.from({ length: 8 }).map((_, i) => (
-            <div key={i} className="flex flex-col gap-3">
-              <div className="h-[180px] rounded-xl bg-gray-200" />
-              <div className="font-medium">서울 빌딩</div>
-              <div className="text-xs text-gray-400">준공일 2025년 2월</div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {projects.map((p, i) => (
+            <div key={i}>
+              <div className="aspect-[4/3] rounded-2xl overflow-hidden mb-3">
+                <img
+                  src={p.image}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="font-medium">{p.title}</div>
+              <div className="text-xs text-orange-400">★ 4.0</div>
             </div>
           ))}
         </div>
