@@ -8,7 +8,14 @@ import image5 from "../assets/image-area(4).jpg";
 import image6 from "../assets/image-area(5).jpg";
 import image7 from "../assets/image-area(6).jpg";
 import image8 from "../assets/image-area(7).jpg";
-import t1 from "../assets/tp1.png"
+import t1 from "../assets/tp1.png";
+import t2 from "../assets/tp2.png";
+import t3 from "../assets/tp3.png";
+import t4 from "../assets/tp4.png";
+import t5 from "../assets/tp5.png";
+import t6 from "../assets/tp6.png";
+import t7 from "../assets/tp7.png";
+import t8 from "../assets/tp8.png";
 
 const partners = [
   { name: "Klarna", logo: "/logos/klarna.png" },
