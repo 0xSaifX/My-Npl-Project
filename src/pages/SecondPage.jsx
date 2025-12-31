@@ -170,7 +170,7 @@ const services = [
       </section>
 
       {/* PARTNERS SLIDER */}
-      <section className="mt-10 ml-20 bg-red-300 py-20">
+      <section className="mt-32 ml-20 bg-red-300 py-20">
         <div className="max-w-[1280px]">
           <h2 className="text-xl sm:text-2xl lg:text-3xl mb-10 font-bold">우리와 함께하는 업체</h2>
 
