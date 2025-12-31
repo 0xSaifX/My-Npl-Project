@@ -145,7 +145,7 @@ export default function ThirdPage() {
 
       {/* CTA */}
       <section className="mt-40 bg-[#4BA3D7]">
-        <div className="max-w-[1280px] mx-20 px-6 text-white flex justify-between items-center">
+        <div className="max-w-[1280px] mx-20 px-6 pt-20 text-white flex justify-between items-center">
           <div>
             <div className="text-sm opacity-80 mb-2">NPL 부동산 A to Z</div>
             <h3 className="text-3xl font-bold">
