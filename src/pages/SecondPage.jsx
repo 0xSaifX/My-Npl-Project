@@ -136,6 +136,26 @@ const services = [
         </div>
       </section> */}
 
+      {/* PROJECTS */}
+      <section className="max-w-[1280px] mx-20 px-6 mt-32">
+        <h2 className="font-bold text-2xl mb-6">지역별</h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {projects.map((p, i) => (
+            <div key={i}>
+              <div className="aspect-[4/3] rounded-2xl overflow-hidden mb-3">
+                <img
+                  src={p.image}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="font-medium">{p.title}</div>
+              <div className="text-xs text-orange-400">★ 4.0</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* PARTNERS SLIDER */}
       <section className="mt-32 ml-20 py-20">
         <div className="max-w-[1280px]">
