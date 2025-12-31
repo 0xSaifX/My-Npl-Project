@@ -38,7 +38,7 @@ const projects = [
 ];
 
 const products = [
-  { title: "삼중단열 창호", image: {}, price: "₩3,180,200" },
+  { title: "삼중단열 창호", image: {tp1}, price: "₩3,180,200" },
   { title: "이중단열 창호", image: {}, price: "₩3,180,200" },
   { title: "독일식 시스템 창호", image: {}, price: "₩3,180,200" },
   { title: "원목 도어", image: {}, price: "₩3,180,200" },
