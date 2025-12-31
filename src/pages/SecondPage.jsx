@@ -70,7 +70,7 @@ const services = [
       <div className="max-w-[1280px] mx-auto bg-white rounded-[32px] px-16 py-20 shadow-sm">
 
       <div className="mx-20">
-      <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold">
+      <h2 className="text-xl sm:text-2xl lg:text-3xl mb-2 font-bold">
         반값 물건 시행·시공에 어려움이 있으신가요?
       </h2>
       <p className="text-sm text-gray-500 mb-14">
