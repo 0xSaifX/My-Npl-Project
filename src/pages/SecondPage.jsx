@@ -119,10 +119,10 @@ const services = [
 
       {/* PARTNERS SLIDER */}
       <section className="mt-32 bg-gray-50 py-20">
-        <div className="max-w-[1280px] mx-auto">
+        <div className="max-w-[1280px] ml-20">
           <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold">우리와 함께하는 업체</h2>
 
-          <div ref={emblaRef} className="overflow-hidden">
+          <div ref={emblaRef} className="overflow-hidden ml-20">
             <div className="flex">
               {["Klarna", "Mastercard", "Skrill", "VISA", "Litecoin", "Amex"].map(
                 (b, i) => (
