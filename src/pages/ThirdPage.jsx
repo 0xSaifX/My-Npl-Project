@@ -38,14 +38,14 @@ const projects = [
 ];
 
 const products = [
-  { title: "삼중단열 창호", image: {tp1}, price: "₩3,180,200" },
-  { title: "이중단열 창호", image: {}, price: "₩3,180,200" },
-  { title: "독일식 시스템 창호", image: {}, price: "₩3,180,200" },
-  { title: "원목 도어", image: {}, price: "₩3,180,200" },
-  { title: "독일식 시스템 창호", image: {}, price: "₩3,180,200" },
-  { title: "이중단열 창호", image: {}, price: "₩3,180,200" },
-  { title: "독일식 시스", image: {}, price: "₩3,180,200" },
-  { title: "삼중단열 창호", image: {}, price: "₩3,180,200" },
+  { title: "삼중단열 창호", image: t1, price: "₩3,180,200" },
+  { title: "이중단열 창호", image: t2, price: "₩3,180,200" },
+  { title: "독일식 시스템 창호", image: t3, price: "₩3,180,200" },
+  { title: "원목 도어", image: t4, price: "₩3,180,200" },
+  { title: "독일식 시스템 창호", image: t5, price: "₩3,180,200" },
+  { title: "이중단열 창호", image: t6, price: "₩3,180,200" },
+  { title: "독일식 시스", image: t7, price: "₩3,180,200" },
+  { title: "삼중단열 창호", image: t8, price: "₩3,180,200" },
 ];
 
 export default function ThirdPage() {
