@@ -102,7 +102,7 @@ export default function ThirdPage() {
       </section>
 
       {/* PROJECTS */}
-      <section className="max-w-[1280px] mx-auto px-6 mt-32">
+      <section className="max-w-[1280px] mx-20 px-6 mt-32">
         <h2 className="font-bold text-2xl mb-6">지역별</h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
