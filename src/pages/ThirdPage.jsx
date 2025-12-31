@@ -16,6 +16,7 @@ import t5 from "../assets/tp5.png";
 import t6 from "../assets/tp6.png";
 import t7 from "../assets/tp7.png";
 import t8 from "../assets/tp8.png";
+import b from "../assets/box.png";
 
 const partners = [
   { name: "Klarna", logo: "/logos/klarna.png" },
@@ -152,7 +153,7 @@ export default function ThirdPage() {
             </h3>
           </div>
           <img
-            src="/cta/cube.png"
+            src= {b}
             className="w-40 hidden md:block"
           />
         </div>
