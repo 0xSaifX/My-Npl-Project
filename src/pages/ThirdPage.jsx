@@ -148,7 +148,7 @@ export default function ThirdPage() {
         <div className="max-w-[1280px] mx-20 px-6 pt-20 text-white flex justify-between items-center">
           <div>
             <div className="text-sm opacity-80 mb-2">NPL 부동산 A to Z</div>
-            <h3 className="text-3xl font-bold">
+            <h3 className="text-3xl font-bold mb-4">
               이영준 박사 NPL 특강 회원모집
             </h3>
           </div>
