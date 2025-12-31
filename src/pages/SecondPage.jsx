@@ -120,7 +120,7 @@ const services = [
       {/* PARTNERS SLIDER */}
       <section className="mt-32 ml-20 bg-gray-50 py-20">
         <div className="max-w-[1280px]">
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold">우리와 함께하는 업체</h2>
+          <h2 className="text-xl sm:text-2xl lg:text-3xl mb-10 font-bold">우리와 함께하는 업체</h2>
 
           <div ref={emblaRef} className="overflow-hidden ml-20">
             <div className="flex">
