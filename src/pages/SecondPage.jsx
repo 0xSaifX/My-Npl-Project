@@ -139,7 +139,7 @@ const services = [
       {/* PROJECTS */}
       <section className="max-w-[1280px] mx-20 px-6 mt-32">
           <h2 className="text-xl sm:text-2xl lg:text-3xl mb-5 font-bold">전국 모든 곳의 시행·시공 노하우</h2>
-           <p className="text-sm text-gray-500 mb-8">
+           <p className="text-sm text-gray-500 mb-4">
               지역별 프로젝트 사례를 확인해보세요.
            </p>
            <div className="flex gap-2 mb-10 text-sm ">
