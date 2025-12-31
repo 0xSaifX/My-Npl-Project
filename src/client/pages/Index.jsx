@@ -3,10 +3,11 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import site from '../assets/site.png';
 import inter from '../assets/interior.png';
+
 export default function Index() {
   return (
-  <div className="w-full max-w-[1920px] mx-auto bg-white overflow-x-hidden">
-      <Header />
+  <div className="w-full bg-white">
+      {/* <Header /> */}
       <HeroSlider />
       <ServicesSection />
       <NPLPropertiesSection />
@@ -15,27 +16,8 @@ export default function Index() {
       <FAQSection />
       <VideosSection />
       <PartnerSearchSection />
-      <Footer />
+      {/* <Footer /> */}
     </div>
-  );
-}
-
-
-function Header() {
-  return (
-    <header className="flex justify-center items-center h-20 px-8 border-b border-gray-300">
-      <div className="flex items-center justify-between w-full max-w-[1920px]">
-        <div className="text-[22px] font-bold font-['Readex_Pro'] uppercase">FULLHOUSE</div>
-        <nav className="flex gap-8 items-center">
-          <a href="#" className="text-gray-900 font-pretendard text-base font-medium hover:text-orange-primary">NPL 경매</a>
-          <a href="#" className="text-gray-900 font-pretendard text-base font-medium hover:text-orange-primary">시행 · 시공</a>
-          <a href="#" className="text-gray-900 font-pretendard text-base font-medium hover:text-orange-primary">인테리어</a>
-          <a href="#" className="text-gray-900 font-pretendard text-base font-medium hover:text-orange-primary">NPL학원</a>
-          <a href="#" className="text-gray-900 font-pretendard text-base font-medium hover:text-orange-primary">법률자문</a>
-          <a href="#" className="text-gray-900 font-pretendard text-base font-medium hover:text-orange-primary">사금융</a>
-        </nav>
-      </div>
-    </header>
   );
 }
 
@@ -801,64 +783,4 @@ function PartnerSearchSection() {
   );
 }
 
-function Footer() {
-  return (
-    <footer className="flex justify-center items-center w-full">
-      <div className="flex w-[1920px] px-[360px] py-20 pb-30 flex-col items-start bg-gray-900">
-        <div className="flex flex-col max-w-[1280px] items-start gap-10 w-full">
-          <div className="flex justify-between items-end w-full">
-            <div className="flex flex-col w-[313px] items-start gap-12">
-              <div className="text-[22px] font-bold font-['Readex_Pro'] uppercase text-white w-full">
-                FULLHOUSE
-              </div>
-              <div className="flex flex-col items-start gap-3 w-full">
-                <div className="flex items-start gap-2.5">
-                  <div className="flex items-center gap-1">
-                    <div className="text-base font-medium font-pretendard text-white">이메일무단수집거부</div>
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <div className="text-base font-medium font-pretendard text-white">이용약관</div>
-                  </div>
-                </div>
-                <div className="text-base font-pretendard text-white/50 w-full opacity-50">
-                  서울특별시 강남구 언주로 651 삼원빌딩 8층
-                </div>
-              </div>
-            </div>
 
-            <div className="flex items-center gap-0">
-              <button className="flex max-w-11 max-h-11 p-3 justify-center items-center gap-2.5 rounded-full hover:bg-white/10">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                  <path
-                    d="M14.7754 8.72363C16.0044 8.72373 16.9988 9.71724 16.999 10.9404C16.999 12.1638 16.0046 13.1581 14.7754 13.1582H13.543L13.4229 13.4863C12.669 15.537 10.6931 17 8.375 17C5.40545 16.9999 3.00055 14.5992 3 11.6396V8.72363H14.7754Z"
-                    fill="white"
-                    stroke="white"
-                  />
-                </svg>
-              </button>
-              <button className="flex max-w-11 max-h-11 p-3 justify-center items-center gap-2.5 rounded-full hover:bg-white/10">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                  <path d="M3 3H17V17H3V3Z" stroke="white" strokeWidth="2" />
-                </svg>
-              </button>
-              <button className="flex max-w-11 max-h-11 p-3 justify-center items-center gap-2.5 rounded-full hover:bg-white/10">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                  <path
-                    d="M10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2Z"
-                    fill="white"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-
-          <div className="w-[1200px] h-px opacity-20 bg-white/60"></div>
-
-          <div className="text-sm font-medium font-pretendard text-white">
-            Copyrightⓒ HMKholdings. All rights reserved.
-          </div>
-        </div>
-      </div>
-    </footer>
-  );
-}
