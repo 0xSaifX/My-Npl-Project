@@ -8,7 +8,7 @@ import image5 from "../assets/image-area(4).jpg";
 import image6 from "../assets/image-area(5).jpg";
 import image7 from "../assets/image-area(6).jpg";
 import image8 from "../assets/image-area(7).jpg";
-import t1 from "../assets/tp.png"
+import t1 from "../assets/tp1.png"
 
 const partners = [
   { name: "Klarna", logo: "/logos/klarna.png" },
