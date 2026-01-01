@@ -89,13 +89,13 @@ const communityPosts = [
     image: c3,
     title: "부동산 투자 트렌드 분석",
     date: "2025. 3. 28",
-    hot: false,
+    hot: true,
   },
   {
     image: c4,
     title: "초보자를 위한 NPL 가이드",
     date: "2025. 3. 20",
-    hot: false,
+    hot: true,
   },
   {
     image: c5,
@@ -107,7 +107,7 @@ const communityPosts = [
     image: c6,
     title: "법률 리스크 체크 포인트",
     date: "2025. 3. 10",
-    hot: false,
+    hot: true,
   },
 ];
 
