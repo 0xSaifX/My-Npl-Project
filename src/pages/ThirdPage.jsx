@@ -25,12 +25,12 @@ import lite from "../assets/Lightcoin.png";
 import amazon from "../assets/Amazon.png";
 
 const partners = [
-  { name: "Klarna", logo: klarna },
-  { name: "Mastercard", logo: master },
-  { name: "Skrill", logo: skirill },
-  { name: "Amazon", logo: amazon },
-  { name: "Litecoin", logo: lite },
-  { name: "Visa", logo: visa },
+  { name: "", logo: klarna },
+  { name: "", logo: master },
+  { name: "", logo: skirill },
+  { name: "", logo: amazon },
+  { name: "", logo: lite },
+  { name: "", logo: visa },
 ];
 
 const projects = [
