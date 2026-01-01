@@ -472,7 +472,17 @@ function PartnersSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 w-full">
             {partners.map((partner, index) => (
               <div key={index} className="flex flex-col gap-6 ">
-                
+                <div
+  className="flex h-[300px] justify-center items-center rounded-2xl"
+  style={{ backgroundColor: partner.bg }}
+>
+  <img
+    src={partner.logo}
+    alt={partner.name}
+    className="w-24 h-24 object-contain"
+  />
+</div>
+
                 <div className="flex flex-col gap-2 px-1">
                   <div className="flex items-center gap-1">
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
