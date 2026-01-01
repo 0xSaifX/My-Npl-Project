@@ -766,7 +766,7 @@ function VideosSection() {
             <img 
             src={inter}
             alt="Video thumbnail 3"
-          className="w-full aspect-video rounded-2xl object-cover"
+          className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black/30"></div>
           </div>
