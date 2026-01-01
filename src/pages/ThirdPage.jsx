@@ -92,7 +92,7 @@ export default function ThirdPage() {
               {partners.map((p, i) => (
                 <div
                   key={i}
-                  className="flex-[0_0_220px] bg-gray-50 center rounded-2xl p-6 text-center"
+                  className="flex-[0_0_220px] bg-gray-50 center rounded-2xl p-10 text-center"
                 >
                   <img
                     src={p.logo}
