@@ -21,7 +21,7 @@ import visa from "../assets/visa.png";
 import klarna from "../assets/klarna.png";
 import master from "../assets/Mastercard.png";
 import skirill from "../assets/Skrill.png";
-import visa from "../assets/visa.png";
+import lite from "../assets/Lightcoin.png";
 import visa from "../assets/visa.png";
 
 const partners = [
