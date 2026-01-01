@@ -73,7 +73,7 @@ export default function FourthPage() {
           </section>
 
           {/* GREEN CTA */}
-          <section className="mt-12 bg-[#e6f3c8] rounded-2xl p-10 m-20 flex items-center justify-between">
+          <section className="mt-12 bg-[#e6f3c8] rounded-2xl p-6 m-20 flex items-center justify-between">
             <div>
               <p className="text-sm font-semibold text-[#4f6f1d]">
                 NPL 실전투자
