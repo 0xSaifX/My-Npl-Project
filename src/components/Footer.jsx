@@ -12,8 +12,8 @@ function Footer() {
 
             <div className="flex flex-col gap-3">
               <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 text-base font-medium">
-                <span className="hover:text-blue-400 cursor-pointer">이메일무단수집거부</span>
-                <span className="hover:text-blue-400 cursor-pointer">이용약관</span>
+                <span className="hover:text-orange-400 cursor-pointer">이메일무단수집거부</span>
+                <span className="hover:text-orange-400 cursor-pointer">이용약관</span>
               </div>
               <div className="text-sm text-white/50">
                 서울특별시 강남구 언주로 651 삼원빌딩 8층
