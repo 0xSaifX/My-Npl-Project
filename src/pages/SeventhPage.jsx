@@ -1,4 +1,5 @@
 // IntegratedSearchPage.jsx
+import { Search } from "lucide-react";
 import React from "react";
 
 export default function SeventhPage() {
@@ -19,7 +20,7 @@ export default function SeventhPage() {
               className="w-full h-[52px] rounded-full bg-gray-100 px-6 pr-14 text-sm focus:outline-none"
             />
             <button className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400">
-              🔍
+              <Search/>
             </button>
           </div>
 
