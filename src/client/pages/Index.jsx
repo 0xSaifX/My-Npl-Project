@@ -3,7 +3,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import site from '../assets/site.png';
 import inter from '../assets/interior.png';
-import visa from "./assets/visa.png";
+import visa from "/assets/visa.png";
 export default function Index() {
   return (
   <div className="w-full bg-white">
