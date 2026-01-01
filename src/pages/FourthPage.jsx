@@ -33,7 +33,7 @@ export default function FourthPage() {
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-0 py-12">
 
           {/*  INTRO  */}
-          <section className="ml-20 items-center">
+          <section className="ml-20 text-center">
             <h2 className="text-lg font-semibold">NPL 특수물건 학원</h2>
             <p className="mt-2 text-sm text-gray-500">
               NPL 전문가가 되고 싶으신가요? 차별화된 NPL 교육을 직접 경험해보세요.
