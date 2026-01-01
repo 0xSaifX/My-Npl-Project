@@ -58,7 +58,7 @@ export default function FourthPage() {
                       />
                     </div>
                     <div className="mt-2">
-                      <span className="text-orange-500 text-xs">★ 추천</span>
+                      <span className="text-orange-500 text-xs"><Star/> 추천</span>
                       <h4 className="text-sm font-medium mt-1">
                         강남 NPL 경매학원
                       </h4>
