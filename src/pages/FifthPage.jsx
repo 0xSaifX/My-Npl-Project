@@ -6,8 +6,11 @@ export default function FifthPage() {
       {/* HERO SECTION */}
       <section
         className="relative h-[420px] md:h-[520px] w-full bg-cover bg-center"
-        style={{ backgroundImage: "url(/images/hero-law.jpg)" }}
-      >
+          style={{
+          backgroundImage:
+            "url(https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=2400)",
+        }}
+>
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative max-w-[1280px] mx-auto h-full px-6 flex flex-col justify-center">
           <h1 className="text-white text-3xl md:text-5xl font-bold leading-tight">
