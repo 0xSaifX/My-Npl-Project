@@ -501,20 +501,44 @@ function PopularPostsSection() {
   });
 
   useEffect(() => {
-    if (!emblaApi) return;
+  if (!emblaApi) return;
 
-    let rafId;
-    const speed = 0.4; // control scroll speed here
+  const mediaQuery = window.matchMedia("(min-width: 1024px)");
+  let rafId = null;
+  const speed = 0.4;
 
-    const autoScroll = () => {
-      emblaApi.scrollBy(speed);
-      rafId = requestAnimationFrame(autoScroll);
-    };
-
+  const autoScroll = () => {
+    emblaApi.scrollBy(speed);
     rafId = requestAnimationFrame(autoScroll);
+  };
 
-    return () => cancelAnimationFrame(rafId);
-  }, [emblaApi]);
+  const handleChange = () => {
+    if (mediaQuery.matches) {
+      // Desktop → start auto-scroll
+      if (!rafId) {
+        rafId = requestAnimationFrame(autoScroll);
+      }
+    } else {
+      // Mobile / Tablet → stop auto-scroll
+      if (rafId) {
+        cancelAnimationFrame(rafId);
+        rafId = null;
+      }
+    }
+  };
+
+  // Initial check
+  handleChange();
+
+  // Listen for screen size changes
+  mediaQuery.addEventListener("change", handleChange);
+
+  return () => {
+    if (rafId) cancelAnimationFrame(rafId);
+    mediaQuery.removeEventListener("change", handleChange);
+  };
+}, [emblaApi]);
+
 
   const posts = [
     {
