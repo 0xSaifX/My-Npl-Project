@@ -72,6 +72,45 @@ export default function FourthPage() {
   },
 ];
 
+const communityPosts = [
+  {
+    image: c1,
+    title: "2025 NEW NPL 투자 기초반",
+    date: "2025. 4. 5",
+    hot: true,
+  },
+  {
+    image: c2,
+    title: "NPL 경매 실전 후기",
+    date: "2025. 4. 2",
+    hot: true,
+  },
+  {
+    image: c3,
+    title: "부동산 투자 트렌드 분석",
+    date: "2025. 3. 28",
+    hot: false,
+  },
+  {
+    image: c4,
+    title: "초보자를 위한 NPL 가이드",
+    date: "2025. 3. 20",
+    hot: false,
+  },
+  {
+    image: c5,
+    title: "NPL 수익 구조 완전 정리",
+    date: "2025. 3. 15",
+    hot: true,
+  },
+  {
+    image: c6,
+    title: "법률 리스크 체크 포인트",
+    date: "2025. 3. 10",
+    hot: false,
+  },
+];
+
 
   return (
     <main className="bg-[#f7f7f7]">
