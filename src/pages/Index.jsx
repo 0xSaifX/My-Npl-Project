@@ -588,7 +588,7 @@ function PopularPostsSection() {
   ];
 
   return (
-    <section className="w-full bg-gray-100 py-16 sm:py-24 lg:py-[140px]">
+    <section className="w-full bg-gray-100 ml-10 sm:ml-20 py-16 sm:py-24 lg:py-[140px]">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col gap-12 sm:gap-16 lg:gap-[72px]">
         {/* Title */}
        <div className="text-center space-y-3 sm:space-y-4">
