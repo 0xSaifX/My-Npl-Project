@@ -577,15 +577,15 @@ function PopularPostsSection() {
                 <div className="space-y-5">
                   {/* Tag */}
                   <span
-                    className={`inline-block px-3 py-1 text-sm rounded
-                    ${post.featured
-                      ? "bg-white/20"
-                      : "bg-orange-primary/10 text-orange-primary"}`}>
-                    {post.tag}
-                  </span>
-
+  className={`inline-block px-3 py-1 text-xs sm:text-sm rounded
+  ${post.featured
+    ? "bg-white/20"
+    : "bg-orange-primary/10 text-orange-primary"}`}
+>
+  {post.tag}
+</span>
                   {/* Title */}
-                  <h3 className="text-xl font-bold leading-snug line-clamp-2">
+                  <h3 className="text-lg sm:text-xl font-bold leading-snug line-clamp-2">
                     {post.title}
                   </h3>
 
