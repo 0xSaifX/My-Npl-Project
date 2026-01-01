@@ -87,12 +87,12 @@ export default function ThirdPage() {
         <div className="bg-white rounded-[32px] max-w-[1280px] mx-auto px-12 py-16 shadow-sm">
           <h2 className="font-bold mb-8 ml-20">ONLY 풀하우스</h2>
 
-          <div ref={emblaRef} className="overflow-hidden ml-20">
+          <div ref={emblaRef} className="overflow-hidden center ml-20">
             <div className="flex gap-6">
               {partners.map((p, i) => (
                 <div
                   key={i}
-                  className="flex-[0_0_220px] bg-gray-50 center rounded-2xl p-10 text-center"
+                  className="flex-[0_0_220px] bg-gray-50  rounded-2xl p-10 text-center"
                 >
                   <img
                     src={p.logo}
