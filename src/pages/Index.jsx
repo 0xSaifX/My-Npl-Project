@@ -794,7 +794,7 @@ export default function PartnerSearchSection() {
   // Auto-scroll on desktop
   useEffect(() => {
     if (!emblaApi) return;
-    if (window.innerWidth < 768) return; // mobile: manual swipe
+    if (window.innerWidth < 768) return; 
 
     let rafId;
     const speed = 0.4;
