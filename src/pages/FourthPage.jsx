@@ -186,7 +186,7 @@ export default function FourthPage() {
       </div>
     ))}
   </div>
-</section>
+          </section>
 
 
           {/* COMMUNITY */}
