@@ -298,7 +298,7 @@ const communityPosts = [
           <h4 className="text-sm font-medium mt-1 line-clamp-2">
             {post.title}
           </h4>
-          <p className="text-xs text-gray-500 mt-1">{post.text}</p>
+          <p className="text-xs text-gray-500 mt-3">{post.text}</p>
           <p className="text-xs text-gray-400 mt-1">{post.date}</p>
         </div>
       </div>
