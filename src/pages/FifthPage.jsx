@@ -119,7 +119,7 @@ export default function FifthPage() {
           생생한 상담 내용과 후기들을 확인해보세요.
         </p>
          <div className="flex gap-2 mb-10 text-sm ">
-          {["서울/수도권", "부산대구"].map((c) => (
+          {["서울/도권", "부산대구"].map((c) => (
             <button
               key={c}
               className="px-4 py-2 rounded-full border text-sm hover:bg-black hover:text-white"
