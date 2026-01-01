@@ -776,7 +776,12 @@ function VideosSection() {
 }
 
 function PartnerSearchSection() {
-  
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+  loop: true,
+  dragFree: true,
+  align: "start",
+});
+
   return (
     <section className="relative h-[627px] w-full my-20">
       <div className="absolute left-0 top-48 w-full h-[200px] flex items-center gap-6 overflow-hidden">
