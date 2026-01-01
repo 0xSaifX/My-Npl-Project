@@ -690,7 +690,7 @@ function FAQSection() {
           </div>
         </div>
 
-        <div className="flex flex-col w-[1200px] items-start border-t border-gray-800">
+        <div className="flex flex-col w-full max-w-[1200px] mx-auto border-t border-gray-800">
           {faqs.map((faq, index) => (
             <div
               key={index}
