@@ -784,9 +784,6 @@ function VideosSection() {
 //   { name: "Klarna", icon: klarna },
 // ];
 
-import React, { useEffect } from "react";
-import useEmblaCarousel from "embla-carousel-react";
-
 const partnerIcons = [
   { name: "Amazon", icon: "/images/amazon.png" },
   { name: "Visa", icon: "/images/visa.png" },
@@ -836,6 +833,4 @@ function PartnerSearchSection() {
     </section>
   );
 }
-
-export default PartnerSearchSection;
 
