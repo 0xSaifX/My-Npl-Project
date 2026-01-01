@@ -157,7 +157,7 @@ export default function FifthPage() {
     엄선된 NPL 학원 관련 모든 커뮤니티 글을 확인해보세요.
   </p>
 
- <div className="flex gap-2 mb-10 text-sm ">
+ <div className="flex gap-2 mb-10 mt-4 text-sm ">
           {["서울/수도권", "대전", "전주", "광주", "대구", "부산"].map((c) => (
             <button
               key={c}
