@@ -565,10 +565,15 @@ function PopularPostsSection() {
           <div className="flex gap-6">
             {posts.concat(posts).map((post, index) => (
               <div
-                key={index}
-                className={`min-w-[380px] h-[360px] rounded-2xl p-8 flex flex-col justify-between
-                ${post.featured ? "bg-orange-500 text-white" : "bg-white text-gray-900"}`}
-              >
+              key={index}
+                className={`flex-shrink-0
+                   w-[85vw] sm:w-[300px] lg:w-[380px]
+                   h-auto min-h-[300px] lg:h-[360px]
+                   rounded-2xl p-6 sm:p-8
+                   flex flex-col justify-between
+                   ${post.featured ? "bg-orange-500 text-white" : "bg-white text-gray-900"}
+                  `}>
+
                 <div className="space-y-5">
                   {/* Tag */}
                   <span
