@@ -157,7 +157,7 @@ export default function FourthPage() {
     {["전체", "서울", "부산", "대구", "광주"].map((r) => (
       <button
         key={r}
-        className="px-4 py-1.5 rounded-full border text-sm whitespace-nowrap hover:bg-gray-100 transition"
+        className="px-4 py-1.5 rounded-full border text-sm whitespace-nowrap hover:bg-black/10 transition"
       >
         {r}
       </button>
