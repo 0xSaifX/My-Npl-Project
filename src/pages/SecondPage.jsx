@@ -192,34 +192,7 @@ const services = [
       </section>
 
       {/* FAQ */}
-      <section className="max-w-[1280px] py-32 mx-20">
-        <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold">자주 묻는 질문</h2>
-
-        <div className="flex gap-2 mb-8">
-          {["NPL", "계약", "상품", "홍보", "이용방법", "카테고리"].map((t) => (
-            <button
-              key={t}
-              className="px-4 py-2 rounded-full border text-sm hover:bg-black hover:text-white"
-            >
-              {t}
-            </button>
-          ))}
-        </div>
-
-        <div className="divide-y">
-          {Array.from({ length: 4 }).map((_, i) => (
-            <div
-              key={i}
-              className="py-6 flex justify-between items-center cursor-pointer"
-            >
-              <span className="font-medium">
-                부실채권(NPL)이란 무엇인가요?
-              </span>
-              <span><ChevronDown/></span>
-            </div>
-          ))}
-        </div>
-      </section>
+      <
 
     </div>
   );
