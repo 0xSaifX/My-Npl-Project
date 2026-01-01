@@ -17,9 +17,15 @@ import t6 from "../assets/tp6.png";
 import t7 from "../assets/tp7.png";
 import t8 from "../assets/tp8.png";
 import b from "../assets/box.png";
+import visa from "../assets/visa.png";
+import klarna from "../assets/klarna.png";
+import master from "../assets/mastercard.png";
+import visa from "../assets/visa.png";
+import visa from "../assets/visa.png";
+import visa from "../assets/visa.png";
 
 const partners = [
-  { name: "Klarna", logo: "/logos/klarna.png" },
+  { name: "Klarna", logo: visa },
   { name: "Mastercard", logo: "/logos/mastercard.png" },
   { name: "Skrill", logo: "/logos/skrill.png" },
   { name: "Amazon", logo: "/logos/amazon.png" },
