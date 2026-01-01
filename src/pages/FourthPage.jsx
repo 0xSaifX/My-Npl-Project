@@ -235,38 +235,44 @@ const communityPosts = [
 
 
           {/* COMMUNITY */}
-          <section className="mt-20 m-20 center items-center">
-            <h3 className="font-semibold">커뮤니티</h3>
-            <p className="text-sm text-gray-500 mt-1">
-              엄선된 NPL 학원 관련 모든 커뮤니티 글을 확인해보세요.
-            </p>
+          <section className="mt-20 mx-4 sm:mx-10 lg:mx-20">
+  <h3 className="font-semibold text-lg">커뮤니티</h3>
+  <p className="text-sm text-gray-500 mt-1">
+    엄선된 NPL 학원 관련 모든 커뮤니티 글을 확인해보세요.
+  </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
-              {[1, 2, 3, 4, 5, 6].map((i) => (
-                <div key={i} className="flex gap-4">
-                  <img
-                    src={`/images/community-${i}.jpg`}
-                    className="w-24 h-24 rounded-xl object-cover"
-                  />
-                  <div>
-                    <span className="text-xs text-orange-500">🔥 인기</span>
-                    <h4 className="text-sm font-medium mt-1">
-                      2025 NEW NPL 투자 기초반
-                    </h4>
-                    <p className="text-xs text-gray-400 mt-1">
-                      2025. 4. 5
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
+    {communityPosts.map((post, i) => (
+      <div key={i} className="flex gap-4 items-start">
+        {/* Image */}
+        <img
+          src={post.image}
+          alt={post.title}
+          className="w-24 h-24 rounded-xl object-cover flex-shrink-0"
+          loading="lazy"
+        />
 
-            <div className="flex justify-center mt-10">
-              <button className="px-6 py-2 border rounded-full text-sm">
-                더보기 +
-              </button>
-            </div>
-          </section>
+        {/* Text */}
+        <div>
+          {post.hot && (
+            <span className="text-xs text-orange-500">🔥 인기</span>
+          )}
+          <h4 className="text-sm font-medium mt-1 line-clamp-2">
+            {post.title}
+          </h4>
+          <p className="text-xs text-gray-400 mt-1">{post.date}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <div className="flex justify-center mt-10">
+    <button className="px-6 py-2 border rounded-full text-sm hover:bg-gray-100 transition">
+      더보기 +
+    </button>
+  </div>
+  </section>
+
         </div>
 
         {/* BOTTOM CTA */}
