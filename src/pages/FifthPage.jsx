@@ -151,7 +151,7 @@ export default function FifthPage() {
       </section>
 
       {/* LATEST CONSULTATIONS */}
-      <section className="mt-20 mx-4 bg-gray-100 p-10 sm:mx-10 lg:mx-0">
+      <section className="mt-20 mx-4 bg-gray-100 p-10 sm:mx-0 lg:mx-0">
   <h3 className="font-semibold text-lg">커뮤니티</h3>
   <p className="text-sm text-gray-500 mt-1">
     엄선된 NPL 학원 관련 모든 커뮤니티 글을 확인해보세요.
