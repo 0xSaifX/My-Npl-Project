@@ -862,12 +862,12 @@ function PartnerSearchSection() {
             {partnerIcons.concat(partnerIcons).map((item, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 w-32 h-32 sm:w-36 sm:h-36 lg:w-40 lg:h-40 rounded-full bg-white flex items-center justify-center shadow-md"
+                className="flex-shrink-0 bg-gray-200 w-32 h-32 sm:w-36 sm:h-36 lg:w-40 lg:h-40 rounded-full bg-white flex items-center justify-center shadow-md"
               >
                 <img
                   src={item.icon}
                   alt={item.name}
-                  className="w-12 h-12 sm:w-16 bg-gray-200 sm:h-16 object-contain"
+                  className="w-12 h-12 sm:w-16 sm:h-16 object-contain"
                 />
               </div>
             ))}
