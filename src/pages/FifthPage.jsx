@@ -157,6 +157,17 @@ export default function FifthPage() {
     엄선된 NPL 학원 관련 모든 커뮤니티 글을 확인해보세요.
   </p>
 
+ <div className="flex gap-2 mb-10 text-sm ">
+          {["서울/수도권", "대전", "전주", "광주", "대구", "부산"].map((c) => (
+            <button
+              key={c}
+              className="px-4 py-2 rounded-full border text-sm hover:bg-black hover:text-white"
+            >
+              {c}
+            </button>
+          ))}
+        </div>
+
   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
     {communityPosts.map((post, i) => (
       <div key={i} className="flex gap-4 bg-[#e8f6d1] p-4 items-start">
