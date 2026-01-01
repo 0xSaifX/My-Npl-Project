@@ -33,7 +33,7 @@ export default function FourthPage() {
           </section>
 
           {/* SLIDER */}
-          <section className="mt-8 m-20">
+          <section className="mt-8 justify-center m-20">
             <h3 className="text-base font-semibold mb-4">
               풀하우스만의 차별화된 NPL 교육
             </h3>
