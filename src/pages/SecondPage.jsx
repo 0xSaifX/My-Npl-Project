@@ -1,6 +1,5 @@
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
-import faq from "../pages/Index/FaQSection";
 import { ChevronDown, Home, KeySquare, Search, WalletCards, } from "lucide-react";
 import image2 from "../assets/image-area(1).jpg";
 import image3 from "../assets/image-area(2).jpg";
@@ -10,7 +9,6 @@ import image6 from "../assets/image-area(5).jpg";
 import image7 from "../assets/image-area(6).jpg";
 import image8 from "../assets/image-area(7).jpg";
 import image1 from "../assets/image-area.jpg";
-import { FaQ } from "react-icons/fa6";
 
 export default function SecondPage() {
   const [emblaRef] = useEmblaCarousel(
@@ -194,7 +192,34 @@ const services = [
       </section>
 
       {/* FAQ */}
-      <FaQ/>
+      <section className="max-w-[1280px] py-32 mx-20">
+        <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold">자주 묻는 질문</h2>
+
+        <div className="flex gap-2 mb-8">
+          {["NPL", "계약", "상품", "홍보", "이용방법", "카테고리"].map((t) => (
+            <button
+              key={t}
+              className="px-4 py-2 rounded-full border text-sm hover:bg-black hover:text-white"
+            >
+              {t}
+            </button>
+          ))}
+        </div>
+
+        <div className="divide-y">
+          {Array.from({ length: 4 }).map((_, i) => (
+            <div
+              key={i}
+              className="py-6 flex justify-between items-center cursor-pointer"
+            >
+              <span className="font-medium">
+                부실채권(NPL)이란 무엇인가요?
+              </span>
+              <span><ChevronDown/></span>
+            </div>
+          ))}
+        </div>
+      </section>
 
     </div>
   );
