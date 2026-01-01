@@ -29,7 +29,7 @@ function Header() {
             <Link
               key={idx}
               to={link.path}
-              className="hover:text-blue-600 transition-colors"
+              className="hover:text-orange-600 transition-colors"
             >
               {link.name}
             </Link>
