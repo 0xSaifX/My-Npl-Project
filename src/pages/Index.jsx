@@ -784,7 +784,7 @@ function PartnerSearchSection() {
 
 useEffect(() => {
   if (!emblaApi) return;
-  if 
+  if (window.innerWidth < 768) return;
   let rafId;
   const speed = 0.5;
 
