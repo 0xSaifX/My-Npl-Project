@@ -8,7 +8,7 @@ export default function FifthPage() {
         className="relative h-[420px] md:h-[520px] w-full bg-cover bg-center"
         style={{ backgroundImage: "url(/images/hero-law.jpg)" }}
       >
-        <div className="absolute inset-0 bg-black/50 text-center" />
+        <div className="absolute inset-0 bg-black/50" />
         <div className="relative max-w-[1280px] mx-auto h-full px-6 flex flex-col justify-center">
           <h1 className="text-white text-3xl md:text-5xl font-bold leading-tight">
             법률 문제, 전문가와 함께
