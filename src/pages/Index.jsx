@@ -117,7 +117,89 @@ function HeroSlider() {
   ];
 
   return (
-    
+    <section className="w-full pt-12 md:pt-20 px-4 sm:px-6 lg:px-8">
+  <div className="max-w-[1920px] mx-auto flex flex-col lg:flex-row items-center gap-10 lg:gap-28">
+
+    {/* SLIDER */}
+    <div className="w-full lg:flex-1">
+      <div ref={emblaRef} className="overflow-hidden rounded-2xl">
+        <div className="flex">
+          {slides.map((slide, index) => (
+            <div key={index} className="flex-[0_0_100%]">
+              <img
+                src={slide.image}
+                alt=""
+                className="w-full h-[220px] sm:h-[280px] md:h-[340px] lg:h-[380px] object-cover rounded-2xl"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    {/* TEXT + CONTROLS */}
+    <div className="w-full lg:w-[520px] flex flex-col gap-10 lg:gap-[92px]">
+
+      {/* TEXT */}
+      <div className="flex flex-col gap-4">
+        <p className="text-base sm:text-lg md:text-xl text-[#1C232C] leading-relaxed whitespace-pre-line">
+          {slides[selectedIndex].title}
+        </p>
+
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
+          <span className="text-orange-light">
+            {slides[selectedIndex].highlight}
+          </span>
+          <span className="text-[#1C232C]">
+            {slides[selectedIndex].subtitle}
+          </span>
+        </h2>
+      </div>
+
+      {/* CONTROLS */}
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+
+        {/* PROGRESS */}
+        <div className="flex items-center gap-4">
+          <span className="text-sm font-medium">01</span>
+
+          <div className="flex">
+            {slides.map((_, i) => (
+              <div
+                key={i}
+                className={`h-0.5 w-10 transition-colors ${
+                  i === selectedIndex ? "bg-black" : "bg-gray-300"
+                }`}
+              />
+            ))}
+          </div>
+
+          <span className="text-sm font-medium">
+            0{slides.length}
+          </span>
+        </div>
+
+        {/* ARROWS */}
+        <div className="flex items-center">
+          <button
+            onClick={() => scrollTo(selectedIndex - 1)}
+            className="w-11 h-11 flex items-center justify-center rounded-full hover:opacity-60 transition"
+          >
+            ←
+          </button>
+
+          <button
+            onClick={() => scrollTo(selectedIndex + 1)}
+            className="w-11 h-11 flex items-center justify-center rounded-full hover:opacity-60 transition"
+          >
+            →
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
   );
 }
 
