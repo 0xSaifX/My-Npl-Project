@@ -696,9 +696,9 @@ function FAQSection() {
             key={index}
               className="flex flex-col w-full px-2 sm:px-4 py-6 sm:py-8 gap-6 sm:gap-8 border-b border-gray-300">
               <button
-                onClick={() => setOpenIndex(openIndex === index ? -1 : index)}
-                className="flex items-center gap-6 w-full"
-              >
+  onClick={() => setOpenIndex(openIndex === index ? -1 : index)}
+  className="flex items-start sm:items-center gap-4 sm:gap-6 w-full"
+>
                 <div className="flex justify-between items-center flex-1">
                   <div className="text-xl font-bold font-pretendard text-gray-900 line-clamp-1 flex-1 text-left">
                     {faq.question}
