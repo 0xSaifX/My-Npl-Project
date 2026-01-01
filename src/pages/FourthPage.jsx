@@ -1,5 +1,6 @@
 import useEmblaCarousel from "embla-carousel-react";
 import box from "../assets/box.png";
+import home from "../assets/home.png";
 import { useState } from "react";
 import { FaStar } from "react-icons/fa";
 
@@ -82,7 +83,7 @@ export default function FourthPage() {
               </h3>
             </div>
             <img
-              src={box}
+              src={home}
               className="w-20 hidden sm:block shrink-0"
             />
           </section>
