@@ -158,7 +158,7 @@ export default function FifthPage() {
   </p>
 
  <div className="flex gap-2 mb-10 mt-4 text-sm ">
-          {["서울/수도권", "대전", "전주", "광주", "대구", "부산"].map((c) => (
+          {["서울/수도권", "부대구산"].map((c) => (
             <button
               key={c}
               className="px-4 py-2 rounded-full border text-sm hover:bg-black hover:text-white"
