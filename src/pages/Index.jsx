@@ -344,103 +344,95 @@ function ServicesSection() {
 }
 
 function NPLPropertiesSection() {
+  const [emblaRef, emblaApi] = useEmblaCarousel({ 
+    loop: false,
+    align: "start",
+    slidesToScroll: 4
+  });
+
   const properties = [
     {
       image: "https://api.builder.io/api/v1/image/assets/TEMP/d0b6dffe0526b819f910d951e743a72630905b0e?width=1152",
       rating: "4.0",
       code: "2024-105003",
       location: "서울시 중랑구 면목동",
-      type: "근린주택",
+      type: "근린주택"
     },
     {
       image: "https://api.builder.io/api/v1/image/assets/TEMP/ddced8f645912319e0bb85ea74259734b9667bde?width=1929",
       rating: "4.0",
       code: "2024-105159",
       location: "서울시 송파구 문정동",
-      type: "근린주택",
+      type: "근린주택"
     },
     {
       image: "https://api.builder.io/api/v1/image/assets/TEMP/127bb2bac78a597ac130885eebdea15db72b7ef3?width=1542",
       rating: "4.0",
       code: "2024-105851",
       location: "서울시 관악구 신사동",
-      type: "근린주택",
+      type: "근린주택"
     },
     {
       image: "https://api.builder.io/api/v1/image/assets/TEMP/f7e1be1e2113ab60cf7c5e5f11b5723250bb0471?width=1812",
       rating: "4.0",
       code: "2024-105074",
       location: "서울시 강남구 성내동",
-      type: "근린주택",
-    },
+      type: "근린주택"
+    }
   ];
 
   return (
-    <section className="w-full py-16 sm:py-24">
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-12">
-
-        {/* Header */}
-        <div className="text-center max-w-3xl mx-auto space-y-3">
-          <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-bold text-gray-900">
-            최신 NPL 물건
-          </h2>
-          <p className="text-base sm:text-lg text-gray-700">
-            엄선된 반값 부동산 물건을 만나보세요. 모든 어려움은 풀하우스의 전문가 집단이 해결해드립니다.
-          </p>
-        </div>
-
-        {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
-          {properties.map((property, index) => (
-            <div key={index} className="flex flex-col gap-5">
-              {/* Image */}
-              <div className="w-full overflow-hidden rounded-2xl">
-                <img
-                  src={property.image}
-                  alt={property.code}
-                  className="w-full h-[220px] sm:h-[300px] lg:h-[420px] object-cover transition-transform duration-300 hover:scale-105"
-                />
-              </div>
-
-              {/* Info */}
-              <div className="flex flex-col gap-2 px-1">
-                <div className="flex items-center gap-1">
-                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M8.51584 1.33175C8.82211 1.18572 9.17792 1.18572 9.48419 1.33175L16.511 6.44001C16.7444 6.68629 16.8541 7.0247 16.8097 7.36102Z"
-                      fill="#FF7D2F"
-                    />
-                  </svg>
-                  <span className="text-lg font-bold text-orange-primary">
-                    {property.rating}
-                  </span>
-                </div>
-
-                <div className="flex flex-col gap-1">
-                  <div className="text-lg sm:text-xl font-bold text-gray-900">
-                    {property.code}
-                  </div>
-                  <div className="flex flex-wrap items-center gap-2 text-sm sm:text-base text-gray-700">
-                    <span>{property.location}</span>
-                    <span className="w-px h-3 bg-gray-400" />
-                    <span>{property.type}</span>
-                  </div>
-                </div>
-              </div>
+    <section className="flex flex-col items-center max-w-[1280px] mx-auto px-10 pt-40 pb-50 gap-15">
+      <div className="flex flex-col gap-12 w-full">
+        <div className="flex justify-between items-center">
+          <div className="flex flex-col items-center gap-2 flex-1">
+            <div className="flex items-center gap-1">
+              <div className="text-[40px] leading-[150%] font-bold font-ibm text-gray-900">최신 NPL 물건</div>
             </div>
-          ))}
+            <div className="text-lg font-pretendard text-gray-900">
+              엄선된 반값 부동산 물건을 만나보세요. 모든 어려움은 풀하우스의 전문가 집단이 해결해드립니다.
+            </div>
+          </div>
         </div>
 
-        {/* Button */}
-        <div className="flex justify-center pt-6">
-          <button className="flex items-center gap-2 px-6 py-4 rounded-full border border-gray-300 text-gray-800 hover:bg-gray-50 transition">
-            더 보러가기
-            <span>+</span>
+        <div className="flex flex-col gap-12">
+          <div className="overflow-hidden" ref={emblaRef}>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+              {properties.map((property, index) => (
+                <div key={index} className="flex flex-col gap-6 ">
+                  <img
+                    src={property.image}
+                    alt={property.code}
+                    className="w-full h-[504px] object-cover rounded-3xl"
+                  />
+                  <div className="flex flex-col gap-2 px-1">
+                    <div className="flex items-center gap-1">
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path fillRule="evenodd" clipRule="evenodd" d="M8.51584 1.33175C8.82211 1.18572 9.17792 1.18572 9.48419 1.33175C9.74895 1.45798 9.89493 1.67716 9.96854 1.7974C10.0447 1.92171 10.1228 2.08006 10.1989 2.23441L11.8157 5.50986L15.4322 6.03847C15.6025 6.06331 15.7772 6.08881 15.9189 6.12288C16.0559 6.15584 16.3094 6.22713 16.511 6.44001C16.7444 6.68629 16.8541 7.0247 16.8097 7.36102C16.7713 7.65175 16.6079 7.85818 16.5163 7.96531C16.4215 8.07603 16.295 8.19917 16.1718 8.31918L13.5559 10.867L14.1731 14.4657C14.2023 14.6354 14.2322 14.8095 14.2437 14.9548C14.2548 15.0954 14.2656 15.3586 14.1255 15.6164C13.9636 15.9145 13.6757 16.1237 13.342 16.1855C13.0536 16.239 12.8066 16.1474 12.6764 16.0934C12.5417 16.0375 12.3854 15.9553 12.233 15.8751L9.00002 14.1749L5.76702 15.8751C5.61465 15.9553 5.45834 16.0375 5.32368 16.0934C5.19345 16.1474 4.94649 16.239 4.65803 16.1855C4.32438 16.1237 4.03647 15.9145 3.8745 15.6164C3.73448 15.3586 3.74524 15.0954 3.75637 14.9548C3.76787 14.8095 3.79777 14.6354 3.82691 14.4657L4.44413 10.867L1.82828 8.31921C1.70501 8.19919 1.57852 8.07604 1.48378 7.96531C1.39213 7.85818 1.22875 7.65175 1.19036 7.36102C1.14594 7.0247 1.25567 6.68629 1.48899 6.44001C1.69067 6.22713 1.9441 6.15584 2.08117 6.12288C2.22286 6.08881 2.39755 6.06331 2.56779 6.03847L6.18432 5.50986L7.78946 2.25802C7.87726 2.08006 7.95539 1.92171 8.03149 1.7974C8.10511 1.67716 8.25108 1.45798 8.51584 1.33175Z" fill="#FF7D2F"/>
+                      </svg>
+                      <div className="text-lg font-bold font-pretendard text-orange-primary">{property.rating}</div>
+                    </div>
+                    <div className="flex flex-col gap-1">
+                      <div className="text-xl font-bold font-pretendard text-gray-900">{property.code}</div>
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <div className="text-base font-pretendard text-gray-900">{property.location}</div>
+                        <div className="w-px h-3 bg-gray-400"></div>
+                        <div className="text-base font-pretendard text-gray-900">{property.type}</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <button className="flex justify-center items-center gap-1.5 px-6 py-5 rounded-full border border-gray-400 max-h-14 hover:bg-gray-50 transition-colors">
+            <div className="text-base font-medium font-pretendard text-gray-800">더 보러가기</div>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path fillRule="evenodd" clipRule="evenodd" d="M9.58162 2.06301C10.4303 1.2433 11.567 0.789722 12.7469 0.799975C13.9268 0.810228 15.0555 1.28349 15.8898 2.11782C16.7241 2.95216 17.1974 4.08082 17.2077 5.2607C17.2179 6.44059 16.7643 7.5773 15.9446 8.42601L13.6856 10.6852C13.2294 11.1415 12.6803 11.4945 12.0758 11.72C11.4712 11.9455 10.8252 12.0384 10.1816 11.9923C9.53793 11.9462 8.91175 11.7622 8.34547 11.4529C7.7792 11.1435 7.28608 10.7159 6.89958 10.1992C6.65147 9.86752 6.71923 9.39751 7.05092 9.1494C7.3826 8.9013 7.85262 8.96905 8.10072 9.30074C8.3584 9.64522 8.68714 9.93025 9.06465 10.1365C9.44217 10.3428 9.85963 10.4654 10.2887 10.4961C10.7178 10.5269 11.1485 10.465 11.5515 10.3146C11.9546 10.1643 12.3206 9.92898 12.6247 9.62474L14.87 7.37948C15.4137 6.81415 15.7145 6.05826 15.7077 5.27374C15.7009 4.48715 15.3854 3.73471 14.8291 3.17848C14.2729 2.62226 13.5205 2.30675 12.7339 2.29992C11.949 2.2931 11.1928 2.59416 10.6274 3.13839L9.34143 4.41685C9.04769 4.70889 8.57281 4.7075 8.28078 4.41376C7.98874 4.12001 7.99012 3.64514 8.28387 3.3531L9.58162 2.06301Z" fill="#282828"/>
+            </svg>
           </button>
         </div>
-
       </div>
     </section>
   );
