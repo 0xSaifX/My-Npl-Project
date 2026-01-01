@@ -37,20 +37,6 @@ export default function FifthPage() {
     date: "2025. 3. 20",
     hot: true,
   },
-  // {
-  //   image: c5,
-  //   text: "부실채권(NPL)을 효과적으로 관리하면 금융기관에 어떤 긍정적인 영향을 미칠 수 있나요?",
-  //   title: "NPL 수익 구조 완전 정리",
-  //   date: "2025. 3. 15",
-  //   hot: true,
-  // },
-  // {
-  //   image: c6,
-  //   text: "부실채권(NPL)을 효과적으로 관리하면 금융기관에 어떤 긍정적인 영향을 미칠 수 있나요?",
-  //   title: "법률 리스크 체크 포인트",
-  //   date: "2025. 3. 10",
-  //   hot: true,
-  // },
 ];
 
   return (
