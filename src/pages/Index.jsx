@@ -867,7 +867,7 @@ function PartnerSearchSection() {
                 <img
                   src={item.icon}
                   alt={item.name}
-                  className="w-12 h-12 sm:w-16  sm:h-16 object-contain"
+                  className="w-12 h-12 sm:w-16 bg-gray-200 sm:h-16 object-contain"
                 />
               </div>
             ))}
