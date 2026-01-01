@@ -52,7 +52,7 @@ export default function SeventhPage() {
                 />
                 <div className="flex flex-col justify-between">
                   <div>
-                    <span className="text-xs text-orange-500 font-medium"><Flame/> 인기</span>
+                    <span className="text-xs text-orange-500 bg-orange-500 font-medium"><Flame/> 인기</span>
                     <h3 className="font-semibold text-sm mt-1 line-clamp-2">
                       2025 NEW NPL투자 기초반 정규강의 안내
                     </h3>
