@@ -97,40 +97,45 @@ export default function FourthPage() {
           </section>
 
           {/* REGION */}
-          <section className="mt-16 m-20">
-            <h3 className="font-semibold">지역별</h3>
+          <section className="mt-16 mx-4 sm:mx-10 lg:mx-20">
+  <h3 className="font-semibold text-lg">지역별</h3>
 
-            <div className="flex gap-2 mt-4 overflow-x-auto">
-              {["전체", "서울", "부산", "대구", "광주"].map((r) => (
-                <button
-                  key={r}
-                  className="px-4 py-1.5 rounded-full border text-sm whitespace-nowrap"
-                >
-                  {r}
-                </button>
-              ))}
-            </div>
+  {/* Region Pills */}
+  <div className="flex gap-2 mt-4 overflow-x-auto pb-2">
+    {["전체", "서울", "부산", "대구", "광주"].map((r) => (
+      <button
+        key={r}
+        className="px-4 py-1.5 rounded-full border text-sm whitespace-nowrap hover:bg-gray-100 transition"
+      >
+        {r}
+      </button>
+    ))}
+  </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
-              {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
-                <div key={i}>
-                  <div className="rounded-xl overflow-hidden aspect-[4/3]">
-                    <img
-                      src={`/images/grid-${i}.jpg`}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="mt-2">
-                    <div className="text-orange-500 text-xs">★ 4.0</div>
-                    <h4 className="text-sm font-medium">
-                      NPL 경매학원
-                    </h4>
-                    <p className="text-xs text-gray-400">서울 강남구</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
+  {/* Grid */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
+    {cards.map((item, i) => (
+      <div key={i} className="group">
+        {/* Image */}
+        <div className="rounded-xl overflow-hidden aspect-[4/3] bg-gray-100">
+          <img
+            src={item.image}
+            alt={item.title}
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+
+        {/* Text */}
+        <div className="mt-2">
+          <div className="text-orange-500 text-xs">★ {item.rating}</div>
+          <h4 className="text-sm font-medium">{item.title}</h4>
+          <p className="text-xs text-gray-400">{item.location}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
 
           {/* COMMUNITY */}
           <section className="mt-20 m-20 center items-center">
