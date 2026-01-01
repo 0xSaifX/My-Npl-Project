@@ -495,6 +495,9 @@ function PopularPostsSection() {
     align: "start",
     loop: true,
     dragFree: true,
+     breakpoints: {
+    "(min-width: 1024px)": { dragFree: false }
+  }
   });
 
   useEffect(() => {
