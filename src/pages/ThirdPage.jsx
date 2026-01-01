@@ -92,11 +92,11 @@ export default function ThirdPage() {
               {partners.map((p, i) => (
                 <div
                   key={i}
-                  className="flex-[0_0_220px] bg-gray-50 rounded-2xl p-6 text-center"
+                  className="flex-[0_0_220px] bg-gray-50 justify-center rounded-2xl p-6 text-center"
                 >
                   <img
                     src={p.logo}
-                    className="h-10 mx-10 mb-4 justify-center object-contain"
+                    className="h-10 mx-10 mb-4 object-contain"
                   />
                   <div className="text-sm font-medium">{p.name}</div>
                   <div className="text-xs text-orange-400 mt-1">★ 4.0</div>
