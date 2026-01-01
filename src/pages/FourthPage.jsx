@@ -118,7 +118,7 @@ export default function FourthPage() {
           </section>
 
           {/* COMMUNITY */}
-          <section className="mt-20 m-20 items-center">
+          <section className="mt-20 m-20 items-center justify-center">
             <h3 className="font-semibold">커뮤니티</h3>
             <p className="text-sm text-gray-500 mt-1">
               엄선된 NPL 학원 관련 모든 커뮤니티 글을 확인해보세요.
