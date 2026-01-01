@@ -97,10 +97,10 @@ export default function ThirdPage() {
                   <img
                     src={p.logo}
                     className="h-10 mx-10 mb-4 object-contain"
-                  />
+                  /></div>
                   <div className="text-sm font-medium">{p.name}</div>
                   <div className="text-xs text-orange-400 mt-1">★ 4.0</div>
-                </div>
+                
               ))}
             </div>
           </div>
