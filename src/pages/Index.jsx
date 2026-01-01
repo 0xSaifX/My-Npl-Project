@@ -761,16 +761,7 @@ function VideosSection() {
           className="w-full aspect-video rounded-2xl object-cover"
             />
           <div className="absolute inset-0 bg-black/30 rounded-2xl"></div>
-        <div className="relative w-[564px] h-80 rounded-2xl bg-gray-200 flex items-center justify-center">
-          <div className="relative w-full aspect-video rounded-2xl overflow-hidden">
-            <img 
-            src={inter}
-            alt="Video thumbnail 3"
-          className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-black/30"></div>
-          </div>
-        </div>
+       
       </div>
     </section>
   );
