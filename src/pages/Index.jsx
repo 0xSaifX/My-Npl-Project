@@ -5,10 +5,10 @@ import site from '../client/assets/site.png';
 import inter from '../client/assets/interior.png';
 
 import klarna from "../assets/klarna.png";
-import master from "../assets/Mastercard.png";
+import master from "../assets/mastercard.png";
 import skirill from "../assets/Skrill.png";
-import lite from "../assets/Lightcoin.png";
-import amazon from "../assets/Amazon.png";
+import lite from "../assets/lightcoin.png";
+import amazon from "../assets/amazon.png";
 import visa from "../assets/visa.png";
 
 export default function Index() {
