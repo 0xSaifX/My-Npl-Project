@@ -775,20 +775,23 @@ function VideosSection() {
   );
 }
 
-// const partnerIcons = [
-//   { name: "Amazon", icon: amazon },
-//   { name: "Skrill", icon: skirill },
-//   { name: "Mastercard", icon: master },
-//   { name: "Visa", icon: visa },
-//   { name: "Lite", icon: lite },
-//   { name: "Klarna", icon: klarna },
-// ];
-
 const partnerIcons = [
-  { name: "Amazon", icon: "/images/amazon.png" },
-  { name: "Visa", icon: "/images/visa.png" },
-  { name: "Mastercard", icon: "/images/mastercard.png" },
+  { name: "Amazon", icon: amazon },
+  { name: "Skrill", icon: skirill },
+  { name: "Mastercard", icon: master },
+  { name: "Visa", icon: visa },
+  { name: "Lite", icon: lite },
+  { name: "Klarna", icon: klarna },
 ];
+
+import React, { useEffect } from "react";
+import useEmblaCarousel from "embla-carousel-react";
+
+// const partnerIcons = [
+//   { name: "Amazon", icon: "/images/amazon.png" },
+//   { name: "Visa", icon: "/images/visa.png" },
+//   { name: "Mastercard", icon: "/images/mastercard.png" },
+// ];
 
 function PartnerSearchSection() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
