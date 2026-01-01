@@ -156,7 +156,7 @@ function HeroSlider() {
                   <div
                     key={index}
                     className={`h-0.5 transition-all duration-300 ${
-                      index === selectedIndex ? "w-[60px] bg--900" : "w-[60px] bg--300"
+                      index === selectedIndex ? "w-[60px] bg-gray-900" : "w-[60px] bg-gray-300"
                     }`}
                   />
                 ))}
