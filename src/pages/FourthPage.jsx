@@ -275,7 +275,7 @@ const communityPosts = [
 
   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
     {communityPosts.map((post, i) => (
-      <div key={i} className="flex gap-4 bg-[#i2e] p-4 items-start">
+      <div key={i} className="flex gap-4 bg-[#c2e] p-4 items-start">
         {/* Image */}
         <img
           src={post.image}
