@@ -552,15 +552,14 @@ function PopularPostsSection() {
     <section className="w-full bg-gray-100 py-16 sm:py-24 lg:py-[140px]">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col gap-12 sm:gap-16 lg:gap-[72px]">
         {/* Title */}
-        <div className="text-center space-y-4">
-          <h2 className="text-[40px] font-bold text-gray-900">
-            오늘의 인기글
-          </h2>
-          <p className="text-lg text-gray-700">
-            카페 · 밴드에서 많은 사람들이 관심 가진 글을 만나보세요.
-          </p>
-        </div>
-
+       <div className="text-center space-y-3 sm:space-y-4">
+  <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-bold text-gray-900">
+    오늘의 인기글
+  </h2>
+  <p className="text-sm sm:text-base lg:text-lg text-gray-700">
+    카페 · 밴드에서 많은 사람들이 관심 가진 글을 만나보세요.
+  </p>
+</div>
         {/* Slider */}
         <div className="overflow-hidden" ref={emblaRef}>
           <div className="flex gap-6">
