@@ -10,7 +10,7 @@ export default function FourthPage() {
   return (
     <main className="bg-[#f7f7f7]">
       {/* Hero */}
-      <section className="relative h-[160px] sm:h-[220px] lg:h-[320px] bg-cover
+      <section className="relative h-[160px] sm:h-[220px] lg:h-[320px] object-cover bg-cover
       "style={{
           backgroundImage:
             "url(https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=2400)",
