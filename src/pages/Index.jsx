@@ -137,10 +137,8 @@ function HeroSlider() {
       </div>
     </div>
 
-    {/* TEXT + CONTROLS */}
     <div className="w-full lg:w-[520px] flex flex-col gap-10 lg:gap-[92px]">
 
-      {/* TEXT */}
       <div className="flex flex-col gap-4">
         <p className="text-base sm:text-lg md:text-xl text-[#1C232C] leading-relaxed whitespace-pre-line">
           {slides[selectedIndex].title}
