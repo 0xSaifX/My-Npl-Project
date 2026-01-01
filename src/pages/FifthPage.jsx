@@ -118,6 +118,16 @@ export default function FifthPage() {
         <p className="text-gray-600 mb-8">
           생생한 상담 내용과 후기들을 확인해보세요.
         </p>
+         <div className="flex gap-2 mb-10 text-sm ">
+          {["서울/수도권", "대전", "전주", "광주", "대구", "부산"].map((c) => (
+            <button
+              key={c}
+              className="px-4 py-2 rounded-full border text-sm hover:bg-black hover:text-white"
+            >
+              {c}
+            </button>
+          ))}
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {[1, 2, 3, 4].map((i) => (
