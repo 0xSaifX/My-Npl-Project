@@ -27,7 +27,8 @@ export default function FourthPage() {
           </h1>
         </div>
         <p className="text-white text-xl sm:text-2xl lg:text-3xl font-semibold tracking-tight">
-          NPL 전문가가 되고 싶으신가요? 차별화된 NPL 교육을 직접 경험해보세요.</p>
+          NPL 전문가가 되고 싶으신가요? 차별화된 NPL 교육을 직접 경험해보세요.
+        </p>
       </section>
 
       {/* Content Wrapper */}
