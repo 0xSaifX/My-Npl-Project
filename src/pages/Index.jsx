@@ -9,7 +9,7 @@ import master from "../assets/mastercard.png";
 import skirill from "../assets/Skrill.png";
 import lite from "../assets/lightcoin.png";
 import amazon from "../assets/amazon.png";
-import visa from "../assets/visa.png"
+import visa from "../assets/visa.png";
 
 export default function Index() {
   return (
