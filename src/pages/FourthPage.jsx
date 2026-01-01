@@ -21,6 +21,29 @@ import c6 from "../assets/pd6.png";
 export default function FourthPage() {
   const [emblaRef] = useEmblaCarousel({ align: "start", loop: false });
 
+  const academies = [
+  {
+    image: a1,
+    title: "강남 NPL 경매학원",
+    location: "서울 강남구",
+  },
+  {
+    image: a2,
+    title: "부동산 실전 투자반",
+    location: "서울 서초구",
+  },
+  {
+    image: a3,
+    title: "NPL 초보 입문 과정",
+    location: "경기 성남시",
+  },
+  {
+    image: a4,
+    title: "고수익 NPL 마스터반",
+    location: "부산 해운대구",
+  },
+];
+
   const cards = [
   {
     image: img1,
