@@ -271,7 +271,7 @@ const communityPosts = [
       더보기 +
     </button>
   </div>
-  </section>
+          </section>
 
         </div>
 
@@ -293,6 +293,7 @@ const communityPosts = [
             />
           </div>
         </section>
+
       </div>
     </main>
   );
