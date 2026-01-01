@@ -23,6 +23,7 @@ import master from "../assets/Mastercard.png";
 import skirill from "../assets/Skrill.png";
 import lite from "../assets/Lightcoin.png";
 import amazon from "../assets/Amazon.png";
+import { FaStar } from "react-icons/fa";
 
 const partners = [
   { name: "", logo: klarna },
@@ -99,7 +100,7 @@ export default function ThirdPage() {
                     className="h-10 mx-10 mb-4 object-contain"
                   />
                   <div className="text-sm font-medium">{p.name}</div>
-                  <div className="text-xs text-orange-400 mt-1"><Star/> 4.0</div>
+                  <div className="text-xs text-orange-400 mt-1"><FaStar/> 4.0</div>
                 </div>
               ))}
             </div>
