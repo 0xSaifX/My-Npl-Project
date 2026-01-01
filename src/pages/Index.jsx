@@ -775,9 +775,6 @@ function VideosSection() {
   );
 }
 
-import React, { useEffect } from "react";
-import useEmblaCarousel from "embla-carousel-react";
-
 const partnerIcons = [
   { name: "Amazon", icon: amazon },
   { name: "Skrill", icon: skirill },
