@@ -98,25 +98,28 @@ export default function FourthPage() {
 const communityPosts = [
   {
     image: c1,
+    text: "부실채권(NPL)을 효과적으로 관리하면 금융기관에 어떤 긍정적인 영향을 미칠 수 있나요?",
     title: "2025 NEW NPL 투자 기초반",
-    text: "",
     date: "2025. 4. 5",
     hot: true,
   },
   {
     image: c2,
+    text: "부실채권(NPL)을 효과적으로 관리하면 금융기관에 어떤 긍정적인 영향을 미칠 수 있나요?",
     title: "NPL 경매 실전 후기",
     date: "2025. 4. 2",
     hot: true,
   },
   {
     image: c3,
+    text: "부실채권(NPL)을 효과적으로 관리하면 금융기관에 어떤 긍정적인 영향을 미칠 수 있나요?",
     title: "부동산 투자 트렌드 분석",
     date: "2025. 3. 28",
     hot: true,
   },
   {
     image: c4,
+    text: "부실채권(NPL)을 효과적으로 관리하면 금융기관에 어떤 긍정적인 영향을 미칠 수 있나요?",
     title: "초보자를 위한 NPL 가이드",
     date: "2025. 3. 20",
     hot: true,
@@ -293,6 +296,7 @@ const communityPosts = [
           <h4 className="text-sm font-medium mt-1 line-clamp-2">
             {post.title}
           </h4>
+          <p className="text-xs text-gray-300 mt-1">{post.text}</p>
           <p className="text-xs text-gray-400 mt-1">{post.date}</p>
         </div>
       </div>
