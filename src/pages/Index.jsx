@@ -9,6 +9,7 @@ import master from "../assets/mastercard.png";
 import skirill from "../assets/Skrill.png";
 import lite from "../assets/lightcoin.png";
 import amazon from "../assets/amazon.png";
+import visa from "../assets/visa.png"
 
 export default function Index() {
   return (
@@ -438,11 +439,11 @@ function PartnersSection() {
 
   const partners = [
     { name: "클라나", rating: "4.0", reviews: "14", contracts: "3", bg: "#FFB4D5", logo: klarna },
-    { name: "머스타드 카드", rating: "3.0", reviews: "14", contracts: "3", bg: "#FFA500", logo: "Mastercard" },
-    { name: "스크릴 인테리어", rating: "2.5", reviews: "14", contracts: "3", bg: "#6CB4EE", logo: "Skrill" },
-    { name: "아마존 익스프레스", rating: "4.0", reviews: "14", contracts: "3", bg: "#FFF8DC", logo: "Amazon" },
-    { name: "롯데 시그니처 서울", rating: "4.0", reviews: "14", contracts: "3", bg: "#FF6B6B", logo: "Lotte" },
-    { name: "비자", rating: "4.0", reviews: "14", contracts: "3", bg: "#1A1F71", logo: "Visa" }
+    { name: "머스타드 카드", rating: "3.0", reviews: "14", contracts: "3", bg: "#FFA500", logo: master },
+    { name: "스크릴 인테리어", rating: "2.5", reviews: "14", contracts: "3", bg: "#6CB4EE", logo: skirill },
+    { name: "아마존 익스프레스", rating: "4.0", reviews: "14", contracts: "3", bg: "#FFF8DC", logo: amazon },
+    { name: "롯데 시그니처 서울", rating: "4.0", reviews: "14", contracts: "3", bg: "#FF6B6B", logo: lite },
+    { name: "비자", rating: "4.0", reviews: "14", contracts: "3", bg: "#1A1F71", logo: visa }
   ];
 
   return (
