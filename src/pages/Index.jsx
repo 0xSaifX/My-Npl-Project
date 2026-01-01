@@ -797,7 +797,7 @@ function PartnerSearchSection() {
     if (window.innerWidth < 768) return; 
 
     let rafId;
-    const speed = 0.4;
+    const speed = 1.4;
 
     const autoScroll = () => {
       emblaApi.scrollBy(speed);
