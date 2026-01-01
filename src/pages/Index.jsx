@@ -671,7 +671,7 @@ function FAQSection() {
       <div className="flex flex-col items-start gap-8 w-full">
         <div className="flex h-11 justify-center items-center gap-3 w-full">
           <div className="flex px-5 py-2.5 justify-center items-center gap-1 rounded-full bg-gray-900">
-            <div className="text-base font-bold font-pretendard text-white">NPL</div>
+              <div className="text-xs sm:text-sm font-bold font-pretendard text-white">NPL</div>
           </div>
           <div className="flex px-5 py-2.5 justify-center items-center gap-1 rounded-full bg-black/5">
             <div className="text-base font-bold font-pretendard text-gray-900">제휴업체</div>
