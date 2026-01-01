@@ -451,7 +451,7 @@ function PartnersSection() {
   ];
 
   return (
-<section className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 pt-20 sm:pt-28 lg:pt-40 pb-20 sm:pb-28 lg:pb-40">
+<section className="w-full max-w-[1280px] m-10 sm:m-20 lg:m-30 mx-auto px-4 sm:px-6 lg:px-10 pt-20 sm:pt-28 lg:pt-40 pb-20 sm:pb-28 lg:pb-40">
 <div className="flex flex-col items-center gap-12">
         <div className="flex flex-col items-center gap-2 w-full max-w-[1200px] text-center">
           <div className="flex items-center gap-1">
