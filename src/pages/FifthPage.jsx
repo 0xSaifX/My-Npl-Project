@@ -1,44 +1,6 @@
 import React from "react";
-import c1 from "../assets/pd1.png";
-import c2 from "../assets/pd2.png";
-import c3 from "../assets/pd3.png";
-import c4 from "../assets/pd4.png";
-import c5 from "../assets/pd5.png";
-import c6 from "../assets/pd6.png";
 
 export default function FifthPage() {
-
-  const communityPosts = [
-  {
-    image: c1,
-    text: "부실채권(NPL)을 효과적으로 관리하면 금융기관에 어떤 긍정적인 영향을 미칠 수 있나요?",
-    title: "2025 NEW NPL 투자 기초반",
-    date: "2025. 4. 5",
-    hot: true,
-  },
-  {
-    image: c2,
-    text: "부실채권(NPL)을 효과적으로 관리하면 금융기관에 어떤 긍정적인 영향을 미칠 수 있나요?",
-    title: "NPL 경매 실전 후기",
-    date: "2025. 4. 2",
-    hot: true,
-  },
-  {
-    image: c3,
-    text: "부실채권(NPL)을 효과적으로 관리하면 금융기관에 어떤 긍정적인 영향을 미칠 수 있나요?",
-    title: "부동산 투자 트렌드 분석",
-    date: "2025. 3. 28",
-    hot: true,
-  },
-  {
-    image: c4,
-    text: "부실채권(NPL)을 효과적으로 관리하면 금융기관에 어떤 긍정적인 영향을 미칠 수 있나요?",
-    title: "초보자를 위한 NPL 가이드",
-    date: "2025. 3. 20",
-    hot: true,
-  },
-];
-
   return (
     <main className="w-full bg-white text-gray-900">
       {/* HERO SECTION */}
@@ -151,55 +113,35 @@ export default function FifthPage() {
       </section>
 
       {/* LATEST CONSULTATIONS */}
-      <section className="mt-20 bg-gray-100 p-5 sm:p-10 lg:p-20 sm:mx-0 lg:mx-0">
-  <h3 className="font-semibold text-lg">커뮤니티</h3>
-  <p className="text-sm text-gray-500 mt-1">
-    엄선된 NPL 학원 관련 모든 커뮤니티 글을 확인해보세요.
-  </p>
+      <section className="max-w-[1280px] mx-auto px-6 pb-32">
+        <h2 className="text-2xl font-bold mb-2">최신 상담글</h2>
+        <p className="text-gray-600 mb-8">
+          생생한 상담 내용과 후기들을 확인해보세요.
+        </p>
 
- <div className="flex gap-2 mb-10 mt-4 text-sm ">
-          {["서울수도권", "부대구산"].map((c) => (
-            <button
-              key={c}
-              className="px-4 py-2 rounded-full border text-sm hover:bg-black hover:text-white"
-            >
-              {c}
-            </button>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {[1, 2, 3, 4].map((i) => (
+            <div key={i} className="border rounded-xl p-6">
+              <span className="text-xs text-orange-500 font-semibold">
+                부동산 · 유치권
+              </span>
+              <h3 className="mt-2 font-bold">
+                지상권 등기 원인 무효와 지상권 진로 관련 문제
+              </h3>
+              <p className="mt-2 text-sm text-gray-600 line-clamp-2">
+                상담을 진행하며 발생한 복잡한 지상권 문제에 대해 조언을 구합니다.
+              </p>
+              <p className="mt-4 text-xs text-gray-400">2025.04.05</p>
+            </div>
           ))}
         </div>
 
-  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
-    {communityPosts.map((post, i) => (
-      <div key={i} className="flex gap-4 bg-[#e8f6d1] p-4 items-start">
-        {/* Image */}
-        <img
-          src={post.image}
-          alt={post.title}
-          className="w-24 h-24 rounded-xl object-cover flex-shrink-0"
-          loading="lazy"
-        />
-
-        {/* Text */}
-        <div>
-          {post.hot && (
-            <span className="text-xs text-orange-500">🔥 인기</span>
-          )}
-          <h4 className="text-sm font-medium mt-1 line-clamp-2">
-            {post.title}
-          </h4>
-          <p className="text-xs text-gray-500 mt-3">{post.text}</p>
-          <p className="text-xs text-gray-400 mt-1">{post.date}</p>
+        <div className="flex justify-center mt-10">
+          <button className="px-6 py-2 border rounded-full text-sm">
+            더보기 +
+          </button>
         </div>
-      </div>
-    ))}
-  </div>
-
-  <div className="flex justify-center mt-10">
-    <button className="px-6 py-2 border rounded-full text-sm hover:bg-gray-100 transition">
-      더보기 +
-    </button>
-  </div>
-          </section>
+      </section>
     </main>
   );
 }
