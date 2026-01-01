@@ -674,7 +674,7 @@ function FAQSection() {
               <div className="text-xs sm:text-sm font-bold font-pretendard text-white">NPL</div>
           </div>
           <div className="flex px-5 py-2.5 justify-center items-center gap-1 rounded-full bg-black/5">
-            <div className="text-xs sm:text-sm font-bold font-pretendard text-white">제휴업체</div>
+            <div className="text-xs sm:text-sm font-bold font-pretendard text-gray-900">제휴업체</div>
           </div>
           <div className="flex px-5 py-2.5 justify-center items-center gap-1 rounded-full bg-black/5">
             <div className="text-base font-bold font-pretendard text-gray-900">상품 등록</div>
