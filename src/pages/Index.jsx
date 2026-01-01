@@ -799,7 +799,7 @@ export default function PartnerSearchSection() {
     if (!emblaApi) return;
     if (window.innerWidth < 768) return; // mobile: manual swipe
 
-    let rafId: number;
+    let rafId;
     const speed = 0.4;
 
     const autoScroll = () => {
