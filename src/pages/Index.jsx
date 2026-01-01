@@ -693,9 +693,8 @@ function FAQSection() {
         <div className="flex flex-col w-full max-w-[1200px] mx-auto border-t border-gray-800">
           {faqs.map((faq, index) => (
             <div
-              key={index}
-              className="flex flex-col w-full px-4 py-8 items-start gap-8 border-b border-gray-300"
-            >
+            key={index}
+              className="flex flex-col w-full px-2 sm:px-4 py-6 sm:py-8 gap-6 sm:gap-8 border-b border-gray-300">
               <button
                 onClick={() => setOpenIndex(openIndex === index ? -1 : index)}
                 className="flex items-center gap-6 w-full"
