@@ -843,15 +843,16 @@ const partnerIcons = [
                 </div>
                 {/* ICON SLIDER */}
 <div className="w-full overflow-hidden mt-6" ref={emblaRef}>
-  <div className="flex gap-4 ">
+  <div className="flex gap-4 sm:gap-6">
     {partnerIcons.concat(partnerIcons).map((item, index) => (
       <div
         key={index}
         className="
+          embla__slide
           flex-shrink-0
-          w-[120px] h-[120px]
-          sm:w-[140px] sm:h-[140px]
-          lg:w-[160px] lg:h-[160px]
+          w-[96px] h-[96px]
+          sm:w-[120px] sm:h-[120px]
+          lg:w-[140px] lg:h-[140px]
           rounded-2xl
           bg-gray-100
           flex flex-col items-center justify-center
@@ -861,9 +862,9 @@ const partnerIcons = [
         <img
           src={item.icon}
           alt={item.name}
-          className="w-10 h-10 sm:w-12 sm:h-12"
+          className="w-8 h-8 sm:w-10 sm:h-10"
         />
-        <span className="text-xs sm:text-sm font-medium text-gray-700">
+        <span className="text-[11px] sm:text-sm font-medium text-gray-700 text-center">
           {item.name}
         </span>
       </div>
