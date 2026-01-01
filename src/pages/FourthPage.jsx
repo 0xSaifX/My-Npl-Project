@@ -6,7 +6,7 @@ export default function FourthPage() {
 
   return (
     <main className="bg-[#f7f7f7]">
-      {/* ================= HERO ================= */}
+      {/* Hero */}
       <section className="relative h-[260px] sm:h-[320px] lg:h-[380px]">
         <img
           src="/images/hero.jpg"
@@ -20,11 +20,11 @@ export default function FourthPage() {
         </div>
       </section>
 
-      {/* ================= CONTENT WRAPPER ================= */}
+      {/* Content Wrapper */}
       <div className="bg-white rounded-t-[32px] -mt-10 relative z-20">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-0 py-12">
 
-          {/* ================= INTRO ================= */}
+          {/*  INTRO  */}
           <section>
             <h2 className="text-lg font-semibold">NPL 특수물건 학원</h2>
             <p className="mt-2 text-sm text-gray-500">
@@ -32,7 +32,7 @@ export default function FourthPage() {
             </p>
           </section>
 
-          {/* ================= SLIDER ================= */}
+          {/* SLIDER */}
           <section className="mt-8">
             <h3 className="text-base font-semibold mb-4">
               풀하우스만의 차별화된 NPL 교육
@@ -64,7 +64,7 @@ export default function FourthPage() {
             </div>
           </section>
 
-          {/* ================= GREEN CTA ================= */}
+          {/* GREEN CTA */}
           <section className="mt-12 bg-[#e6f3c8] rounded-2xl p-6 flex items-center justify-between">
             <div>
               <p className="text-sm font-semibold text-[#4f6f1d]">
@@ -80,7 +80,7 @@ export default function FourthPage() {
             />
           </section>
 
-          {/* ================= REGION ================= */}
+          {/* REGION */}
           <section className="mt-16">
             <h3 className="font-semibold">지역별</h3>
 
@@ -116,7 +116,7 @@ export default function FourthPage() {
             </div>
           </section>
 
-          {/* ================= COMMUNITY ================= */}
+          {/* COMMUNITY */}
           <section className="mt-20">
             <h3 className="font-semibold">커뮤니티</h3>
             <p className="text-sm text-gray-500 mt-1">
@@ -151,7 +151,7 @@ export default function FourthPage() {
           </section>
         </div>
 
-        {/* ================= BOTTOM CTA ================= */}
+        {/* BOTTOM CTA */}
         <section className="bg-[#4aa0d8] mt-24">
           <div className="max-w-[1280px] mx-auto px-4 py-12 flex items-center justify-between">
             <div className="text-white">
