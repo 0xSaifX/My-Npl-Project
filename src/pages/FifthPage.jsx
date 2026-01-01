@@ -13,7 +13,7 @@ export default function FifthPage() {
           <h1 className="text-white text-3xl md:text-5xl font-bold leading-tight">
             법률 문제, 전문가와 함께
           </h1>
-          <p className="mt-4 max-w-2xl text-white/90 text-center md:text-lg">
+          <p className="mt-4 max-w-2xl text-white/90 text-base text-center md:text-lg">
             해결이 어려운 부동산·법률 문제를 전문가와 함께 가장 합리적인 방향으로 해결해보세요.
           </p>
         </div>
