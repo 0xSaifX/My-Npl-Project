@@ -30,7 +30,7 @@ const partners = [
   { name: "Skrill", logo: skirill },
   { name: "Amazon", logo: amazon },
   { name: "Litecoin", logo: lite },
-  { name: "Amex", logo: visa },
+  { name: "Visa", logo: visa },
 ];
 
 const projects = [
