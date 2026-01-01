@@ -840,6 +840,36 @@ const partnerIcons = [
                       fill="#616161"
                     />
                   </svg>
+                  {/* ICON SLIDER */}
+<div className="w-full overflow-hidden mt-6" ref={emblaRef}>
+  <div className="flex gap-4 sm:gap-6">
+    {partnerIcons.concat(partnerIcons).map((item, index) => (
+      <div
+        key={index}
+        className="
+          flex-shrink-0
+          w-[120px] h-[120px]
+          sm:w-[140px] sm:h-[140px]
+          lg:w-[160px] lg:h-[160px]
+          rounded-2xl
+          bg-gray-100
+          flex flex-col items-center justify-center
+          gap-2
+        "
+      >
+        <img
+          src={item.icon}
+          alt={item.name}
+          className="w-10 h-10 sm:w-12 sm:h-12"
+        />
+        <span className="text-xs sm:text-sm font-medium text-gray-700">
+          {item.name}
+        </span>
+      </div>
+    ))}
+  </div>
+</div>
+
                 </div>
               </div>
             </div>
