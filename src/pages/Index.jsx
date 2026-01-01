@@ -455,8 +455,8 @@ function PartnersSection() {
                 ONLY 풀하우스
             </div>
           </div>
-          <div className="text-lg font-pretendard text-gray-900">
-            풀하우스만의 차별화된 업체를 만나보세요.
+          <div className="text-sm sm:text-base lg:text-lg font-pretendard text-gray-900">
+              풀하우스만의 차별화된 업체를 만나보세요.
           </div>
         </div>
 
