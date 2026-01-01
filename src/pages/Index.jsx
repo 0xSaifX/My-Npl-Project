@@ -775,13 +775,67 @@ function VideosSection() {
   );
 }
 
+// const partnerIcons = [
+//   { name: "Amazon", icon: amazon },
+//   { name: "Skrill", icon: skirill },
+//   { name: "Mastercard", icon: master },
+//   { name: "Visa", icon: visa },
+//   { name: "Lite", icon: lite },
+//   { name: "Klarna", icon: klarna },
+// ];
+
+import React, { useEffect } from "react";
+import useEmblaCarousel from "embla-carousel-react";
+
 const partnerIcons = [
-  { name: "Amazon", icon: amazon },
-  { name: "Skrill", icon: skirill },
-  { name: "Mastercard", icon: master },
-  { name: "Visa", icon: visa },
-  { name: "Lite", icon: lite },
-  { name: "Klarna", icon: klarna },
+  { name: "Amazon", icon: "/images/amazon.png" },
+  { name: "Visa", icon: "/images/visa.png" },
+  { name: "Mastercard", icon: "/images/mastercard.png" },
 ];
 
+function PartnerSearchSection() {
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+
+  useEffect(() => {
+    if (!emblaApi) return;
+
+    let rafId;
+    const autoScroll = () => {
+      emblaApi.scrollNext();
+      rafId = requestAnimationFrame(autoScroll);
+    };
+
+    rafId = requestAnimationFrame(autoScroll);
+    return () => cancelAnimationFrame(rafId);
+  }, [emblaApi]);
+
+  return (
+    <section className="w-full py-24 bg-gray-100">
+      <div className="max-w-[1200px] mx-auto px-4">
+        <h2 className="text-3xl font-bold mb-8 text-center">
+          제휴 업체 찾기
+        </h2>
+
+        <div ref={emblaRef} className="overflow-hidden">
+          <div className="flex gap-6">
+            {partnerIcons.map((item, i) => (
+              <div
+                key={i}
+                className="w-32 h-32 bg-white rounded-full shadow flex items-center justify-center"
+              >
+                <img
+                  src={item.icon}
+                  alt={item.name}
+                  className="w-16 h-16 object-contain"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default PartnerSearchSection;
 
