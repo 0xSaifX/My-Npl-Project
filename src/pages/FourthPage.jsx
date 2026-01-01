@@ -171,7 +171,7 @@ export default function FourthPage() {
             </div>
             <img
               src= {box}
-              className="w-38 hidden cover-contain sm:block shrink-0"
+              className="w-38 hidden sm:block shrink-0"
             />
           </div>
         </section>
