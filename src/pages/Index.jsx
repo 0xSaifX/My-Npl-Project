@@ -451,7 +451,9 @@ function PartnersSection() {
 <div className="flex flex-col items-center gap-12">
         <div className="flex flex-col items-center gap-2 w-full max-w-[1200px] text-center">
           <div className="flex items-center gap-1">
-            <div className="text-[40px] leading-[150%] font-bold font-ibm text-gray-900">ONLY 풀하우스</div>
+            <div className="text-2xl sm:text-3xl lg:text-[40px] leading-tight sm:leading-[150%] font-bold font-ibm text-gray-900">
+                ONLY 풀하우스
+            </div>
           </div>
           <div className="text-lg font-pretendard text-gray-900">
             풀하우스만의 차별화된 업체를 만나보세요.
