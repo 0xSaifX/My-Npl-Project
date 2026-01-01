@@ -84,7 +84,7 @@ export default function FourthPage() {
             </div>
             <img
               src={home}
-              className="w-10 sm:block shrink-0"
+              className="w-30 sm:block shrink-0"
             />
           </section>
 
