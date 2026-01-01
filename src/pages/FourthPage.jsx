@@ -99,6 +99,7 @@ const communityPosts = [
   {
     image: c1,
     title: "2025 NEW NPL 투자 기초반",
+    text: "",
     date: "2025. 4. 5",
     hot: true,
   },
