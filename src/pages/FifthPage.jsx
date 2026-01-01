@@ -23,7 +23,7 @@ export default function FifthPage() {
       </section>
 
       {/* SERVICE SECTION */}
-      <section className="max-w-[1280px] mx-auto px-6 py-20">
+      <section className="max-w-[1280px] rounded-[32px] mx-auto px-6 py-20">
         <h2 className="text-2xl font-bold mb-2">법률자문 서비스</h2>
         <p className="text-gray-600 mb-8">
           유치권, 명도소송, 가등기 등 복잡한 부동산 법률 문제를 빠르고 정확하게 해결합니다.
