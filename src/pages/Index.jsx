@@ -749,7 +749,7 @@ function VideosSection() {
   </div>
       </div>
 
-      <div className="flex items-start gap-4 w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
         <img
           src="https://api.builder.io/api/v1/image/assets/TEMP/97b60a92c9400ae5ce90d99e71c3b0fc2035e3ef?width=1128"
           alt="Video thumbnail 1"
