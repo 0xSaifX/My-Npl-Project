@@ -661,8 +661,8 @@ function FAQSection() {
   ];
 
   return (
-    <section className="flex flex-col w-full p-20 max-w-[1280px] mx-auto px-10 pt-40 justify-center items-start gap-12">
-      <div className="flex flex-col items-center gap-2 w-full">
+<section className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 pt-20 sm:pt-28 lg:pt-40 pb-20 sm:pb-28 lg:pb-40 flex flex-col gap-12">
+<div className="flex flex-col items-center gap-2 w-full">
         <div className="text-[40px] leading-[150%] font-bold font-ibm text-gray-900">자주 묻는 질문</div>
       </div>
 
