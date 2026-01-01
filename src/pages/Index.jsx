@@ -591,10 +591,9 @@ function PopularPostsSection() {
 
                   {/* Excerpt */}
                   <p
-                    className={`text-base leading-relaxed line-clamp-4
-                    ${post.featured ? "text-white/90" : "text-gray-700"}`}>
-                    {post.excerpt}
-                  </p>
+                   className={`text-sm sm:text-base leading-relaxed line-clamp-4
+                   ${post.featured ? "text-white/90" : "text-gray-700"}`}
+                  ></p>
                 </div>
 
                 {/* Date */}
