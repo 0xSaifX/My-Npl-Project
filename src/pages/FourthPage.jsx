@@ -170,7 +170,7 @@ export default function FourthPage() {
               </p>
             </div>
             <img
-              src="/images/blue-cube.png"
+              src= {box}
               className="w-32 hidden sm:block shrink-0"
             />
           </div>
