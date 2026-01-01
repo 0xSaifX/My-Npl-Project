@@ -273,9 +273,9 @@ const communityPosts = [
     엄선된 NPL 학원 관련 모든 커뮤니티 글을 확인해보세요.
   </p>
 
-  <div className="grid grid-cols-1 sm:grid-cols-2 bg-black gap-6 mt-6">
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
     {communityPosts.map((post, i) => (
-      <div key={i} className="flex gap-4 items-start">
+      <div key={i} className="flex gap-4 bg-black items-start">
         {/* Image */}
         <img
           src={post.image}
