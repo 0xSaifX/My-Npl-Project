@@ -1,5 +1,6 @@
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
+import faq from "../pages/Index/FaQSection";
 import { ChevronDown, Home, KeySquare, Search, WalletCards, } from "lucide-react";
 import image2 from "../assets/image-area(1).jpg";
 import image3 from "../assets/image-area(2).jpg";
@@ -9,6 +10,7 @@ import image6 from "../assets/image-area(5).jpg";
 import image7 from "../assets/image-area(6).jpg";
 import image8 from "../assets/image-area(7).jpg";
 import image1 from "../assets/image-area.jpg";
+import { FaQ } from "react-icons/fa6";
 
 export default function SecondPage() {
   const [emblaRef] = useEmblaCarousel(
@@ -192,7 +194,7 @@ const services = [
       </section>
 
       {/* FAQ */}
-      <FaQSection/>
+      <FaQ/>
 
     </div>
   );
