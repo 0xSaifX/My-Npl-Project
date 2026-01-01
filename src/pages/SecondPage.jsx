@@ -213,7 +213,6 @@ const services = [
       </section>
 
       {/* FAQ */}
-  return (
 <section className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 pt-20 sm:pt-28 lg:pt-40 pb-20 sm:pb-28 lg:pb-40 flex flex-col gap-12">
 <div className="flex flex-col items-center gap-2 w-full">
 <div className="text-2xl sm:text-3xl lg:text-[40px] leading-tight sm:leading-[150%] font-bold font-ibm text-gray-900">
