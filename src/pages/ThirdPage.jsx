@@ -27,10 +27,10 @@ import amazon from "../assets/Amazon.png";
 const partners = [
   { name: "Klarna", logo: visa },
   { name: "Mastercard", logo: master },
-  { name: "Skrill", logo: skrill },
+  { name: "Skrill", logo: skirill },
   { name: "Amazon", logo: amazon },
   { name: "Litecoin", logo: lite },
-  { name: "Amex", logo: "/logos/amex.png" },
+  { name: "Amex", logo: klarna },
 ];
 
 const projects = [
