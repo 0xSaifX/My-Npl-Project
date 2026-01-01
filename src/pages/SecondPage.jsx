@@ -192,7 +192,7 @@ const services = [
       </section>
 
       {/* FAQ */}
-      <FaqSection/>
+      <FaQSection/>
 
     </div>
   );
