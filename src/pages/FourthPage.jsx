@@ -3,6 +3,7 @@ import box from "../assets/box.png";
 import home from "../assets/home.png";
 import { useState } from "react";
 import { FaStar } from "react-icons/fa";
+import p1 from "../assets/p4-1.png";
 
 export default function FourthPage() {
   const [emblaRef] = useEmblaCarousel({ align: "start", loop: false });
