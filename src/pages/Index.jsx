@@ -440,12 +440,7 @@ function NPLPropertiesSection() {
 }
 
 function PartnersSection() {
-  const [emblaRef] = useEmblaCarousel({ 
-    loop: true,
-    align: "start",
-    slidesToScroll: 3
-  });
-
+ 
   const partners = [
     { name: "클라나", rating: "4.0", reviews: "14", contracts: "3", bg: "#FFB4D5", logo: klarna },
     { name: "머스타드 카드", rating: "3.0", reviews: "14", contracts: "3", bg: "#FFA500", logo: master },
@@ -473,15 +468,15 @@ function PartnersSection() {
             {partners.map((partner, index) => (
               <div key={index} className="flex flex-col gap-6 ">
                 <div
-  className="flex h-[300px] justify-center items-center rounded-2xl"
-  style={{ backgroundColor: partner.bg }}
->
-  <img
-    src={partner.logo}
-    alt={partner.name}
-    className="w-24 h-24 object-contain"
-  />
-</div>
+                  className="flex h-[300px] justify-center items-center rounded-2xl"
+                    style={{ backgroundColor: partner.bg }}
+                      >
+                     <img
+                        src={partner.logo}
+                       alt={partner.name}
+                       className="w-24 h-24 object-contain"
+                      />
+                </div>
 
                 <div className="flex flex-col gap-2 px-1">
                   <div className="flex items-center gap-1">
