@@ -4,12 +4,6 @@ import Autoplay from "embla-carousel-autoplay";
 import site from '../assets/site.png';
 import inter from '../assets/interior.png';
 import visa from ".../assets/visa.png"
-import klarna from "../assets/klarna.png";
-import master from "../assets/Mastercard.png";
-import skirill from "../assets/Skrill.png";
-import lite from "../assets/Lightcoin.png";
-import amazon from "../assets/Amazon.png";
-
 export default function Index() {
   return (
   <div className="w-full bg-white">
