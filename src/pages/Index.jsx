@@ -768,6 +768,7 @@ function VideosSection() {
             alt="Video thumbnail 3"
           className="w-full h-full object-cover"
             />
+            <div className="absolute inset-0 bg-black/30"></div>
           </div>
         </div>
       </div>
