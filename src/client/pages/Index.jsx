@@ -7,7 +7,7 @@ import visa from "../assets/visa.png";
 import klarna from "../assets/klarna.png";
 import master from "../assets/Mastercard.png";
 import skirill from "../assets/Skrill.png";
-import lottie from "../assets/lotti"
+import lite from "../assets/Lightcoin.png";
 import amazon from "../assets/Amazon.png";
 
 export default function Index() {
