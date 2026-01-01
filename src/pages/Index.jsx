@@ -776,40 +776,8 @@ function VideosSection() {
 }
 
 function PartnerSearchSection() {
-  const [emblaRef, emblaApi] = useEmblaCarousel({
-  loop: true,
-  dragFree: true,
-  align: "start",
-});
-
-useEffect(() => {
-  if (!emblaApi) return;
-  if (window.innerWidth < 768) return;
-  let rafId;
-  const speed = 0.5;
-
-  const autoScroll = () => {
-    emblaApi.scrollBy(speed);
-    rafId = requestAnimationFrame(autoScroll);
-  };
-
-  rafId = requestAnimationFrame(autoScroll);
-
-  return () => cancelAnimationFrame(rafId);
-}, [emblaApi]);
-
-const partnerIcons = [
-  { name: "시행·시공", icon: klarna },
-  { name: "인테리어", icon: amazon },
-  { name: "법률자문", icon: skirill },
-  { name: "NPL", icon: visa },
-  { name: "금융", icon: lite },
-  { name: "홍보", icon: master },
-];
-
-
   return (
-    <section className="relative min-h-[627px] w-full my-20">
+    <section className="relative h-[627px] w-full my-20">
       <div className="absolute left-0 top-48 w-full h-[200px] flex items-center gap-6 overflow-hidden">
         <div className="flex gap-6 animate-marquee">
           {Array(12).fill(null).map((_, i) => (
@@ -828,7 +796,7 @@ const partnerIcons = [
           </div>
 
           <div className="flex flex-col items-center gap-7">
-            <div className="flex flex-col items-start w-full max-w-[680px] px-4 sm:px-0">
+            <div className="flex flex-col items-start w-[680px]">
               <div className="flex flex-col items-start gap-1.5 w-full">
                 <div className="flex h-16 max-h-16 px-7 py-4.5 items-center w-full rounded-full bg-gray-200">
                   <div className="flex-1 text-lg font-pretendard text-gray-500">검색어를 입력하세요.</div>
@@ -841,37 +809,6 @@ const partnerIcons = [
                     />
                   </svg>
                 </div>
-                {/* ICON SLIDER */}
-<div className="w-full overflow-hidden mt-6" ref={emblaRef}>
-  <div className="flex gap-4 sm:gap-6">
-    {partnerIcons.concat(partnerIcons).map((item, index) => (
-      <div
-        key={index}
-        className="
-          embla__slide
-          flex-shrink-0
-          w-[96px] h-[96px]
-          sm:w-[120px] sm:h-[120px]
-          lg:w-[140px] lg:h-[140px]
-          rounded-2xl
-          bg-gray-100
-          flex flex-col items-center justify-center
-          gap-2
-        "
-      >
-        <img
-          src={item.icon}
-          alt={item.name}
-          className="w-8 h-8 sm:w-10 sm:h-10"
-        />
-        <span className="text-[11px] sm:text-sm font-medium text-gray-700 text-center">
-          {item.name}
-        </span>
-      </div>
-    ))}
-  </div>
-</div>
-
               </div>
             </div>
 
