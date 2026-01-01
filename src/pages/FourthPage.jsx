@@ -1,4 +1,5 @@
 import useEmblaCarousel from "embla-carousel-react";
+import box from "../assets/box.png";
 import { useState } from "react";
 
 export default function FourthPage() {
@@ -75,7 +76,7 @@ export default function FourthPage() {
               </h3>
             </div>
             <img
-              src="/images/green-icon.png"
+              src={box}
               className="w-20 hidden sm:block"
             />
           </section>
