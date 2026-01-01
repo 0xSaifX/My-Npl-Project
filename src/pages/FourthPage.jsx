@@ -15,6 +15,58 @@ import img8 from "../assets/p4-8.png";
 export default function FourthPage() {
   const [emblaRef] = useEmblaCarousel({ align: "start", loop: false });
 
+  const cards = [
+  {
+    image: img1,
+    rating: "4.0",
+    title: "NPL 경매학원",
+    location: "서울 강남구",
+  },
+  {
+    image: img2,
+    rating: "4.2",
+    title: "부동산 컨설팅",
+    location: "서울 서초구",
+  },
+  {
+    image: img3,
+    rating: "4.5",
+    title: "시행 · 시공 업체",
+    location: "부산 해운대",
+  },
+  {
+    image: img4,
+    rating: "4.1",
+    title: "인테리어 전문",
+    location: "대구 수성구",
+  },
+  {
+    image: img5,
+    rating: "4.3",
+    title: "법률자문",
+    location: "광주 북구",
+  },
+  {
+    image: img6,
+    rating: "4.0",
+    title: "금융 컨설팅",
+    location: "서울 영등포",
+  },
+  {
+    image: img7,
+    rating: "4.4",
+    title: "대부업체",
+    location: "인천 연수구",
+  },
+  {
+    image: img8,
+    rating: "4.6",
+    title: "NPL 투자",
+    location: "경기 성남",
+  },
+];
+
+
   return (
     <main className="bg-[#f7f7f7]">
       {/* Hero */}
