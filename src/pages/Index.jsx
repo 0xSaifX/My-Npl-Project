@@ -443,7 +443,7 @@ function PartnersSection() {
     { name: "스크릴 인테리어", rating: "2.5", reviews: "14", contracts: "3", bg: "#6CB4EE", logo: skirill },
     { name: "아마존 익스프레스", rating: "4.0", reviews: "14", contracts: "3", bg: "#FFF8DC", logo: amazon },
     { name: "롯데 시그니처 서울", rating: "4.0", reviews: "14", contracts: "3", bg: "#FF6B6B", logo: lite },
-    { name: "비자", rating: "4.0", reviews: "14", contracts: "3", bg: "#1A1F71", logo: visa }
+    { name: "비자", rating: "4.0", reviews: "14", contracts: "3", bg: "#1A1F71", logo: "../assets/visa.png" }
   ];
 
   return (
