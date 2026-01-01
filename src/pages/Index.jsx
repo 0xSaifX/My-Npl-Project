@@ -784,7 +784,7 @@ function PartnerSearchSection() {
 
 useEffect(() => {
   if (!emblaApi) return;
-
+  if 
   let rafId;
   const speed = 0.5;
 
@@ -828,7 +828,7 @@ const partnerIcons = [
           </div>
 
           <div className="flex flex-col items-center gap-7">
-            <div className="flex flex-col items-start w-[680px]">
+            <div className="flex flex-col items-start w-full max-w-[680px] px-4 sm:px-0">
               <div className="flex flex-col items-start gap-1.5 w-full">
                 <div className="flex h-16 max-h-16 px-7 py-4.5 items-center w-full rounded-full bg-gray-200">
                   <div className="flex-1 text-lg font-pretendard text-gray-500">검색어를 입력하세요.</div>
@@ -843,7 +843,7 @@ const partnerIcons = [
                 </div>
                 {/* ICON SLIDER */}
 <div className="w-full overflow-hidden mt-6" ref={emblaRef}>
-  <div className="flex gap-4 sm:gap-6">
+  <div className="flex gap-4 ">
     {partnerIcons.concat(partnerIcons).map((item, index) => (
       <div
         key={index}
