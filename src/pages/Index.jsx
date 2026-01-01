@@ -598,7 +598,7 @@ function PopularPostsSection() {
 
                 {/* Date */}
                 <span
-                  className={`text-sm
+                  className={`text-sm sm:text-sm
                   ${post.featured ? "text-white/80" : "text-gray-500"}`}>
                   {post.date}
                 </span>
