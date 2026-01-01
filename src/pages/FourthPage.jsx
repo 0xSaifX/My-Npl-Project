@@ -11,7 +11,12 @@ import img5 from "../assets/p4-5.png";
 import img6 from "../assets/p4-6.png";
 import img7 from "../assets/p4-7.png";
 import img8 from "../assets/p4-8.png";
-import c1 from "../assets/pd1.png"
+import c1 from "../assets/pd1.png";
+import c2 from "../assets/pd2.png";
+import c3 from "../assets/pd3.png";
+import c4 from "../assets/pd4.png";
+import c5 from "../assets/pd5.png";
+import c6 from "../assets/pd6.png";
 
 export default function FourthPage() {
   const [emblaRef] = useEmblaCarousel({ align: "start", loop: false });
