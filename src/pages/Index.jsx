@@ -840,7 +840,8 @@ const partnerIcons = [
                       fill="#616161"
                     />
                   </svg>
-                  {/* ICON SLIDER */}
+                </div>
+                {/* ICON SLIDER */}
 <div className="w-full overflow-hidden mt-6" ref={emblaRef}>
   <div className="flex gap-4 sm:gap-6">
     {partnerIcons.concat(partnerIcons).map((item, index) => (
@@ -870,7 +871,6 @@ const partnerIcons = [
   </div>
 </div>
 
-                </div>
               </div>
             </div>
 
