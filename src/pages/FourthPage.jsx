@@ -23,22 +23,22 @@ export default function FourthPage() {
 
   const academies = [
   {
-    image: a1,
+    image: img3,
     title: "강남 NPL 경매학원",
     location: "서울 강남구",
   },
   {
-    image: a2,
+    image: img5,
     title: "부동산 실전 투자반",
     location: "서울 서초구",
   },
   {
-    image: a3,
+    image: img8,
     title: "NPL 초보 입문 과정",
     location: "경기 성남시",
   },
   {
-    image: a4,
+    image: img4,
     title: "고수익 NPL 마스터반",
     location: "부산 해운대구",
   },
@@ -169,36 +169,45 @@ const communityPosts = [
           </section>
 
           {/* SLIDER */}
-          <section className="mt-8 m-20 items-center">
-            <h3 className="text-base font-semibold mb-4">
-              풀하우스만의 차별화된 NPL 교육
-            </h3>
+          <section className="mt-8 mx-4 sm:mx-10 lg:mx-20">
+  <h3 className="text-base font-semibold mb-4">
+    풀하우스만의 차별화된 NPL 교육
+  </h3>
 
-            <div ref={emblaRef} className="overflow-hidden">
-              <div className="flex gap-4">
-                {[1, 2, 3, 4].map((i) => (
-                  <div
-                    key={i}
-                    className="flex-[0_0_70%] sm:flex-[0_0_40%] lg:flex-[0_0_240px]"
-                  >
-                    <div className="rounded-xl overflow-hidden">
-                      <img
-                        src={`/images/academy-${i}.jpg`}
-                        className="w-full h-[150px] object-cover"
-                      />
-                    </div>
-                    <div className="mt-2">
-                      <span className="text-orange-500 text-xs"><FaStar/> 추천</span>
-                      <h4 className="text-sm font-medium mt-1">
-                        강남 NPL 경매학원
-                      </h4>
-                      <p className="text-xs text-gray-400">서울 강남구</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
+  <div className="
+    grid
+    grid-cols-1
+    sm:grid-cols-2
+    lg:grid-cols-4
+    gap-6
+  ">
+    {academies.map((item, i) => (
+      <div key={i}>
+        {/* Image */}
+        <div className="rounded-xl overflow-hidden aspect-[4/3]">
+          <img
+            src={item.image}
+            alt={item.title}
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </div>
+
+        {/* Text */}
+        <div className="mt-2">
+          <span className="text-orange-500 text-xs flex items-center gap-1">
+            <FaStar /> 추천
+          </span>
+          <h4 className="text-sm font-medium mt-1 line-clamp-1">
+            {item.title}
+          </h4>
+          <p className="text-xs text-gray-400">{item.location}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
 
           {/* GREEN CTA */}
           <section className="mt-12 bg-[#e6f3c8] rounded-2xl p-6 m-20 sm:m-40 flex items-center justify-between">
