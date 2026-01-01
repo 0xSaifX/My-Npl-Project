@@ -161,7 +161,7 @@ export default function FourthPage() {
         {/* BOTTOM CTA */}
         <section className="bg-[#4aa0d8] mt-24 ">
           <div className="max-w-[1280px] mx-20 px-4 pt-12 flex items-center justify-between">
-            <div className="text-white">
+            <div className="text-white mb-5">
               <p className="text-sm">NPL 특강 A to Z</p>
               <h3 className="text-xl font-semibold mt-1">
                 이영준 박사 NPL 특강 회원모집
