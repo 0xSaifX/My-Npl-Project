@@ -855,14 +855,14 @@ function PartnerSearchSection() {
       {/* Auto-scrolling Icons Slider */}
       <div className="mt-16">
         <div
-          className="w-full overflow-hidden"
+          className="w-full bg-gray-200 overflow-hidden"
           ref={emblaRef}
         >
           <div className="flex gap-6">
             {partnerIcons.concat(partnerIcons).map((item, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 bg-gray-200 w-32 h-32 sm:w-36 sm:h-36 lg:w-40 lg:h-40 rounded-full bg-white flex items-center justify-center shadow-md"
+                className="flex-shrink-0 w-32 h-32 sm:w-36 sm:h-36 lg:w-40 lg:h-40 rounded-full bg-white flex items-center justify-center shadow-md"
               >
                 <img
                   src={item.icon}
