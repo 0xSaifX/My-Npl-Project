@@ -82,7 +82,7 @@ export default function FourthPage() {
           </section>
 
           {/* REGION */}
-          <section className="mt-16">
+          <section className="mt-16 m-20">
             <h3 className="font-semibold">지역별</h3>
 
             <div className="flex gap-2 mt-4 overflow-x-auto">
