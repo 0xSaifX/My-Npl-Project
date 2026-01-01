@@ -3,12 +3,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import site from '../assets/site.png';
 import inter from '../assets/interior.png';
-// import visa from "../assets/visa.png";
-// import klarna from "../assets/klarna.png";
-// import master from "../assets/mastercard.png";
-// import skirill from "../assets/Skrill.png";
-// import lite from "../assets/lightcoin.png";
-// import amazon from "../assets/amazon.png";
+import visa from "../assets/visa.png";
 import amazon from ".../src/assets/Amazon.png";
 
 export default function Index() {
