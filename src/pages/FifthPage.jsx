@@ -3,7 +3,7 @@ import React from "react";
 export default function FifthPage() {
   return (
     <main className="w-full bg-white text-gray-900">
-      {/* ================= HERO SECTION ================= */}
+      {/* HERO SECTION */}
       <section
         className="relative h-[420px] md:h-[520px] w-full bg-cover bg-center"
         style={{ backgroundImage: "url(/images/hero-law.jpg)" }}
@@ -19,7 +19,7 @@ export default function FifthPage() {
         </div>
       </section>
 
-      {/* ================= SERVICE SECTION ================= */}
+      {/* SERVICE SECTION */}
       <section className="max-w-[1280px] mx-auto px-6 py-20">
         <h2 className="text-2xl font-bold mb-2">법률자문 서비스</h2>
         <p className="text-gray-600 mb-8">
@@ -65,7 +65,7 @@ export default function FifthPage() {
         </div>
       </section>
 
-      {/* ================= HIGHLIGHT BANNER ================= */}
+      {/* HIGHLIGHT BANNER */}
       <section className="max-w-[1280px] mx-auto px-6 mb-24">
         <div className="relative rounded-2xl bg-lime-200 p-10 flex flex-col md:flex-row items-center justify-between">
           <div>
@@ -85,7 +85,7 @@ export default function FifthPage() {
         </div>
       </section>
 
-      {/* ================= LAWYER SECTION ================= */}
+      {/* LAWYER SECTION */}
       <section className="max-w-[1280px] mx-auto px-6 mb-24">
         <h2 className="text-2xl font-bold mb-2">변호사</h2>
         <p className="text-gray-600 mb-6">
@@ -112,7 +112,7 @@ export default function FifthPage() {
         </div>
       </section>
 
-      {/* ================= LATEST CONSULTATIONS ================= */}
+      {/* LATEST CONSULTATIONS */}
       <section className="max-w-[1280px] mx-auto px-6 pb-32">
         <h2 className="text-2xl font-bold mb-2">최신 상담글</h2>
         <p className="text-gray-600 mb-8">
