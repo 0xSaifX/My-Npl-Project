@@ -5,7 +5,7 @@ export default function FifthPage() {
     <main className="w-full bg-white text-gray-900">
       {/* HERO SECTION */}
       <section
-        className="relative h-[420px] md:h-[520px] w-full bg-cover bg-center"
+        className="relative h-[320px] md:h-[420px] w-full bg-cover bg-center"
           style={{
           backgroundImage:
             "url(https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=2400)",
