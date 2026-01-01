@@ -798,6 +798,14 @@ useEffect(() => {
   return () => cancelAnimationFrame(rafId);
 }, [emblaApi]);
 
+const partnerIcons = [
+  { name: "시행·시공", icon: klarna },
+  { name: "인테리어", icon: amazon },
+  { name: "법률자문", icon: skirill },
+  { name: "NPL", icon: visa },
+  { name: "금융", icon: lite },
+  { name: "홍보", icon: master },
+];
 
 
   return (
