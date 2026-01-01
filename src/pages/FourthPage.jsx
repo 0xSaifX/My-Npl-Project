@@ -26,7 +26,7 @@ export default function FourthPage() {
             NPL 전문가로의 첫걸음
           </h1>
           <p>
-            
+           특수물건 학원 NPL 전문가가 되고 싶으신가요? 차별화된 NPL 교육을 직접 경험해보세요
           </p>
         </div>
       </section>
