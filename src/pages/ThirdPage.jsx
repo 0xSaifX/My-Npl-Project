@@ -19,8 +19,8 @@ import t8 from "../assets/tp8.png";
 import b from "../assets/box.png";
 import visa from "../assets/visa.png";
 import klarna from "../assets/klarna.png";
-import master from "../assets/mastercard.png";
-import visa from "../assets/visa.png";
+import master from "../assets/Mastercard.png";
+import skirill from "../assets/Skrill.png";
 import visa from "../assets/visa.png";
 import visa from "../assets/visa.png";
 
