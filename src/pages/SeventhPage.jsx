@@ -66,7 +66,7 @@ export default function SeventhPage() {
             ))}
           </div>
 
-          <button className="mx-auto mt-10 block px-6 py-2 border rounded-full text-sm">
+          <button className="mx-auto mt-10 block px-6 py-2 border hover:bg-black/50 rounded-full text-sm">
             더보기 +
           </button>
         </div>
