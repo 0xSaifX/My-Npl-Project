@@ -158,7 +158,7 @@ export default function FourthPage() {
         </div>
 
         {/* BOTTOM CTA */}
-        <section className="bg-[#4aa0d8] mt-24">
+        <section className="bg-[#4aa0d8] mt-24 p-10">
           <div className="max-w-[1280px] mx-auto px-4 py-12 flex items-center justify-between">
             <div className="text-white">
               <p className="text-sm">NPL 특강 A to Z</p>
