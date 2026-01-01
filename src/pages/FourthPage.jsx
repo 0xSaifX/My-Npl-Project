@@ -25,6 +25,9 @@ export default function FourthPage() {
           <h1 className="text-white text-xl sm:text-2xl lg:text-3xl font-semibold tracking-tight">
             NPL 전문가로의 첫걸음
           </h1>
+          <p>
+            
+          </p>
         </div>
       </section>
 
