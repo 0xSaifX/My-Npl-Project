@@ -22,14 +22,14 @@ import klarna from "../assets/klarna.png";
 import master from "../assets/Mastercard.png";
 import skirill from "../assets/Skrill.png";
 import lite from "../assets/Lightcoin.png";
-import visa from "../assets/visa.png";
+import amazon from "../assets/Amazon.png";
 
 const partners = [
   { name: "Klarna", logo: visa },
-  { name: "Mastercard", logo: "/logos/mastercard.png" },
-  { name: "Skrill", logo: "/logos/skrill.png" },
-  { name: "Amazon", logo: "/logos/amazon.png" },
-  { name: "Litecoin", logo: "/logos/litecoin.png" },
+  { name: "Mastercard", logo: master },
+  { name: "Skrill", logo: skrill },
+  { name: "Amazon", logo: amazon },
+  { name: "Litecoin", logo: lite },
   { name: "Amex", logo: "/logos/amex.png" },
 ];
 
