@@ -38,7 +38,7 @@ const App = () => (
           <Route path="/seventh-page" element={<SeventhPage />} />
           <Route path="/eight-page" element={<EightPage />} />
           <Route path="/inquiry-modal" element={<InquiryModal />} />
-          
+
           </Route>
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
