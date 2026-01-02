@@ -35,6 +35,17 @@ export default function FifthPage() {
   },
 ];
 
+const lawyers = [
+  { image: l1, name: "김대성 변호사", specialty: "부동산 전문" },
+  { image: l2, name: "박지훈 변호사", specialty: "경매 · NPL" },
+  { image: l3, name: "이수현 변호사", specialty: "부동산 소송" },
+  { image: l4, name: "정민재 변호사", specialty: "채권 추심" },
+  { image: l5, name: "오세훈 변호사", specialty: "부동산 자문" },
+  { image: l6, name: "최은지 변호사", specialty: "경매 컨설팅" },
+  { image: l7, name: "한지민 변호사", specialty: "부동산 계약" },
+  { image: l8, name: "윤성호 변호사", specialty: "법률 자문" },
+];
+
   
   return (
     <main className="w-full bg-white text-gray-900">
