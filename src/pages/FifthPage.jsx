@@ -162,7 +162,7 @@ const lawyers = [
       </section>
 
       {/* LAWYER SECTION */}
-      <section className="max-w-[1280px] mx-auto px-6 mb-24">
+      <section className="max-w-[1280px] mx-10 px-6 mb-24">
         <h2 className="text-2xl font-bold mb-2">변호사</h2>
         <p className="text-gray-600 mb-6">
           다양한 분야의 전문 변호사들이 여러분의 어려움을 해결해드립니다.
