@@ -8,6 +8,7 @@ const links = [
   { name: "투자대출", path: "/inquiry-modal" },
   { name: "투자대출", path: "/inquiry-modal" }
 ];
+// export default links;
 
 const notices = [
   {
