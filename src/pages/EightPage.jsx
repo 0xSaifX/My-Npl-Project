@@ -48,16 +48,16 @@ export default function EightPage() {
 
          <div className="flex justify-center gap-8 mb-2 text-sm text-black font-bold flex-wrap">
             <nav className="lg:flex gap-8">
-                      {links.map((link, idx) => (
-                        <Link
-                          key={idx}
-                          to={link.path}
-                          className="hover:text-orange-600 transition-colors"
-                        >
-                          {link.name}
-                        </Link>
-                      ))}
-                    </nav>
+              {links.map((link, idx) => (
+                  <Link
+                    key={idx}
+                    to={link.path}
+                    className="hover:text-orange-600 transition-colors"
+                      >
+                     {link.name}
+                    </Link>
+                  ))}
+              </nav>
           </div>
         <div className="border-t border-gray-400 mb-6" />
       <div className="max-w-4xl mx-auto">
