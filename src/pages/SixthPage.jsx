@@ -69,6 +69,7 @@ export default function SixthPage() {
               </span>
             </button>
           </div>
+          
         </div>
       </section>
 
