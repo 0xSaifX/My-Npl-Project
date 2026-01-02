@@ -27,6 +27,32 @@ export default function SeventhPage() {
   { image: p78, title: "부동산 투자 네트워크", members: 2890 },
 ];
 
+const posts = [
+  {
+    image: c1,
+    title: "2025 NEW NPL투자 기초반 정규강의 안내",
+    desc: "경매·NPL 투자자 필수 과정! 실전 중심 커리큘럼을 만나보세요.",
+    date: "2025.04.05",
+  },
+  {
+    image: c2,
+    title: "초보자를 위한 NPL 투자 로드맵",
+    desc: "처음 시작하는 분들을 위한 단계별 NPL 투자 전략 정리",
+    date: "2025.04.03",
+  },
+  {
+    image: c3,
+    title: "부동산 경매 vs NPL, 무엇이 다를까?",
+    desc: "두 투자 방식의 차이점과 장단점을 한눈에 비교해봅니다.",
+    date: "2025.04.01",
+  },
+  {
+    image: c4,
+    title: "NPL 투자 시 꼭 알아야 할 법률 포인트",
+    desc: "실무에서 자주 발생하는 법률 이슈 정리",
+    date: "2025.03.29",
+  },
+];
 
 
   return (
