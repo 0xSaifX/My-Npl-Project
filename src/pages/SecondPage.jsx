@@ -125,7 +125,7 @@ const services = [
     </div>
 
     </div>
-  </section>
+      </section>
 
 
       {/* PROJECTS
