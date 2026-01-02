@@ -62,9 +62,17 @@ export default function FifthPage() {
         </div>
 
         <div className="flex justify-center mt-12">
-          <button className="px-8 py-3 rounded-full bg-black text-white">
-            법률 상담 신청 →
-          </button>
+            <button
+          onClick={nextService}
+          className="flex items-center justify-between w-80 px-8 py-3 rounded-full bg-gray-900 hover:bg-gray-800 transition"
+        >
+          <span className="text-white font-bold text-lg">
+            통합 컨설팅 상담 신청
+          </span>
+          <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+            →
+          </div>
+        </button>
         </div>
       </section>
 
