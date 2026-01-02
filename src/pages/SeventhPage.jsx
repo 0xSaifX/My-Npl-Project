@@ -12,7 +12,16 @@ import p78 from "../assets/p78.png";
 
 export default function SeventhPage() {
 
-  
+  const cafes = [
+  { image: c1, title: "NPL 투자 아카데미", members: 2356 },
+  { image: c2, title: "부동산 경매 스터디", members: 1870 },
+  { image: c3, title: "NPL 실전 투자", members: 920 },
+  { image: c4, title: "부동산 법무 카페", members: 1320 },
+  { image: c5, title: "인테리어 실무자", members: 840 },
+  { image: c6, title: "시행·시공 전문가", members: 1560 },
+  { image: c7, title: "대부 금융 정보", members: 610 },
+  { image: c8, title: "부동산 투자 네트워크", members: 2890 },
+];
 
   return (
     <div className="w-full bg-[#FAFAFA] text-gray-900">
