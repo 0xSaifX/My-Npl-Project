@@ -45,6 +45,18 @@ export default function EightPage() {
           NPL 사업에 대한 최신 공지와 안내를 전달드립니다.
         </p>
 
+       {/* Filters */}
+        <div className="flex flex-wrap gap-2 mb-10">
+          {['인기순', '추천순', '리뷰순', '분야별', '지역 찾기'].map((item) => (
+            <button
+              key={item}
+              className="px-4 py-2 rounded-full text-sm bg-gray-100 hover:bg-black hover:text-white"
+            >
+              {item}
+            </button>
+          ))}
+        </div>
+
         {/* Divider */}
         <div className="border-t border-gray-200 mb-6" />
 
