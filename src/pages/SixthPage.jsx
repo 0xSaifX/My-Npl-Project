@@ -1,4 +1,6 @@
 import React from "react";
+import home from "../assets/home.png";
+
 
 export default function SixthPage() {
   return (
@@ -85,7 +87,7 @@ export default function SixthPage() {
             </p>
           </div>
           <img
-            src="/images/green-house.png"
+            src= {home}
             alt="house"
             className="absolute right-6 bottom-0 h-28 md:h-36"
           />
