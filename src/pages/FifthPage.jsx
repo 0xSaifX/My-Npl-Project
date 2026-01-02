@@ -77,8 +77,8 @@ export default function FifthPage() {
 
         {/* Service Cards */}
        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-  {services.map((item, i) => (
-    <div
+       {services.map((item, i) => (
+     <div
       key={i}
       className="rounded-xl overflow-hidden shadow-sm border bg-white"
     >
@@ -105,9 +105,8 @@ export default function FifthPage() {
         </p>
       </div>
     </div>
-  ))}
-</div>
-
+    ))}
+  </div>
 
         <div className="flex justify-center mt-12">
             <button
