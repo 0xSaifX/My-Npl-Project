@@ -34,7 +34,7 @@ const notices = [
 ];
 
 const links = [
-  { name : }
+  { name : 투자대출 }
 ]
 
 export default function EightPage() {
