@@ -1,7 +1,5 @@
 import React from "react";
 import home from "../assets/home.png";
-import img1 from "../assets/p4-1.png";
-import hero from "../assets/hero6.jpg";
 import { CgDanger } from "react-icons/cg";
 
 
