@@ -95,7 +95,7 @@ export default function EightPage() {
                       : "grid-rows-[0fr] opacity-0"
                   }`}
                 >
-                  <div className="overflow-hidden text-sm text-gray-500 leading-relaxed whitespace-pre-line">
+                  <div className="overflow-hidden text-sm text-gray-700 leading-relaxed whitespace-pre-line">
                     {item.content}
                   </div>
                 </div>
