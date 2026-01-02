@@ -737,35 +737,37 @@ function FAQSection() {
 
 function VideosSection() {
   return (
-    <section className="flex flex-col max-w-[1280px] mx-auto px-10 items-start mt-20 gap-12">
-      <div className="flex items-center w-full">
-        <div className="flex flex-col items-center gap-2 flex-1">
-          <div className="text-[40px] leading-[150%] font-bold font-ibm text-gray-900">풀하우스 이야기</div>
-          <div className="text-lg font-pretendard text-gray-900">
-            풀하우스의 다양한 이야기를 확인해보세요.
-          </div>
-        </div>
+<section className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 mt-16 sm:mt-20 flex flex-col gap-10 sm:gap-12">
+<div className="flex items-center w-full">
+       <div className="flex flex-col items-center gap-2 flex-1 text-center">
+    <div className="text-2xl sm:text-3xl lg:text-[40px] leading-tight sm:leading-[150%] font-bold font-ibm text-gray-900">
+      풀하우스 이야기
+    </div>
+    <div className="text-sm sm:text-base lg:text-lg font-pretendard text-gray-900">
+      풀하우스의 다양한 이야기를 확인해보세요.
+    </div>
+  </div>
       </div>
 
-      <div className="flex items-start gap-4 w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
         <img
           src="https://api.builder.io/api/v1/image/assets/TEMP/97b60a92c9400ae5ce90d99e71c3b0fc2035e3ef?width=1128"
           alt="Video thumbnail 1"
-          className="w-full aspect-square max-w-[564px] h-80 rounded-2xl object-cover"
+          className="w-full aspect-video rounded-2xl object-cover"
         />
             <img 
             src={site}
             alt="Video thumbnail 2"
-          className="w-full aspect-square max-w-[564px] h-80 rounded-2xl object-cover"
+          className="w-full aspect-video rounded-2xl object-cover"
             />
         <div className="relative w-[564px] h-80 rounded-2xl bg-gray-200 flex items-center justify-center">
-          <div className="absolute inset-0 bg-black/30 rounded-2xl"></div>
-          <div className="relative rounded-full bg-red-600 flex items-start ">
+          <div className="relative w-full aspect-video rounded-2xl overflow-hidden">
             <img 
             src={inter}
             alt="Video thumbnail 3"
-          className="w-full aspect-square max-w-[564px] h-80 rounded-2xl object-cover"
+          className="w-full h-full object-cover"
             />
+            <div className="absolute inset-0 bg-black/30"></div>
           </div>
         </div>
       </div>
