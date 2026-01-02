@@ -118,11 +118,11 @@ function HeroSlider() {
 
   return (
     <section className="w-full pt-12 md:pt-20 px-4 sm:px-6 lg:px-8">
-  <div className="max-w-[1920px] mx-auto flex flex-col lg:flex-row items-center gap-10 lg:gap-28">
+      <div className="max-w-[1920px] mx-auto flex flex-col lg:flex-row items-center gap-10 lg:gap-28">
 
     {/* SLIDER */}
-    <div className="w-full lg:flex-1">
-      <div ref={emblaRef} className="overflow-hidden rounded-2xl">
+      <div className="w-full lg:flex-1">
+       <div ref={emblaRef} className="overflow-hidden rounded-2xl">
         <div className="flex">
           {slides.map((slide, index) => (
             <div key={index} className="flex-[0_0_100%]">
