@@ -129,7 +129,7 @@ export default function SixthPage() {
         </div>
 
         <div className="mt-10 flex justify-center">
-          <button className="rounded-full border px-8 py-3 text-sm">
+          <button className="rounded-full bg-gray-100 hover:bg-balck hover:text-white border px-8 py-3 text-sm">
             더보기 +
           </button>
         </div>
