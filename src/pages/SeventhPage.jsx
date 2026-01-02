@@ -13,14 +13,14 @@ import p78 from "../assets/p78.png";
 export default function SeventhPage() {
 
   const cafes = [
-  { image: c1, title: "NPL 투자 아카데미", members: 2356 },
-  { image: c2, title: "부동산 경매 스터디", members: 1870 },
-  { image: c3, title: "NPL 실전 투자", members: 920 },
-  { image: c4, title: "부동산 법무 카페", members: 1320 },
-  { image: c5, title: "인테리어 실무자", members: 840 },
-  { image: c6, title: "시행·시공 전문가", members: 1560 },
-  { image: c7, title: "대부 금융 정보", members: 610 },
-  { image: c8, title: "부동산 투자 네트워크", members: 2890 },
+  { image: p7, title: "NPL 투자 아카데미", members: 2356 },
+  { image: p72, title: "부동산 경매 스터디", members: 1870 },
+  { image: p73, title: "NPL 실전 투자", members: 920 },
+  { image: p74, title: "부동산 법무 카페", members: 1320 },
+  { image: p75, title: "인테리어 실무자", members: 840 },
+  { image: p76, title: "시행·시공 전문가", members: 1560 },
+  { image: p77, title: "대부 금융 정보", members: 610 },
+  { image: p78, title: "부동산 투자 네트워크", members: 2890 },
 ];
 
   return (
@@ -94,46 +94,58 @@ export default function SeventhPage() {
 
       {/* POPULAR CAFES */}
       <section className="py-24 bg-white">
-        <div className="max-w-[1200px] mx-10 sm:mx-20 px-4">
-          <h2 className="text-xl font-bold mb-6">주제별 인기 카페</h2>
+  <div className="max-w-[1200px] mx-4 sm:mx-20 px-4">
+    <h2 className="text-xl font-bold mb-6">주제별 인기 카페</h2>
 
-          <div className="flex gap-2 mb-8 overflow-x-auto">
-            {["전체", "시행·시공", "인테리어", "NPL 학원", "법무", "대학(사금융)"].map(
-              (tag) => (
-                <button
-                  key={tag}
-                  className="px-4 py-2 text-sm rounded-full bg-gray-100 whitespace-nowrap"
-                >
-                  {tag}
-                </button>
-              )
-            )}
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
-              <div key={i} className="bg-gray-50 rounded-xl overflow-hidden">
-                <img
-                  src={`/images/cafe-${i}.jpg`}
-                  alt="cafe"
-                  className="w-full h-[140px] object-cover"
-                />
-                <div className="p-4">
-                  <span className="text-xs text-orange-500">네이버카페</span>
-                  <h3 className="text-sm font-semibold mt-1 line-clamp-2">
-                    NPL 투자 아카데미
-                  </h3>
-                  <p className="text-xs text-gray-500 mt-1">가입자수 2356</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <button className="mx-auto mt-10 block px-6 py-2 border rounded-full text-sm">
-            더보기 +
+    {/* Tags */}
+    <div className="flex gap-2 mb-8 overflow-x-auto">
+      {["전체", "시행·시공", "인테리어", "NPL 학원", "법무", "대부(사금융)"].map(
+        (tag) => (
+          <button
+            key={tag}
+            className="px-4 py-2 text-sm rounded-full bg-gray-100 whitespace-nowrap"
+          >
+            {tag}
           </button>
+        )
+      )}
+    </div>
+
+    {/* Grid */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {cafes.map((cafe, i) => (
+        <div
+          key={i}
+          className="bg-gray-50 rounded-xl overflow-hidden hover:shadow-md transition-shadow"
+        >
+          <div className="aspect-[16/9] overflow-hidden">
+            <img
+              src={cafe.image}
+              alt={cafe.title}
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+
+          <div className="p-4">
+            <span className="text-xs text-orange-500">네이버카페</span>
+            <h3 className="text-sm font-semibold mt-1 line-clamp-2">
+              {cafe.title}
+            </h3>
+            <p className="text-xs text-gray-500 mt-1">
+              가입자수 {cafe.members.toLocaleString()}
+            </p>
+          </div>
         </div>
-      </section>
+      ))}
+    </div>
+
+    <button className="mx-auto mt-10 block px-6 py-2 border rounded-full text-sm">
+      더보기 +
+    </button>
+  </div>
+</section>
+
 
       {/* BOTTOM BANNER */}
       <section className="bg-[#5AA6D6] py-10">
