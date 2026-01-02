@@ -710,7 +710,7 @@ function FAQSection() {
                   height="24"
                   viewBox="0 0 24 24"
                   fill="none"
-                  className={`transition-transform ${openIndex === index ? "rotate-180" : ""}`}
+                  className={`transition-transform shrink-0 ${openIndex === index ? "rotate-180" : ""}`}
                 >
                   <path
                     fillRule="evenodd"
@@ -723,7 +723,7 @@ function FAQSection() {
               {openIndex === index && (
                 <div className="flex flex-col items-start gap-6 w-full">
                   <div className="flex items-center gap-2.5 w-full">
-                    <div className="flex-1 text-base font-pretendard text-gray-700">{faq.answer}</div>
+                    <div className="text-sm sm:text-base font-pretendard text-gray-700 leading-relaxed">{faq.answer}</div>
                   </div>
                 </div>
               )}
@@ -737,91 +737,147 @@ function FAQSection() {
 
 function VideosSection() {
   return (
-    <section className="flex flex-col max-w-[1280px] mx-auto px-10 items-start mt-20 gap-12">
-      <div className="flex items-center w-full">
-        <div className="flex flex-col items-center gap-2 flex-1">
-          <div className="text-[40px] leading-[150%] font-bold font-ibm text-gray-900">풀하우스 이야기</div>
-          <div className="text-lg font-pretendard text-gray-900">
-            풀하우스의 다양한 이야기를 확인해보세요.
-          </div>
-        </div>
+<section className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 mt-16 sm:mt-20 flex flex-col gap-10 sm:gap-12">
+<div className="flex items-center w-full">
+       <div className="flex flex-col items-center gap-2 flex-1 text-center">
+    <div className="text-2xl sm:text-3xl lg:text-[40px] leading-tight sm:leading-[150%] font-bold font-ibm text-gray-900">
+      풀하우스 이야기
+    </div>
+    <div className="text-sm sm:text-base lg:text-lg font-pretendard text-gray-900">
+      풀하우스의 다양한 이야기를 확인해보세요.
+    </div>
+  </div>
       </div>
 
-      <div className="flex items-start gap-4 w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
         <img
           src="https://api.builder.io/api/v1/image/assets/TEMP/97b60a92c9400ae5ce90d99e71c3b0fc2035e3ef?width=1128"
           alt="Video thumbnail 1"
-          className="w-full aspect-square max-w-[564px] h-80 rounded-2xl object-cover"
+          className="w-full aspect-video rounded-2xl object-cover"
         />
             <img 
             src={site}
             alt="Video thumbnail 2"
-          className="w-full aspect-square max-w-[564px] h-80 rounded-2xl object-cover"
+          className="w-full aspect-video rounded-2xl object-cover"
             />
-        <div className="relative w-[564px] h-80 rounded-2xl bg-gray-200 flex items-center justify-center">
           <div className="absolute inset-0 bg-black/30 rounded-2xl"></div>
-          <div className="relative rounded-full bg-red-600 flex items-start ">
-            <img 
-            src={inter}
+       <div className="relative w-full aspect-video rounded-2xl overflow-hidden">
+        <img
+          src={inter}
             alt="Video thumbnail 3"
-          className="w-full aspect-square max-w-[564px] h-80 rounded-2xl object-cover"
-            />
-          </div>
-        </div>
+            className="w-full h-full object-cover"
+          />
+        <div className="absolute inset-0 bg-black/30"></div>
+      </div>
+
       </div>
     </section>
   );
 }
 
-function PartnerSearchSection() {
+
+const partnerIcons = [
+  { name: "Amazon", icon: amazon },
+  { name: "Skrill", icon: skirill },
+  { name: "Mastercard", icon: master },
+  { name: "Visa", icon: visa },
+  { name: "Lite", icon: lite },
+  { name: "Klarna", icon: klarna },
+];
+
+export default function PartnerSearchSection() {
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    loop: true,
+    align: "start",
+    dragFree: true,
+  });
+
+  // Auto-scroll on desktop
+  useEffect(() => {
+    if (!emblaApi) return;
+    if (window.innerWidth < 768) return; // mobile: manual swipe
+
+    let rafId;
+    const speed = 0.4;
+
+    const autoScroll = () => {
+      emblaApi.scrollBy(speed);
+      rafId = requestAnimationFrame(autoScroll);
+    };
+
+    rafId = requestAnimationFrame(autoScroll);
+    return () => cancelAnimationFrame(rafId);
+  }, [emblaApi]);
+
   return (
-    <section className="relative h-[627px] w-full my-20">
-      <div className="absolute left-0 top-48 w-full h-[200px] flex items-center gap-6 overflow-hidden">
-        <div className="flex gap-6 animate-marquee">
-          {Array(12).fill(null).map((_, i) => (
-            <div key={i} className="w-[200px] h-[200px] flex-shrink-0 rounded-2xl bg-white shadow-md"></div>
-          ))}
+    <section className="relative w-full py-24 bg-gray-50">
+      {/* Search Card */}
+      <div className="relative z-10 max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center gap-8">
+        <h2 className="text-[40px] font-bold text-gray-900 text-center">제휴 업체 찾기</h2>
+        <p className="text-lg text-gray-700 text-center">
+          전국에 있는 풀하우스 제휴업체를 만나보세요.
+        </p>
+
+        {/* Search Input */}
+        <div className="w-full max-w-[680px]">
+          <div className="flex h-16 px-6 py-4 items-center w-full rounded-full bg-gray-200">
+            <input
+              type="text"
+              placeholder="검색어를 입력하세요."
+              className="flex-1 bg-transparent outline-none text-lg text-gray-700"
+            />
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              className="text-gray-500"
+            >
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M10 4C6.68629 4 4 6.68629 4 10C4 13.3137 6.68629 16 10 16C13.3137 16 16 13.3137 16 10C16 6.68629 13.3137 4 10 4ZM2 10C2 5.58172 5.58172 2 10 2C14.4183 2 18 5.58172 18 10C18 11.8487 17.3729 13.5509 16.3199 14.9056L21.7071 20.2929C22.0976 20.6834 22.0976 21.3166 21.7071 21.7071C21.3166 22.0976 20.6834 22.0976 20.2929 21.7071L14.9057 16.3198C13.551 17.3729 11.8487 18 10 18C5.58172 18 2 14.4183 2 10Z"
+                fill="#616161"
+              />
+            </svg>
+          </div>
+        </div>
+
+        {/* Hashtags */}
+        <div className="flex flex-wrap justify-center gap-4 text-gray-900 text-base">
+          <span>#시행 · 시공</span>
+          <span>#인테리어</span>
+          <span>#NPL학원</span>
+          <span>#법률자문</span>
+          <span>#대부(사금융)</span>
         </div>
       </div>
 
-      <div className="absolute left-0 top-30 w-full flex justify-center">
-        <div className="flex max-w-[1920px] px-0 py-12 flex-col items-center gap-12 bg-white rounded-[14px] shadow-lg z-10">
-          <div className="flex flex-col items-center gap-2 px-18">
-            <div className="text-[40px] leading-[150%] font-bold font-ibm text-gray-900">제휴 업체 찾기</div>
-            <div className="text-lg font-pretendard text-gray-900">
-              전국에 있는 풀하우스 제휴업체를 만나보세요.
-            </div>
-          </div>
-
-          <div className="flex flex-col items-center gap-7">
-            <div className="flex flex-col items-start w-[680px]">
-              <div className="flex flex-col items-start gap-1.5 w-full">
-                <div className="flex h-16 max-h-16 px-7 py-4.5 items-center w-full rounded-full bg-gray-200">
-                  <div className="flex-1 text-lg font-pretendard text-gray-500">검색어를 입력하세요.</div>
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M10 4C6.68629 4 4 6.68629 4 10C4 13.3137 6.68629 16 10 16C13.3137 16 16 13.3137 16 10C16 6.68629 13.3137 4 10 4ZM2 10C2 5.58172 5.58172 2 10 2C14.4183 2 18 5.58172 18 10C18 11.8487 17.3729 13.5509 16.3199 14.9056L21.7071 20.2929C22.0976 20.6834 22.0976 21.3166 21.7071 21.7071C21.3166 22.0976 20.6834 22.0976 20.2929 21.7071L14.9057 16.3198C13.551 17.3729 11.8487 18 10 18C5.58172 18 2 14.4183 2 10Z"
-                      fill="#616161"
-                    />
-                  </svg>
-                </div>
+      {/* Auto-scrolling Icons Slider */}
+      <div className="mt-16">
+        <div
+          className="w-full overflow-hidden"
+          ref={emblaRef}
+        >
+          <div className="flex gap-6">
+            {partnerIcons.concat(partnerIcons).map((item, index) => (
+              <div
+                key={index}
+                className="flex-shrink-0 w-32 h-32 sm:w-36 sm:h-36 lg:w-40 lg:h-40 rounded-full bg-white flex items-center justify-center shadow-md"
+              >
+                <img
+                  src={item.icon}
+                  alt={item.name}
+                  className="w-12 h-12 sm:w-16 sm:h-16 object-contain"
+                />
               </div>
-            </div>
-
-            <div className="flex justify-center items-center gap-5 w-full">
-              <div className="text-base font-medium font-pretendard text-gray-900">#시행 · 시공</div>
-              <div className="text-base font-medium font-pretendard text-gray-900">#인테리어</div>
-              <div className="text-base font-medium font-pretendard text-gray-900">#NPL학원</div>
-              <div className="text-base font-medium font-pretendard text-gray-900">#법률자문</div>
-              <div className="text-base font-medium font-pretendard text-gray-900">#대부(사금융)</div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
     </section>
   );
 }
+
 
 
