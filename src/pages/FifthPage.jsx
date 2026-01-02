@@ -243,7 +243,7 @@ const lawyers = [
         </div>
 
         <div className="flex justify-center mt-10">
-          <button className="px-6 py-2 borde bg-gray-100 rounded-full text-sm">
+          <button className="px-6 py-2 borde bg-gray-100 hover:bg-black rounded-full text-sm">
             더보기 +
           </button>
         </div>
