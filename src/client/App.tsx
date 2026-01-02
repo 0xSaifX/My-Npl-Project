@@ -14,6 +14,7 @@ import FifthPage from "../pages/FifthPage";
 import SixthPage from "../pages/SixthPage";
 import SeventhPage from "../pages/SeventhPage";
 import EightPage from "../pages/EightPage";
+import InquiryModal from "../pages/NinethPage";
 
 import MainLayout from "../layouts/MainLayout";
 
