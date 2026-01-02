@@ -178,19 +178,28 @@ const lawyers = [
           ))}
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-          {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
-            <div key={i} className="text-center">
-              <img
-                src={`/images/lawyer-${i}.jpg`}
-                alt="lawyer"
-                className="mx-auto rounded-xl h-[220px] w-full object-cover"
-              />
-              <h4 className="mt-3 font-bold">김대성 변호사</h4>
-              <p className="text-sm text-gray-500">부동산 전문</p>
-            </div>
-          ))}
-        </div>
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+  {lawyers.map((lawyer, i) => (
+    <div key={i} className="text-center">
+      <div className="aspect-[3/4] overflow-hidden rounded-xl">
+        <img
+          src={lawyer.image}
+          alt={lawyer.name}
+          className="w-full h-full object-cover"
+          loading="lazy"
+        />
+      </div>
+
+      <h4 className="mt-3 font-bold text-sm sm:text-base">
+        {lawyer.name}
+      </h4>
+      <p className="text-xs sm:text-sm text-gray-500">
+        {lawyer.specialty}
+      </p>
+    </div>
+  ))}
+</div>
+
       </section>
 
       {/* LATEST CONSULTATIONS */}
