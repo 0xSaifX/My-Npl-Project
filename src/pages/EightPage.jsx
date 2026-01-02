@@ -113,16 +113,16 @@ export default function EightPage() {
 
         {/* Pagination */}
         <div className="flex justify-center items-center gap-4 mt-16 text-sm text-gray-400">
-          <button className="hover:text-white">&laquo;</button>
-          <button className="hover:text-white">&lsaquo;</button>
-          <button className="w-8 h-8 rounded-full bg-gray-700 text-white">
+          <button className="hover:text-black">&laquo;</button>
+          <button className="hover:text-black">&lsaquo;</button>
+          <button className="w-8 h-8 rounded-full bg-gray-700 text-black">
             2
           </button>
-          <button className="hover:text-white">3</button>
-          <button className="hover:text-white">4</button>
-          <button className="hover:text-white">5</button>
-          <button className="hover:text-white">&rsaquo;</button>
-          <button className="hover:text-white">&raquo;</button>
+          <button className="hover:text-black">3</button>
+          <button className="hover:text-black">4</button>
+          <button className="hover:text-black">5</button>
+          <button className="hover:text-black">&rsaquo;</button>
+          <button className="hover:text-black">&raquo;</button>
         </div>
       </div>
     </section>
