@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
-import InquiryModal from "./NinethPage";
 
 const links = [
   { name: "투자대출", path: "/inquiry-modal" },
@@ -48,17 +47,9 @@ export default function EightPage() {
 
          <div className="flex justify-center gap-8 mb-2 text-sm text-black font-bold flex-wrap">
             <nav className="lg:flex flex gap-8">
-              {links.map((link, idx) => (
-                  <Link
-                    key={idx}
-                    to={link.path}
-                    className="hover:text-orange-600 transition-colors"
-                      >
-                     {link.name}
-                    </Link>
-                  ))}
-                  <button onClick={() => setOpen(true)}>투자대출</button>
-              {open && <InquiryModal onClose={() => setOpen(false)} />}
+              <Link>
+              
+              </Link>
               </nav>
           </div>
         <div className="border-t border-gray-400 mb-6" />
