@@ -75,7 +75,7 @@ export default function SeventhPage() {
 
       {/* POPULAR CAFES */}
       <section className="py-24 bg-white">
-        <div className="max-w-[1200px] mx-auto px-4">
+        <div className="max-w-[1200px] mx-10 sm:mx-20 px-4">
           <h2 className="text-xl font-bold mb-6">주제별 인기 카페</h2>
 
           <div className="flex gap-2 mb-8 overflow-x-auto">
