@@ -38,7 +38,7 @@ export default function EightPage() {
     <section className="min-h-screen bg-white px-4 sm:px-8 py-24">
 
          <div className="flex justify-center gap-8 mb-2 text-sm text-black font-bold flex-wrap">
-            <a href="#InquiryModal">투자대출 <hr /> </a>
+            <a href="InquiryModal">투자대출 <hr /> </a>
             <a href="#" >공지사항 </a>
             <a href="#">경매부동산</a>
           </div>
