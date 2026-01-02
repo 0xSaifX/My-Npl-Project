@@ -87,42 +87,54 @@ const posts = [
       </section>
 
       {/* POPULAR POSTS */}
-      <section className="py-24 ">
-        <div className="max-w-[1200px] mx-10 sm:mx-20 px-4">
-          <h2 className="text-xl font-bold mb-2">인기글</h2>
-          <p className="text-sm text-gray-500 mb-8">
-            NPL·부동산 관련 인기글을 제공합니다. 풀하우스에서 나만의 기회를 발견해보세요.
-          </p>
+      <section className="py-24">
+  <div className="max-w-[1200px] mx-4 sm:mx-20 px-4">
+    <h2 className="text-xl font-bold mb-2">인기글</h2>
+    <p className="text-sm text-gray-500 mb-8">
+      NPL·부동산 관련 인기글을 제공합니다. 풀하우스에서 나만의 기회를 발견해보세요.
+    </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {[1, 2, 3, 4].map((i) => (
-              <div key={i} className="bg-white rounded-xl p-4 flex gap-4">
-                <img
-                  src={`/images/post-${i}.jpg`}
-                  alt="post"
-                  className="w-[120px] h-[80px] rounded-lg object-cover"
-                />
-                <div className="flex flex-col justify-between">
-                  <div>
-                    <span className="text-xs text-orange-500 font-medium"><Flame/> 인기</span>
-                    <h3 className="font-semibold text-sm mt-1 line-clamp-2">
-                      2025 NEW NPL투자 기초반 정규강의 안내
-                    </h3>
-                    <p className="text-xs text-gray-500 line-clamp-2 mt-1">
-                      경매·NPL 투자자 필수 과정! 실전 중심 커리큘럼을 만나보세요.
-                    </p>
-                  </div>
-                  <span className="text-[11px] text-gray-400">2025.04.05</span>
-                </div>
-              </div>
-            ))}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {posts.map((post, i) => (
+        <div
+          key={i}
+          className="bg-white rounded-xl p-4 flex gap-4 hover:shadow-sm transition-shadow"
+        >
+          {/* Thumbnail */}
+          <div className="flex-shrink-0 w-[120px] h-[80px] rounded-lg overflow-hidden">
+            <img
+              src={post.image}
+              alt={post.title}
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
           </div>
 
-          <button className="mx-auto mt-10 block px-6 py-2 border hover:text-bg-black rounded-full text-sm">
-            더보기 +
-          </button>
+          {/* Content */}
+          <div className="flex flex-col justify-between">
+            <div>
+              <span className="text-xs text-orange-500 font-medium flex items-center gap-1">
+                <Flame /> 인기
+              </span>
+              <h3 className="font-semibold text-sm mt-1 line-clamp-2">
+                {post.title}
+              </h3>
+              <p className="text-xs text-gray-500 line-clamp-2 mt-1">
+                {post.desc}
+              </p>
+            </div>
+            <span className="text-[11px] text-gray-400">{post.date}</span>
+          </div>
         </div>
-      </section>
+      ))}
+    </div>
+
+    <button className="mx-auto mt-10 block px-6 py-2 border rounded-full text-sm hover:bg-gray-50">
+      더보기 +
+    </button>
+    </div>
+    </section>
+
 
       {/* POPULAR CAFES */}
       <section className="py-24 bg-white">
