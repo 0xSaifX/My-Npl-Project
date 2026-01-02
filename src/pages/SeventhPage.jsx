@@ -144,7 +144,7 @@ export default function SeventhPage() {
       더보기 +
     </button>
   </div>
-</section>
+      </section>
 
 
       {/* BOTTOM BANNER */}
