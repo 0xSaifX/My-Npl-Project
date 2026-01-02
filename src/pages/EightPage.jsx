@@ -46,7 +46,7 @@ export default function EightPage() {
         </p>
 
        {/* Filters */}
-        <div className="flex flex-wrap gap-2 mb-10">
+        <div className="flex flex-wrap font-bold gap-2 mb-10">
           {['NPL', '인기순', '추천순', '리뷰순', '분야별', '지역 찾기'].map((item) => (
             <button
               key={item}
