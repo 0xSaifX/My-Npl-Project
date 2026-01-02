@@ -142,7 +142,7 @@ const lawyers = [
       </section>
 
       {/* HIGHLIGHT BANNER */}
-      <section className="max-w-[1280px] mx-auto px-6 mb-24">
+      <section className="max-w-[1280px] mx-10 sm:mx-20 px-6 mb-24">
         <div className="relative rounded-2xl bg-lime-200 p-10 flex flex-col md:flex-row items-center justify-between">
           <div>
             <span className="text-sm font-semibold">NPL 실전투자</span>
