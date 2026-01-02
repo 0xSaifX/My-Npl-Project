@@ -125,52 +125,57 @@ const posts = [
       </section>
 
       {/* POPULAR CAFES */}
-    <section className="py-24">
-    <div className="max-w-[1200px] mx-4 sm:mx-20 px-4">
-    <h2 className="text-xl font-bold mb-2">인기글</h2>
-    <p className="text-sm text-gray-500 mb-8">
-      NPL·부동산 관련 인기글을 제공합니다. 풀하우스에서 나만의 기회를 발견해보세요.
-    </p>
+      <section className="py-24 bg-white">
+  <div className="max-w-[1200px] mx-4 sm:mx-20 px-4">
+    <h2 className="text-xl font-bold mb-6">주제별 인기 카페</h2>
 
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-      {posts.map((post, i) => (
+    {/* Tags */}
+    <div className="flex gap-2 mb-8 overflow-x-auto">
+      {["전체", "시행·시공", "인테리어", "NPL 학원", "법무", "대부(사금융)"].map(
+        (tag) => (
+          <button
+            key={tag}
+            className="px-4 py-2 text-sm rounded-full bg-gray-100 whitespace-nowrap"
+          >
+            {tag}
+          </button>
+        )
+      )}
+    </div>
+
+    {/* Grid */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {cafes.map((cafe, i) => (
         <div
           key={i}
-          className="bg-white rounded-xl p-4 flex gap-4 hover:shadow-sm transition-shadow"
+          className="bg-gray-50 rounded-xl overflow-hidden hover:shadow-md transition-shadow"
         >
-          {/* Thumbnail */}
-          <div className="flex-shrink-0 w-[120px] h-[80px] rounded-lg overflow-hidden">
+          <div className="aspect-[16/9] overflow-hidden">
             <img
-              src={post.image}
-              alt={post.title}
+              src={cafe.image}
+              alt={cafe.title}
               className="w-full h-full object-cover"
               loading="lazy"
             />
           </div>
 
-          {/* Content */}
-          <div className="flex flex-col justify-between">
-            <div>
-              <span className="text-xs text-orange-500 font-medium flex items-center gap-1">
-                <Flame /> 인기
-              </span>
-              <h3 className="font-semibold text-sm mt-1 line-clamp-2">
-                {post.title}
-              </h3>
-              <p className="text-xs text-gray-500 line-clamp-2 mt-1">
-                {post.desc}
-              </p>
-            </div>
-            <span className="text-[11px] text-gray-400">{post.date}</span>
+          <div className="p-4">
+            <span className="text-xs text-orange-500">네이버카페</span>
+            <h3 className="text-sm font-semibold mt-1 line-clamp-2">
+              {cafe.title}
+            </h3>
+            <p className="text-xs text-gray-500 mt-1">
+              가입자수 {cafe.members.toLocaleString()}
+            </p>
           </div>
         </div>
-        ))}
-      </div>
+      ))}
+    </div>
 
-      <button className="mx-auto mt-10 block px-6 py-2 border rounded-full text-sm hover:bg-gray-50">
+    <button className="mx-auto mt-10 block px-6 py-2 border rounded-full text-sm">
       더보기 +
-        </button>
-      </div>
+    </button>
+  </div>
       </section>
 
 
