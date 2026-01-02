@@ -55,7 +55,7 @@ export default function SeventhPage() {
       </section>
 
       {/* POPULAR POSTS */}
-      <section className="py-24 px-10">
+      <section className="py-24 ">
         <div className="max-w-[1200px] mx-10 sm:mx-20 px-4">
           <h2 className="text-xl font-bold mb-2">인기글</h2>
           <p className="text-sm text-gray-500 mb-8">
