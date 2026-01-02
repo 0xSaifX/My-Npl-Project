@@ -4,7 +4,7 @@ import img1 from "../assets/p4-1.png";
 import hero from "../assets/hero6.jpg";
 import { BiMoney } from "react-icons/bi";
 import { FaSackDollar } from "react-icons/fa6";
-import { PiMarkerCircle } from "react-icons/pi";
+import { Check } from "lucide-react";
 
 
 export default function SixthPage() {
@@ -47,7 +47,7 @@ export default function SixthPage() {
               {
                 title: "제휴 금융사 자금 지원",
                 desc: "최적의 금융사로 간편한 자금 지원을 제공합니다.",
-                icon: <PiMarkerCircle/>,
+                icon: <Check/>,
               },
               {
                 title: "최저 이율 최대 대출 제공",
