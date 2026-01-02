@@ -4,6 +4,12 @@ import { Link } from "react-router-dom";
 import InquiryModal from "./NinethPage";
 import path from "path";
 
+const links = [
+  { name: "투자대출", path: "/inquiry-modal" },
+  { name: "투자대출", path: "/inquiry-modal" },
+  { name: "투자대출", path: "/inquiry-modal" }
+];
+
 const notices = [
   {
     title: "NPL 사업 운영 변경 사항 안내",
@@ -33,12 +39,6 @@ const notices = [
     content: "조회 속도 및 정확도가 개선되었습니다.",
   },
 ];
-
-const links = [
-  { name: "투자대출", path: "/inquiry-modal" },
-  { name: "투자대출", path: "/inquiry-modal" },
-  { name: "투자대출", path: "/inquiry-modal" }
-]
 
 export default function EightPage() {
   const [openIndex, setOpenIndex] = useState(0);
