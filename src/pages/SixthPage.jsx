@@ -1,5 +1,6 @@
 import React from "react";
 import home from "../assets/home.png";
+import img1 from "../assets/p4-1.png";
 
 
 export default function SixthPage() {
@@ -8,7 +9,7 @@ export default function SixthPage() {
       {/* HERO */}
       <section
         className="relative h-[260px] md:h-[360px] lg:h-[420px] w-full bg-cover bg-center"
-        style={{ backgroundImage: "url('/images/finance-hero.jpg')" }}
+        style={{ backgroundImage: "url('../assets/p4-1.png')" }}
       >
         <div className="absolute inset-0 bg-black/30" />
         <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center text-white">
@@ -69,7 +70,7 @@ export default function SixthPage() {
               </span>
             </button>
           </div>
-          
+
         </div>
       </section>
 
