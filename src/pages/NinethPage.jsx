@@ -34,7 +34,8 @@ export default function InquiryModal() {
       <div className="w-full max-w-[720px] bg-white rounded-[28px] shadow-2xl p-8 sm:p-10 relative">
 
         {/* Close button */}
-        <button onClick={() => navigate(-1)}
+        <button 
+        onClick={() => navigate(-1)}
         className="absolute top-6 right-6 w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center">
           <X className="w-5 h-5" />
         </button>
