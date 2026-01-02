@@ -27,50 +27,7 @@ export default function SeventhPage() {
   { image: p78, title: "부동산 투자 네트워크", members: 2890 },
 ];
 
-const communityPosts = [
-  {
-    image: c1,
-    text: "부실채권(NPL)을 효과적으로 관리하면 금융기관에 어떤 긍정적인 영향을 미칠 수 있나요?",
-    title: "2025 NEW NPL 투자 기초반",
-    date: "2025. 4. 5",
-    hot: true,
-  },
-  {
-    image: c2,
-    text: "부실채권(NPL)을 효과적으로 관리하면 금융기관에 어떤 긍정적인 영향을 미칠 수 있나요?",
-    title: "NPL 경매 실전 후기",
-    date: "2025. 4. 2",
-    hot: true,
-  },
-  {
-    image: c3,
-    text: "부실채권(NPL)을 효과적으로 관리하면 금융기관에 어떤 긍정적인 영향을 미칠 수 있나요?",
-    title: "부동산 투자 트렌드 분석",
-    date: "2025. 3. 28",
-    hot: true,
-  },
-  {
-    image: c4,
-    text: "부실채권(NPL)을 효과적으로 관리하면 금융기관에 어떤 긍정적인 영향을 미칠 수 있나요?",
-    title: "초보자를 위한 NPL 가이드",
-    date: "2025. 3. 20",
-    hot: true,
-  },
-  {
-    image: c5,
-    text: "부실채권(NPL)을 효과적으로 관리하면 금융기관에 어떤 긍정적인 영향을 미칠 수 있나요?",
-    title: "NPL 수익 구조 완전 정리",
-    date: "2025. 3. 15",
-    hot: true,
-  },
-  {
-    image: c6,
-    text: "부실채권(NPL)을 효과적으로 관리하면 금융기관에 어떤 긍정적인 영향을 미칠 수 있나요?",
-    title: "법률 리스크 체크 포인트",
-    date: "2025. 3. 10",
-    hot: true,
-  },
-];
+
 
   return (
     <div className="w-full bg-[#FAFAFA] text-gray-900">
