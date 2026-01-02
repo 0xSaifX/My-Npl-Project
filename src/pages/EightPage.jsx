@@ -41,7 +41,7 @@ export default function EightPage() {
 
         {/* Header */}
         <h1 className="text-xl font-semibold mb-2">공지사항</h1>
-        <p className="text-sm text-gray-400 mb-10">
+        <p className="text-sm text-gray-200 mb-10">
           NPL 사업에 대한 최신 공지와 안내를 전달드립니다.
         </p>
 
