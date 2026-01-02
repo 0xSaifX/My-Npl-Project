@@ -1,7 +1,7 @@
 // IntegratedSearchPage.jsx
 import { Flame, Search } from "lucide-react";
 import React from "react";
-import house from "../assets/hball.png"
+import house from "../assets/hball.png";
 
 export default function SeventhPage() {
   return (
@@ -126,7 +126,7 @@ export default function SeventhPage() {
             </p>
           </div>
           <img
-            src="/images/consult.png"
+            src= {house}
             alt="consult"
             className="w-[160px]"
           />
