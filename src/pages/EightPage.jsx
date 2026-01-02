@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import { BiLeftArrow } from "react-icons/bi";
 
 const notices = [
   {
@@ -93,7 +94,7 @@ export default function EightPage() {
 
         {/* Pagination */}
         <div className="flex justify-center items-center gap-4 mt-16 text-sm text-gray-400">
-          <button className="hover:text-white">&laquo;</button>
+          <button className="hover:text-white"><BiLeftArrow/>;</button>
           <button className="hover:text-white">&lsaquo;</button>
           <button className="w-8 h-8 rounded-full bg-gray-700 text-white">
             2
