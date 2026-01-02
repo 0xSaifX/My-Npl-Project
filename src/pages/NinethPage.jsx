@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { X } from "lucide-react";
 import t1 from "../assets/tp1.png";
+import { useNavigate } from "react-router-dom";
 
 
 export default function InquiryModal() {
   const [selectedTypes, setSelectedTypes] = useState(["통합상담신청"]);
   const [content, setContent] = useState("");
+  const navigate = useNavigate();
 
   const inquiryTypes = [
     "NPL반값 부동산",
@@ -32,7 +34,7 @@ export default function InquiryModal() {
       <div className="w-full max-w-[720px] bg-white rounded-[28px] shadow-2xl p-8 sm:p-10 relative">
 
         {/* Close button */}
-        <button onClick={onclose}
+        <button onClick={() => navigate(-1)}
         className="absolute top-6 right-6 w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center">
           <X className="w-5 h-5" />
         </button>
