@@ -47,8 +47,8 @@ export default function EightPage() {
 
          <div className="flex justify-center gap-8 mb-2 text-sm text-black font-bold flex-wrap">
             <nav className="lg:flex flex gap-8">
-              <Link>
-              
+              <Link to= >
+               투자대출
               </Link>
               </nav>
           </div>
