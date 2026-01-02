@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 import InquiryModal from "./NinethPage";
+import path from "path";
 
 const notices = [
   {
@@ -34,7 +35,7 @@ const notices = [
 ];
 
 const links = [
-  { name : 투자대출 }
+  { name : 투자대출 path:  }
 ]
 
 export default function EightPage() {
