@@ -58,7 +58,7 @@ export default function EightPage() {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-gray-200 mb-6" />
+        {/* <div className="border-t border-gray-200 mb-6" /> */}
 
         {/* FAQ List */}
         <ul className="space-y-0">
