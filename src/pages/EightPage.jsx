@@ -33,6 +33,10 @@ const notices = [
   },
 ];
 
+const links = [
+  
+]
+
 export default function EightPage() {
   const [openIndex, setOpenIndex] = useState(0);
 
