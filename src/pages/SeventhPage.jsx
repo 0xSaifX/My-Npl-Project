@@ -117,7 +117,7 @@ export default function SeventhPage() {
       </section>
 
       {/* BOTTOM BANNER */}
-      <section className="bg-[#5AA6D6] py-16">
+      <section className="bg-[#5AA6D6] py-10">
         <div className="max-w-[1200px] mx-10 sm:mx-20 px-4 flex items-center justify-between flex-col md:flex-row gap-6">
           <div className="text-white">
             <h3 className="text-xl font-bold mb-2">풀하우스만의 특별 상담</h3>
