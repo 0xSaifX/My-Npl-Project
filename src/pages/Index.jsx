@@ -490,7 +490,7 @@ function PartnersSection() {
                     <div className="text-lg font-bold font-pretendard text-orange-light">{partner.rating}</div>
                   </div>
                   <div className="flex flex-col gap-1">
-                    <div className="text-xl font-bold font-pretendard text-gray-900">{partner.name}</div>
+                    <div className="text-xl sm:text-2xl font-bold font-pretendard text-gray-900">{partner.name}</div>
                     <div className="flex items-center gap-2 flex-wrap">
                       <div className="text-base font-pretendard text-gray-900">계약자리뷰 {partner.reviews}</div>
                       <div className="w-px h-3 bg-gray-400"></div>
