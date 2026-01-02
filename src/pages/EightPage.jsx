@@ -40,7 +40,7 @@ export default function EightPage() {
 
          <div className="flex justify-center gap-8 mb-2 text-sm text-black font-bold flex-wrap">
             <a href="#/">투자대출 </a>
-            <a href="#">공지사항</a>
+            <a href="#" >공지사항 <hr /> </a>
             <a href="#">경매부동산</a>
           </div>
         <div className="border-t border-gray-400 mb-6" />
