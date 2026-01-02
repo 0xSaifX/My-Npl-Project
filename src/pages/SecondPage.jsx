@@ -207,26 +207,44 @@ export default function SecondPage() {
       </section>
 
       {/* PARTNERS SLIDER */}
-      <section className="mt-32 ml-20 bg-gray-100 py-20">
-        <div className="max-w-[1280px]">
-          <h2 className="text-xl sm:text-2xl lg:text-3xl mb-10 font-bold">우리와 함께하는 업체</h2>
+      <section className="mt-32 bg-gray-100 py-20">
+  <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
 
-          <div ref={emblaRef} className="overflow-hidden ml-20">
-            <div className="flex">
-              {["Klarna", "Mastercard", "Skrill", "VISA", "Litecoin", "Amex"].map(
-                (b, i) => (
-                  <div
-                    key={i}
-                    className="flex-[0_0_70%] sm:flex-[0_0_33%] lg:flex-[0_0_220px]"
-                  >
-                    <span className="font-semibold">{b}</span>
-                  </div>
-                )
-              )}
+    <h2 className="text-xl sm:text-2xl lg:text-3xl mb-10 font-bold">
+      우리와 함께하는 업체
+    </h2>
+
+    <div ref={emblaRef} className="overflow-hidden">
+      <div className="flex gap-6">
+        {partners.map((partner, i) => (
+          <div
+            key={i}
+            className="
+              flex-[0_0_70%] 
+              sm:flex-[0_0_33%] 
+              lg:flex-[0_0_220px]
+            "
+          >
+            <div className="
+              h-28 
+              rounded-xl 
+              bg-white 
+              flex items-center justify-center
+              shadow-sm
+            ">
+              <img
+                src={partner.logo}
+                alt={partner.name}
+                className="max-h-12 object-contain"
+              />
             </div>
           </div>
-        </div>
-      </section>
+        ))}
+      </div>
+    </div>
+
+  </div>
+</section>
 
       {/* FAQ */}
     <section className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 pt-20 sm:pt-28 lg:pt-40 pb-20 sm:pb-28 lg:pb-40 flex flex-col gap-12">
