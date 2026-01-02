@@ -43,7 +43,7 @@ export default function InquiryModal() {
         {/* Summary Card */}
         <div className="border rounded-2xl p-6 flex flex-col sm:flex-row gap-6 mb-10">
           <img
-            src="/images/sample-interior.jpg"   // 🔁 replace with your image
+            src= {} 
             alt="preview"
             className="w-full sm:w-[180px] h-[140px] object-cover rounded-xl"
           />
