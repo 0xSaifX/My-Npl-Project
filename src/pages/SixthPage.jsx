@@ -5,7 +5,6 @@ import hero from "../assets/hero6.jpg";
 import { BiMoney } from "react-icons/bi";
 import { FaSackDollar } from "react-icons/fa6";
 import { CheckCircle2Icon } from "lucide-react";
-import { GrEmergency } from "react-icons/gr";
 
 
 export default function SixthPage() {
@@ -43,7 +42,7 @@ export default function SixthPage() {
               {
                 title: "NPL 부동산 구매 자금 부족",
                 desc: "재무 금융사로 자금을 빠르게 마련해드립니다.",
-                icon: <GrEmergency/>,
+                icon: "⚠️",
               },
               {
                 title: "제휴 금융사 자금 지원",
