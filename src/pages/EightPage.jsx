@@ -2,7 +2,6 @@ import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 import InquiryModal from "./NinethPage";
-import path from "path";
 
 const links = [
   { name: "투자대출", path: "/inquiry-modal" },
