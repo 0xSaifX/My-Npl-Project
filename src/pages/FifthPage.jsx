@@ -3,6 +3,7 @@ import img1 from "../assets/image-area(2).jpg";
 import img2 from "../assets/image-area(4).jpg";
 import img3 from "../assets/image-area(6).jpg";
 import img4 from "../assets/image-area(7).jpg";
+import home from "../assets/home.png";
 
 
 export default function FifthPage() {
@@ -135,7 +136,7 @@ export default function FifthPage() {
             </p>
           </div>
           <img
-            src="/images/green-house.png"
+            src= {home}
             alt="banner"
             className="h-[120px] mt-6 md:mt-0"
           />
