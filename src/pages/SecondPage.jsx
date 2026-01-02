@@ -78,8 +78,8 @@ export default function SecondPage() {
   { name: "Mastercard", logo: mastercard },
   { name: "Skrill", logo: skirill },
   { name: "VISA", logo: visa },
-  { name: "Litecoin", logo: litecoin },
-  { name: "Amex", logo: amex }
+  { name: "Litecoin", logo: lite },
+  { name: "Amex", logo: amazon }
   ];
 
 
