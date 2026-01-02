@@ -218,7 +218,7 @@ const lawyers = [
           {["서울/도권", "부산대구"].map((c) => (
             <button
               key={c}
-              className="px-4 py-2 rounded-full border text-sm hover:bg-black hover:text-white"
+              className="px-4 py-2 rounded-full border bg-gray-100 text-sm hover:bg-black hover:text-white"
             >
               {c}
             </button>
