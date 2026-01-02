@@ -10,7 +10,7 @@ export default function SixthPage() {
       {/* HERO */}
       <section
         className="relative h-[260px] md:h-[360px] lg:h-[420px] object-cover bg-cover bg-center"
-        style={{ backgroundImage: "url('/src/assets/p4-1.png')" }}
+        style={{ backgroundImage: "url('/src/assets/hero6.jpg')" }}
       >
         <div className="absolute inset-0 bg-black/30" />
         <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center text-white">
