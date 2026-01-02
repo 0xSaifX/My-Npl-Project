@@ -47,7 +47,7 @@ export default function EightPage() {
     <section className="min-h-screen bg-white px-4 sm:px-8 py-24">
 
          <div className="flex justify-center gap-8 mb-2 text-sm text-black font-bold flex-wrap">
-            <nav className=" lg:flex gap-8">
+            <nav className="lg:flex gap-8">
                       {links.map((link, idx) => (
                         <Link
                           key={idx}
