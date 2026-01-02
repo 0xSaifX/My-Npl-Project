@@ -753,12 +753,12 @@ function VideosSection() {
         <img
           src="https://api.builder.io/api/v1/image/assets/TEMP/97b60a92c9400ae5ce90d99e71c3b0fc2035e3ef?width=1128"
           alt="Video thumbnail 1"
-          className=""
+          className="w-full aspect-video rounded-2xl object-cover"
         />
             <img 
             src={site}
             alt="Video thumbnail 2"
-          className=""
+          className="w-full aspect-video rounded-2xl object-cover"
             />
         <div className="relative w-[564px] h-80 rounded-2xl bg-gray-200 flex items-center justify-center">
           <div className="absolute inset-0 bg-black/30 rounded-2xl"></div>
@@ -766,7 +766,7 @@ function VideosSection() {
             <img 
             src={inter}
             alt="Video thumbnail 3"
-          className=""
+          className="w-full aspect-video rounded-2xl object-cover"
             />
           </div>
         </div>
