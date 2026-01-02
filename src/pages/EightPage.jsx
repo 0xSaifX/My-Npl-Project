@@ -48,7 +48,7 @@ export default function EightPage() {
          <div className="flex justify-center gap-8 mb-2 text-sm text-black font-bold flex-wrap">
             <nav className="lg:flex flex gap-8">
              <button className="border bg-black/80 rounded-full p-2">
-               <Link to="/inquiry-modal" className="hover:text-orange-600">
+               <Link to="/inquiry-modal" className="hover:text-white">
                 투자대출
               </Link>
              </button>
