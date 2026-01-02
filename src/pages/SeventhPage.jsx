@@ -71,7 +71,8 @@ const posts = [
               placeholder="검색어를 입력하세요."
               className="w-full h-[52px] rounded-full bg-gray-100 px-6 pr-14 text-sm focus:outline-none"
             />
-            <button className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400">
+            <button onClick={() => posts}
+            className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400">
               <Search/>
             </button>
           </div>
