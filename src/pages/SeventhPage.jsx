@@ -129,7 +129,7 @@ const posts = [
       ))}
     </div>
 
-    <button className="mx-auto mt-10 block px-6 py-2 border rounded-full text-sm hover:bg-gray-50">
+    <button className="mx-auto mt-10 block px-6 py-2 border rounded-full text-sm hover:bg-gray-100">
       더보기 +
     </button>
     </div>
