@@ -737,8 +737,9 @@ function FAQSection() {
 
 function VideosSection() {
   return (
-    <section className="flex flex-col max-w-[1280px] mx-auto px-10 items-start mt-20 gap-12">
-      <div className="flex items-center w-full">
+<section className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 mt-16 sm:mt-20 flex flex-col gap-10 sm:gap-12">
+
+<div className="flex items-center w-full">
         <div className="flex flex-col items-center gap-2 flex-1">
           <div className="text-[40px] leading-[150%] font-bold font-ibm text-gray-900">풀하우스 이야기</div>
           <div className="text-lg font-pretendard text-gray-900">
