@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { X } from "lucide-react";
+import t1 from "../assets/tp1.png";
+
 
 export default function InquiryModal() {
   const [selectedTypes, setSelectedTypes] = useState(["통합상담신청"]);
@@ -43,7 +45,7 @@ export default function InquiryModal() {
         {/* Summary Card */}
         <div className="border rounded-2xl p-6 flex flex-col sm:flex-row gap-6 mb-10">
           <img
-            src= {} 
+            src= {t1} 
             alt="preview"
             className="w-full sm:w-[180px] h-[140px] object-cover rounded-xl"
           />
