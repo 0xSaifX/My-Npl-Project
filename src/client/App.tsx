@@ -29,6 +29,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route element={<MainLayout/>}>
+
           <Route path="/" element={<Index />} />
           <Route path="/second-page" element={<SecondPage />} />
           <Route path="/third-page" element={<ThirdPage />} />
@@ -36,11 +37,9 @@ const App = () => (
           <Route path="/fifth-page" element={<FifthPage />} />
           <Route path="/Sixth-page" element={<SixthPage />} />
           <Route path="/seventh-page" element={<SeventhPage />} />
-          <Route path="/" element={<MainLayout />}>
-          <Route path="/eight" element={<EightPage />} />
+          <Route path="/eight-page" element={<EightPage />} />
           <Route path="/inquiry-modal" element={<InquiryModal />} />
-        </Route>
-
+          
           </Route>
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
