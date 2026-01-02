@@ -209,7 +209,7 @@ const lawyers = [
       </section>
 
       {/* LATEST CONSULTATIONS */}
-      <section className="max-w-[1280px] mx-auto px-6 pb-32">
+      <section className="max-w-[1280px] mx-10 sm:mx-20 px-6 pb-32">
         <h2 className="text-2xl font-bold mb-2">최신 상담글</h2>
         <p className="text-gray-600 mb-8">
           생생한 상담 내용과 후기들을 확인해보세요.
