@@ -147,7 +147,7 @@ const posts = [
         (tag) => (
           <button
             key={tag}
-            className="px-4 py-2 text-sm rounded-full bg-gray-100 whitespace-nowrap"
+            className="px-4 py-2 text-sm rounded-full bg-gray-100 hover:bg-black hover:text-white whitespace-nowrap"
           >
             {tag}
           </button>
