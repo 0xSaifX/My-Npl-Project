@@ -54,7 +54,7 @@ export default function EightPage() {
             const isOpen = openIndex === i;
 
             return (
-              <li key={i} className="border-b border-gray-700">
+              <li key={i} className="border-b border-gray-200">
                 <button
                   onClick={() => setOpenIndex(isOpen ? -1 : i)}
                   className="w-full flex items-center justify-between py-6 text-left"
