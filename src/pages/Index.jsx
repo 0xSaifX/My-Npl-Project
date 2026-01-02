@@ -749,7 +749,7 @@ function FAQSection() {
 
 function VideosSection() {
   return (
-<section className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 mt-16 sm:mt-20 flex flex-col gap-10 sm:gap-12">
+<section className="w-full max-w-[1280px] ml-10 sm:ml-20 px-4 sm:px-6 lg:px-10 mt-16 sm:mt-20 flex flex-col gap-10 sm:gap-12">
 <div className="flex items-center w-full">
        <div className="flex flex-col items-center gap-2 flex-1 text-center">
     <div className="text-2xl sm:text-3xl lg:text-[40px] leading-tight sm:leading-[150%] font-bold font-ibm text-gray-900">
