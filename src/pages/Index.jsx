@@ -463,7 +463,25 @@ function PartnersSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 w-full">
             {partners.map((partner, index) => (
               <div key={index} className="flex flex-col gap-6 ">
-                
+                <div
+  className="
+    relative flex items-center justify-center 
+    rounded-2xl overflow-hidden
+    h-[180px] sm:h-[220px] lg:h-[300px]
+  "
+  style={{ backgroundColor: partner.bg }}
+>
+  <img
+    src={partner.logo}
+    alt={partner.name}
+    className="
+      max-h-[60%] max-w-[70%]
+      object-contain
+    "
+    loading="lazy"
+  />
+</div>
+
                 <div className="flex flex-col gap-2 px-1">
                   <div className="flex items-center gap-1">
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
