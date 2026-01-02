@@ -4,6 +4,13 @@ import img2 from "../assets/image-area(4).jpg";
 import img3 from "../assets/image-area(6).jpg";
 import img4 from "../assets/image-area(7).jpg";
 import law1 from "../assets/lawyer1.png";
+import law2 from "../assets/lawyer2.png";
+import law3 from "../assets/lawyer3.png";
+import law4 from "../assets/lawyer4.png";
+import law5 from "../assets/lawyer5.png";
+import law6 from "../assets/lawyer6.png";
+import law7 from "../assets/lawyer7.png";
+import law8 from "../assets/lawyer8.png";
 import home from "../assets/home.png";
 
 
@@ -37,17 +44,16 @@ export default function FifthPage() {
 ];
 
 const lawyers = [
-  { image: l1, name: "김대성 변호사", specialty: "부동산 전문" },
-  { image: l2, name: "박지훈 변호사", specialty: "경매 · NPL" },
-  { image: l3, name: "이수현 변호사", specialty: "부동산 소송" },
-  { image: l4, name: "정민재 변호사", specialty: "채권 추심" },
-  { image: l5, name: "오세훈 변호사", specialty: "부동산 자문" },
-  { image: l6, name: "최은지 변호사", specialty: "경매 컨설팅" },
-  { image: l7, name: "한지민 변호사", specialty: "부동산 계약" },
-  { image: l8, name: "윤성호 변호사", specialty: "법률 자문" },
+  { image: law1, name: "김대성 변호사", specialty: "부동산 전문" },
+  { image: law2, name: "박지훈 변호사", specialty: "경매 · NPL" },
+  { image: law3, name: "이수현 변호사", specialty: "부동산 소송" },
+  { image: law4, name: "정민재 변호사", specialty: "채권 추심" },
+  { image: law5, name: "오세훈 변호사", specialty: "부동산 자문" },
+  { image: law6, name: "최은지 변호사", specialty: "경매 컨설팅" },
+  { image: law7, name: "한지민 변호사", specialty: "부동산 계약" },
+  { image: law8, name: "윤성호 변호사", specialty: "법률 자문" },
 ];
 
-  
   return (
     <main className="w-full bg-white text-gray-900">
       {/* HERO SECTION */}
