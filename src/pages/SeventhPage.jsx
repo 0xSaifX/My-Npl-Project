@@ -128,7 +128,7 @@ export default function SeventhPage() {
           <img
             src= {house}
             alt="consult"
-            className="w-[160px]"
+            className="w-[160px] object-cover"
           />
         </div>
       </section>
