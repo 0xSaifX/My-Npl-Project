@@ -2,6 +2,13 @@ import { Flame, Search } from "lucide-react";
 import React from "react";
 import house from "../assets/hball.png";
 import p7 from "../assets/p7.png";
+import p72 from "../assets/p72.png";
+import p73 from "../assets/p73.png";
+import p74 from "../assets/p74.png";
+import p75 from "../assets/p75.png";
+import p76 from "../assets/p76.png";
+import p77 from "../assets/p77.png";
+import p78 from "../assets/p78.png";
 
 export default function SeventhPage() {
   return (
