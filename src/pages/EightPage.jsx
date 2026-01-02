@@ -35,7 +35,7 @@ const notices = [
 ];
 
 const links = [
-  { name : 투자대출 path: "" }
+  { name : 투자대출 path: "/inquiry-modal" }
 ]
 
 export default function EightPage() {
