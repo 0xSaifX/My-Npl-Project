@@ -12,7 +12,7 @@ export default function SixthPage() {
     <div className="w-full bg-[#f8f8f8] text-gray-900">
       {/* HERO */}
       <section
-        className="relative h-[260px] md:h-[360px] lg:h-[420px] object-cover bg-cover bg-center"
+        className="relative h-[260px] md:h-[360px] lg:h-[420px] object-cover bg-cover"
         style={{ backgroundImage: "url('/src/assets/hero6.jpg')" }}
       >
         <div className="absolute inset-0 bg-black/30" />
