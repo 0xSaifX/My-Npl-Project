@@ -9,6 +9,12 @@ import image6 from "../assets/image-area(5).jpg";
 import image7 from "../assets/image-area(6).jpg";
 import image8 from "../assets/image-area(7).jpg";
 import image1 from "../assets/image-area.jpg";
+import klarna from "../assets/klarna.png";
+import master from "../assets/mastercard.png";
+import skirill from "../assets/Skrill.png";
+import lite from "../assets/lightcoin.png";
+import amazon from "../assets/amazon.png";
+import visa from "../assets/visa.png";
 import { useState } from "react";
 
 export default function SecondPage() {
