@@ -63,7 +63,6 @@ export default function FifthPage() {
 
         <div className="flex justify-center mt-12">
             <button
-          onClick={nextService}
           className="flex items-center justify-between w-80 px-8 py-3 rounded-full bg-gray-900 hover:bg-gray-800 transition"
         >
           <span className="text-white font-bold text-lg">
