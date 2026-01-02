@@ -1,6 +1,7 @@
 // IntegratedSearchPage.jsx
 import { Flame, Search } from "lucide-react";
 import React from "react";
+import house from "../assets/hball.png"
 
 export default function SeventhPage() {
   return (
