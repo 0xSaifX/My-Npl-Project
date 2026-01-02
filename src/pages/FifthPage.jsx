@@ -1,8 +1,8 @@
 import React from "react";
-import image1 from "../assets/image-area(2).jpg";
-import image2 from "../assets/image-area(4).jpg";
-import image3 from "../assets/image-area(6).jpg";
-import image4 from "../assets/image-area(8).jpg";
+// import image1 from "../assets/image-area(2).jpg";
+// import image2 from "../assets/image-area(4).jpg";
+// import image3 from "../assets/image-area(6).jpg";
+// import image4 from "../assets/image-area(8).jpg";
 
 
 export default function FifthPage() {
