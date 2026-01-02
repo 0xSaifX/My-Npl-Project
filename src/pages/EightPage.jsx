@@ -51,10 +51,10 @@ export default function EightPage() {
                 투자대출
               </Link>
               <Link to="/inquiry-modal" className="hover:text-orange-600">
-                투자대출
+                공지와
               </Link>
               <Link to="/inquiry-modal" className="hover:text-orange-600">
-                투자대출
+                투자대한대출
               </Link>
               </nav>
           </div>
