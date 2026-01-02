@@ -195,14 +195,13 @@ const lawyers = [
           className="w-full h-30 object-cover"
           loading="lazy"
         />
-      </div>
-
-      <h4 className="mt-3 font-bold text-sm sm:text-base">
+        <h4 className="mt-3 font-bold text-sm sm:text-base">
         {lawyer.name}
       </h4>
       <p className="text-xs sm:text-sm text-gray-500">
         {lawyer.specialty}
       </p>
+      </div>
     </div>
   ))}
 </div>
