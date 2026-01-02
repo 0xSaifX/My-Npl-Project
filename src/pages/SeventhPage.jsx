@@ -1,6 +1,10 @@
 import { Flame, Search } from "lucide-react";
 import React from "react";
 import house from "../assets/hball.png";
+import c1 from "../assets/pd1.png";
+import c2 from "../assets/pd2.png";
+import c3 from "../assets/pd3.png";
+import c4 from "../assets/pd4.png";
 import p7 from "../assets/p7.png";
 import p72 from "../assets/p72.png";
 import p73 from "../assets/p73.png";
