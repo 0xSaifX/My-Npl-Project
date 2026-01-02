@@ -8,7 +8,7 @@ export default function SixthPage() {
     <div className="w-full bg-[#f8f8f8] text-gray-900">
       {/* HERO */}
       <section
-        className="relative h-[260px] md:h-[360px] lg:h-[420px] w-full object-cover bg-cover bg-center"
+        className="relative h-[260px] md:h-[360px] lg:h-[420px] object-cover bg-cover bg-center"
         style={{ backgroundImage: "url('/src/assets/p4-1.png')" }}
       >
         <div className="absolute inset-0 bg-black/30" />
