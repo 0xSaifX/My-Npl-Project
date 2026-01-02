@@ -36,6 +36,7 @@ const App = () => (
           <Route path="/Sixth-page" element={<SixthPage />} />
           <Route path="/seventh-page" element={<SeventhPage />} />
           <Route path="/eight-page" element={<EightPage />} />
+          <Route path="/inquiry-modal" element={<InquiryModal />} />
           
           </Route>
           
