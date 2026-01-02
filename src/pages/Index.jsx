@@ -27,6 +27,22 @@ export default function Index() {
     </div>
   );
 }
+const videos = [
+  {
+    src: "https://api.builder.io/api/v1/image/assets/TEMP/97b60a92c9400ae5ce90d99e71c3b0fc2035e3ef?width=1128",
+    alt: "Video thumbnail 1"
+  },
+  {
+    src: site,
+    alt: "Video thumbnail 2"
+  },
+  {
+    src: inter,
+    alt: "Video thumbnail 3",
+    overlay: true
+  }
+];
+
 
 // import { Link, useLocation } from "react-router-dom";
 
