@@ -35,7 +35,7 @@ export default function EightPage() {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <section className="min-h-screen bg-black text-white px-4 sm:px-8 py-24">
+    <section className="min-h-screen bg-black px-4 sm:px-8 py-24">
       <div className="max-w-4xl mx-auto">
 
         {/* Header */}
