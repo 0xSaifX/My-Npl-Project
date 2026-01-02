@@ -9,6 +9,7 @@ const links = [
   { name: "투자대출", path: "/inquiry-modal" }
 ];
 // export default links;
+const [open, setOpen] = useState(false);
 
 const notices = [
   {
