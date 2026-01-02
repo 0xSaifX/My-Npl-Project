@@ -1,33 +1,33 @@
 import React from "react";
-// import image1 from "../assets/image-area(2).jpg";
-// import image2 from "../assets/image-area(4).jpg";
-// import image3 from "../assets/image-area(6).jpg";
-// import image4 from "../assets/image-area(8).jpg";
+import img1 from "../assets/image-area(2).jpg";
+import img2 from "../assets/image-area(4).jpg";
+import img3 from "../assets/image-area(6).jpg";
+import img4 from "../assets/image-area(8).jpg";
 
 
 export default function FifthPage() {
 
   const services = [
   {
-    image: s1,
+    image: img1,
     category: "부동산 · 유치권",
     name: "퍼스트존 법률사무소",
     location: "서울 강남구",
   },
   {
-    image: s2,
+    image: img2,
     category: "법률자문",
     name: "에이스 법무법인",
     location: "서울 서초구",
   },
   {
-    image: s3,
+    image: img3,
     category: "채권 분석",
     name: "NPL 솔루션",
     location: "경기 성남시",
   },
   {
-    image: s4,
+    image: img4,
     category: "부동산 경매",
     name: "탑옥션 컨설팅",
     location: "부산 해운대구",
@@ -76,24 +76,38 @@ export default function FifthPage() {
         </div>
 
         {/* Service Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {[1, 2, 3, 4].map((i) => (
-            <div key={i} className="rounded-xl overflow-hidden shadow-sm border">
-              <img
-                src={`/images/service-${i}.jpg`}
-                alt="service"
-                className="h-[180px] w-full object-cover"
-              />
-              <div className="p-4">
-                <span className="text-xs text-orange-500 font-semibold">
-                  부동산 · 유치권
-                </span>
-                <h3 className="mt-1 font-bold">퍼스트존 법률사무소</h3>
-                <p className="text-sm text-gray-500 mt-1">서울 강남구</p>
-              </div>
-            </div>
-          ))}
-        </div>
+       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+  {services.map((item, i) => (
+    <div
+      key={i}
+      className="rounded-xl overflow-hidden shadow-sm border bg-white"
+    >
+      {/* Image */}
+      <div className="aspect-[4/3] overflow-hidden">
+        <img
+          src={item.image}
+          alt={item.name}
+          className="w-full h-full object-cover"
+          loading="lazy"
+        />
+      </div>
+
+      {/* Content */}
+      <div className="p-4">
+        <span className="text-xs text-orange-500 font-semibold">
+          {item.category}
+        </span>
+        <h3 className="mt-1 font-bold text-sm line-clamp-1">
+          {item.name}
+        </h3>
+        <p className="text-sm text-gray-500 mt-1">
+          {item.location}
+        </p>
+      </div>
+    </div>
+  ))}
+</div>
+
 
         <div className="flex justify-center mt-12">
             <button
