@@ -186,9 +186,9 @@ const lawyers = [
         </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-  {lawyers.map((lawyer, i) => (
-    <div key={i} className="text-center">
-      <div className="aspect-[3/4] overflow-hidden rounded-xl">
+        {lawyers.map((lawyer, i) => (
+         <div key={i} className="text-center">
+         <div className="aspect-[3/4] overflow-hidden rounded-xl">
         <img
           src={lawyer.image}
           alt={lawyer.name}
@@ -202,9 +202,9 @@ const lawyers = [
         {lawyer.specialty}
       </p>
       </div>
+     </div>
+     ))}
     </div>
-  ))}
-</div>
 
       </section>
 
