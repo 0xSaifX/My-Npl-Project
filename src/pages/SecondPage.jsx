@@ -75,7 +75,7 @@ export default function SecondPage() {
 
   const partners = [
   { name: "Klarna", logo: klarna },
-  { name: "Mastercard", logo: mastercard },
+  { name: "Mastercard", logo: master },
   { name: "Skrill", logo: skirill },
   { name: "VISA", logo: visa },
   { name: "Litecoin", logo: lite },
