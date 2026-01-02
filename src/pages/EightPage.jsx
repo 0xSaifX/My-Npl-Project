@@ -34,7 +34,7 @@ const notices = [
 ];
 
 const links = [
-  
+  { name : }
 ]
 
 export default function EightPage() {
