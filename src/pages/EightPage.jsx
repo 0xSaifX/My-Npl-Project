@@ -37,6 +37,8 @@ export default function EightPage() {
 
   return (
     <section className="min-h-screen bg-white px-4 sm:px-8 py-24">
+
+        
         <div className="border-t border-gray-400 mb-6" />
       <div className="max-w-4xl mx-auto">
 
