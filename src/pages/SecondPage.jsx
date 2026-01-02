@@ -32,9 +32,9 @@ export default function SecondPage() {
   { title: "다도디자인", image: image6 },
   { title: "라이크디자인", image: image7 },
   { title: "라이크디자인", image: image8 },
-];
+  ];
 
-const services = [
+  const services = [
   {
     title: "문제 진단",
     icon: Search,
@@ -51,7 +51,7 @@ const services = [
     title: "정확한 완공",
     icon: Home,
   },
-];
+  ];
  const [openIndex, setOpenIndex] = useState(0);
 
   const faqs = [
@@ -72,6 +72,16 @@ const services = [
       answer: "NPL 투자는 높은 수익률을 창출할 수 있는 기회를 제공합니다."
     }
   ];
+
+  const partners = [
+  { name: "Klarna", logo: klarna },
+  { name: "Mastercard", logo: mastercard },
+  { name: "Skrill", logo: skrill },
+  { name: "VISA", logo: visa },
+  { name: "Litecoin", logo: litecoin },
+  { name: "Amex", logo: amex }
+  ];
+
 
   return (
     <div className="w-full bg-white">
