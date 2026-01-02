@@ -37,7 +37,7 @@ export default function SeventhPage() {
 
       {/* POPULAR POSTS */}
       <section className="py-24">
-        <div className="max-w-[1200px] mx-auto px-4">
+        <div className="max-w-[1200px] mx-10 sm:mx-20 px-4">
           <h2 className="text-xl font-bold mb-2">인기글</h2>
           <p className="text-sm text-gray-500 mb-8">
             NPL·부동산 관련 인기글을 제공합니다. 풀하우스에서 나만의 기회를 발견해보세요.
