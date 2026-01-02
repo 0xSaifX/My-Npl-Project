@@ -36,10 +36,10 @@ const App = () => (
           <Route path="/fifth-page" element={<FifthPage />} />
           <Route path="/Sixth-page" element={<SixthPage />} />
           <Route path="/seventh-page" element={<SeventhPage />} />
-          <Route path="/" element={<Layout />}>
-    <Route path="/eight" element={<EightPage />} />
-    <Route path="/inquiry-modal" element={<InquiryModal />} />
-  </Route>
+          <Route path="/" element={<MainLayout />}>
+          <Route path="/eight" element={<EightPage />} />
+          <Route path="/inquiry-modal" element={<InquiryModal />} />
+        </Route>
 
           </Route>
           
