@@ -7,6 +7,33 @@ import React from "react";
 
 export default function FifthPage() {
 
+  const services = [
+  {
+    image: s1,
+    category: "부동산 · 유치권",
+    name: "퍼스트존 법률사무소",
+    location: "서울 강남구",
+  },
+  {
+    image: s2,
+    category: "법률자문",
+    name: "에이스 법무법인",
+    location: "서울 서초구",
+  },
+  {
+    image: s3,
+    category: "채권 분석",
+    name: "NPL 솔루션",
+    location: "경기 성남시",
+  },
+  {
+    image: s4,
+    category: "부동산 경매",
+    name: "탑옥션 컨설팅",
+    location: "부산 해운대구",
+  },
+];
+
   
   return (
     <main className="w-full bg-white text-gray-900">
