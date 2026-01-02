@@ -3,7 +3,6 @@ import home from "../assets/home.png";
 import img1 from "../assets/p4-1.png";
 import hero from "../assets/hero6.jpg";
 import { CgDanger } from "react-icons/cg";
-import { MdDangerous } from "react-icons/md";
 
 
 export default function SixthPage() {
@@ -41,7 +40,7 @@ export default function SixthPage() {
               {
                 title: "NPL 부동산 구매 자금 부족",
                 desc: "재무 금융사로 자금을 빠르게 마련해드립니다.",
-                icon: <MdDangerous/>,
+                icon: <CgDanger/>,
               },
               {
                 title: "제휴 금융사 자금 지원",
