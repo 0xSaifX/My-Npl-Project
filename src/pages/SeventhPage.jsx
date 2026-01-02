@@ -25,7 +25,7 @@ export default function SeventhPage() {
             </button>
           </div>
 
-          <div className="flex justify-center gap-3 mt-6 text-sm text-gray-500 flex-wrap">
+          <div className="flex justify-center gap-3 mt-6 text-sm text-black flex-wrap">
             <span>#부동산</span>
             <span>#NPL</span>
             <span>#경매</span>
