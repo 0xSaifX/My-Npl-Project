@@ -57,6 +57,8 @@ export default function EightPage() {
                      {link.name}
                     </Link>
                   ))}
+                  <button onClick={() => setOpen(true)}>투자대출</button>
+              {open && <InquiryModal onClose={() => setOpen(false)} />}
               </nav>
           </div>
         <div className="border-t border-gray-400 mb-6" />
