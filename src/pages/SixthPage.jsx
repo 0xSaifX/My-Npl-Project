@@ -2,6 +2,7 @@ import React from "react";
 import home from "../assets/home.png";
 import img1 from "../assets/p4-1.png";
 import hero from "../assets/hero6.jpg";
+import { BiMoney } from "react-icons/bi";
 
 
 export default function SixthPage() {
@@ -49,7 +50,7 @@ export default function SixthPage() {
               {
                 title: "최저 이율 최대 대출 제공",
                 desc: "낮은 이율로 최대 한도 대출을 지원합니다.",
-                icon: "💰",
+                icon: <BiMoney/>,
               },
             ].map((item, i) => (
               <div key={i} className="flex flex-col items-center text-center">
