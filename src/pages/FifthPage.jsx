@@ -192,7 +192,7 @@ const lawyers = [
         <img
           src={lawyer.image}
           alt={lawyer.name}
-          className="w-full h-full object-cover"
+          className="w-full h-30 object-cover"
           loading="lazy"
         />
       </div>
