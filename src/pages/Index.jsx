@@ -464,23 +464,20 @@ function PartnersSection() {
             {partners.map((partner, index) => (
               <div key={index} className="flex flex-col gap-6 ">
                 <div
-  className="
-    relative flex items-center justify-center 
-    rounded-2xl overflow-hidden
-    h-[180px] sm:h-[220px] lg:h-[300px]
-  "
-  style={{ backgroundColor: partner.bg }}
->
-  <img
-    src={partner.logo}
-    alt={partner.name}
-    className="
-      max-h-[60%] max-w-[70%]
-      object-contain
-    "
-    loading="lazy"
-  />
-</div>
+                className="
+                  relative flex items-center justify-center 
+                  rounded-2xl overflow-hidden
+                 h-[180px] sm:h-[220px] lg:h-[300px] "
+                 style={{ backgroundColor: partner.bg }}
+                  >
+                <img
+                 src={partner.logo}
+                alt={partner.name}
+                className="
+                max-h-[60%] max-w-[70%]
+                object-contain"
+                loading="lazy"/>
+                </div>
 
                 <div className="flex flex-col gap-2 px-1">
                   <div className="flex items-center gap-1">
@@ -492,7 +489,7 @@ function PartnersSection() {
                   <div className="flex flex-col gap-1">
                     <div className="text-xl sm:text-2xl font-bold font-pretendard text-gray-900">{partner.name}</div>
                     <div className="flex items-center gap-2 flex-wrap">
-                      <div className="text-base font-pretendard text-gray-900">계약자리뷰 {partner.reviews}</div>
+                      <div className="text-base sm:text-base font-pretendard text-gray-900">계약자리뷰 {partner.reviews}</div>
                       <div className="w-px h-3 bg-gray-400"></div>
                       <div className="text-base font-pretendard text-gray-900">최근계약 {partner.contracts}</div>
                     </div>
