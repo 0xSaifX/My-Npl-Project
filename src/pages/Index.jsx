@@ -491,54 +491,6 @@ function PartnersSection() {
 }
 
 function PopularPostsSection() {
-  const [emblaRef, emblaApi] = useEmblaCarousel({
-    align: "start",
-    loop: true,
-    dragFree: true,
-     breakpoints: {
-    "(min-width: 1024px)": { dragFree: false }
-  }
-  });
-
-  useEffect(() => {
-  if (!emblaApi) return;
-
-  const mediaQuery = window.matchMedia("(min-width: 1024px)");
-  let rafId = null;
-  const speed = 0.4;
-
-  const autoScroll = () => {
-    emblaApi.scrollBy(speed);
-    rafId = requestAnimationFrame(autoScroll);
-  };
-
-  const handleChange = () => {
-    if (mediaQuery.matches) {
-      // Desktop → start auto-scroll
-      if (!rafId) {
-        rafId = requestAnimationFrame(autoScroll);
-      }
-    } else {
-      // Mobile / Tablet → stop auto-scroll
-      if (rafId) {
-        cancelAnimationFrame(rafId);
-        rafId = null;
-      }
-    }
-  };
-
-  // Initial check
-  handleChange();
-
-  // Listen for screen size changes
-  mediaQuery.addEventListener("change", handleChange);
-
-  return () => {
-    if (rafId) cancelAnimationFrame(rafId);
-    mediaQuery.removeEventListener("change", handleChange);
-  };
-}, [emblaApi]);
-
 
   const posts = [
     {
