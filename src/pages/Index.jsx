@@ -723,7 +723,7 @@ function FAQSection() {
               {openIndex === index && (
                 <div className="flex flex-col items-start gap-6 w-full">
                   <div className="flex items-center gap-2.5 w-full">
-                    <div className="flex-1 text-base font-pretendard text-gray-700">{faq.answer}</div>
+                    <div className="text-sm sm:text-base font-pretendard text-gray-700 leading-relaxed">{faq.answer}</div>
                   </div>
                 </div>
               )}
