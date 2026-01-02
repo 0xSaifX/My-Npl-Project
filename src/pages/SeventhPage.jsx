@@ -11,6 +11,9 @@ import p77 from "../assets/p77.png";
 import p78 from "../assets/p78.png";
 
 export default function SeventhPage() {
+
+  
+
   return (
     <div className="w-full bg-[#FAFAFA] text-gray-900">
       {/* HERO SEARCH */}
