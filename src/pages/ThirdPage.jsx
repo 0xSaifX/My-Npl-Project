@@ -138,7 +138,8 @@ export default function ThirdPage() {
         src={home}
         alt="Investment"
         className="
-          w-26 sm:w-34 lg:w-44
+          h-26 sm:h-34 lg:h-44
+          w-auto
           shrink-0
           hidden sm:block
         "
