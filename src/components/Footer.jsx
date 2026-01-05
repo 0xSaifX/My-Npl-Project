@@ -26,7 +26,45 @@ function Footer() {
           </div>
 
           {/* Social icons */}
-          
+          {/* Social icons */}
+<div className="flex gap-4 md:gap-6 items-center">
+  <a
+    href="#"
+    aria-label="Cafe"
+    className="p-3 rounded-full hover:bg-white/10 transition"
+  >
+    <img
+      src={cafe}
+      alt="Cafe"
+      className="w-5 h-5 object-contain"
+    />
+  </a>
+
+  <a
+    href="#"
+    aria-label="Blog"
+    className="p-3 rounded-full hover:bg-white/10 transition"
+  >
+    <img
+      src={blog}
+      alt="Blog"
+      className="w-5 h-5 object-contain"
+    />
+  </a>
+
+  <a
+    href="#"
+    aria-label="YouTube"
+    className="p-3 rounded-full hover:bg-white/10 transition"
+  >
+    <img
+      src={youtube}
+      alt="YouTube"
+      className="w-5 h-5 object-contain"
+    />
+  </a>
+</div>
+
         </div>
 
         {/* Divider */}
