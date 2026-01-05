@@ -108,22 +108,7 @@ export default function ThirdPage() {
         </div>
       </section>
 
-      {/* GREEN CTA */}
-          <section className="mt-12 bg-[#e6f3c8] rounded-2xl p-6 m-20 flex items-center justify-between">
-            <div>
-              <p className="text-sm font-semibold text-[#4f6f1d]">
-                NPL 실전투자
-              </p>
-              <h3 className="mt-1 font-semibold">
-                경매를 이기는 투자 바이블 놓치지 마세요!
-              </h3>
-            </div>
-            <img
-              src={home}
-              className="w-20 sm:block shrink-0"
-            />
-          </section>
-
+      
 
       {/* PROJECTS */}
       <section className="max-w-[1280px] mx-20 px-6 mt-32">
