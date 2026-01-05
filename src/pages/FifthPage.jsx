@@ -196,7 +196,7 @@ const lawyers = [
     <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-4">
       {lawyers.map((lawyer, i) => (
         <div key={i} className="text-center">
-          <div className="aspect-[3/2] overflow-hidden rounded-xl">
+          <div className="aspect-[4/3] overflow-hidden rounded-xl">
             <img
               src={lawyer.image}
               alt={lawyer.name}
