@@ -76,70 +76,70 @@ const lawyers = [
       </section>
 
       {/* SERVICE SECTION */}
-      <section className="max-w-[1280px] mx-10 sm:mx-20 px-6 py-20">
-        <h2 className="text-2xl font-bold mb-2">법률자문 서비스</h2>
-        <p className="text-gray-600 mb-8">
-          유치권, 명도소송, 가등기 등 복잡한 부동산 법률 문제를 빠르고 정확하게 해결합니다.
-        </p>
+    <section className="py-16 sm:py-20">
+    <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
 
-        {/* Filters */}
-        <div className="flex flex-wrap gap-2 mb-10">
-          {['인기순', '추천순', '리뷰순', '분야별', '지역 찾기'].map((item) => (
-            <button
-              key={item}
-              className="px-4 py-2 rounded-full text-sm bg-gray-100 hover:bg-black hover:text-white"
-            >
-              {item}
-            </button>
-          ))}
-        </div>
+    <h2 className="text-xl sm:text-2xl font-bold mb-2">
+      법률자문 서비스
+    </h2>
+    <p className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8">
+      유치권, 명도소송, 가등기 등 복잡한 부동산 법률 문제를 빠르고 정확하게 해결합니다.
+    </p>
 
-        {/* Service Cards */}
-       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-       {services.map((item, i) => (
-     <div
-      key={i}
-      className="rounded-xl overflow-hidden shadow-sm border bg-white"
-    >
-      {/* Image */}
-      <div className="aspect-[4/3] overflow-hidden">
-        <img
-          src={item.image}
-          alt={item.name}
-          className="w-full h-full object-cover"
-          loading="lazy"
-        />
-      </div>
-
-      {/* Content */}
-      <div className="p-4">
-        <span className="text-xs text-orange-500 font-semibold">
-          {item.category}
-        </span>
-        <h3 className="mt-1 font-bold text-sm line-clamp-1">
-          {item.name}
-        </h3>
-        <p className="text-sm text-gray-500 mt-1">
-          {item.location}
-        </p>
-      </div>
-    </div>
-    ))}
-  </div>
-
-        <div className="flex justify-center mt-12">
-            <button
-          className="flex items-center justify-between w-80 px-8 py-3 rounded-full bg-gray-900 hover:bg-gray-800 transition"
+    {/* Filters */}
+    <div className="flex gap-2 mb-8 sm:mb-10 overflow-x-auto scrollbar-hide">
+      {['인기순', '추천순', '리뷰순', '분야별', '지역 찾기'].map(item => (
+        <button
+          key={item}
+          className="px-4 py-2 rounded-full text-sm bg-gray-100 hover:bg-black hover:text-white whitespace-nowrap transition"
         >
-          <span className="text-white font-bold text-lg">
-            통합 컨설팅 상담 신청
-          </span>
-          <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-            →
-          </div>
+          {item}
         </button>
+      ))}
+    </div>
+
+    {/* Cards */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {services.map((item, i) => (
+        <div key={i} className="rounded-xl overflow-hidden border bg-white">
+          <div className="aspect-[4/3] overflow-hidden">
+            <img
+              src={item.image}
+              alt={item.name}
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <div className="p-4">
+            <span className="text-xs text-orange-500 font-semibold">
+              {item.category}
+            </span>
+            <h3 className="mt-1 font-bold text-sm line-clamp-1">
+              {item.name}
+            </h3>
+            <p className="text-sm text-gray-500 mt-1">
+              {item.location}
+            </p>
+          </div>
         </div>
-      </section>
+      ))}
+    </div>
+
+    {/* CTA */}
+    <div className="flex justify-center mt-10 sm:mt-12">
+      <button className="flex items-center gap-4 px-6 sm:px-8 py-3 rounded-full bg-gray-900 hover:bg-gray-800 transition">
+        <span className="text-white font-bold text-sm sm:text-lg">
+          통합 컨설팅 상담 신청
+        </span>
+        <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-full flex items-center justify-center">
+          →
+        </div>
+      </button>
+    </div>
+
+    </div>
+    </section>
+
 
       {/* HIGHLIGHT BANNER */}
       <section className="max-w-[1280px] mx-10 sm:mx-20 px-6 mb-24">
