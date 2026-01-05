@@ -207,6 +207,7 @@ const posts = [
           />
         </div>
       </section>
+      
     </div>
   );
 }
