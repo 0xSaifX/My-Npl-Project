@@ -205,7 +205,6 @@ export default function SecondPage() {
   </div>
 </section>
 
-
       {/* PARTNERS SLIDER */}
       <section className="mt-32 bg-gray-100 py-20">
   <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
