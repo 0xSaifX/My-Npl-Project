@@ -26,30 +26,7 @@ function Footer() {
           </div>
 
           {/* Social icons */}
-          <div className="flex gap-4 md:gap-6 items-center">
-            <button className="p-3 rounded-full hover:bg-white/10">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <path
-                  d="M14.7754 8.72363C16.0044 8.72373 16.9988 9.71724 16.999 10.9404C16.999 12.1638 16.0046 13.1581 14.7754 13.1582H13.543L13.4229 13.4863C12.669 15.537 10.6931 17 8.375 17C5.40545 16.9999 3.00055 14.5992 3 11.6396V8.72363H14.7754Z"
-                  fill="white"
-                  stroke="white"
-                />
-              </svg>
-            </button>
-            <button className="p-3 rounded-full hover:bg-white/10">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <path d="M3 3H17V17H3V3Z" stroke="white" strokeWidth="2" />
-              </svg>
-            </button>
-            <button className="p-3 rounded-full hover:bg-white/10">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <path
-                  d="M10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2Z"
-                  fill="white"
-                />
-              </svg>
-            </button>
-          </div>
+          
         </div>
 
         {/* Divider */}
