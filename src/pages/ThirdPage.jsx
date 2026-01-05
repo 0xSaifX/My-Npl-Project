@@ -187,7 +187,7 @@ export default function ThirdPage() {
 
 
       {/* PRODUCTS */}
-      <section className="max-w-[1280px] mx-20 px-6 mt-32">
+      <section className="max-w-[1280px] mx-16 sm:mx-24 px-6 mt-32">
         <h2 className="font-bold text-2xl mb-6">상품군</h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
