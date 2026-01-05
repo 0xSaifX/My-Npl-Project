@@ -163,53 +163,7 @@ const lawyers = [
      </div>
     </section>
 
-
-      {/* LAWYER SECTION */}
-      <section className="max-w-[1280px] mx-10 sm:mx-20 px-6 mb-24">
-        <h2 className="text-2xl font-bold mb-2">변호사</h2>
-        <p className="text-gray-600 mb-6">
-          다양한 분야의 전문 변호사들이 여러분의 어려움을 해결해드립니다.
-        </p>
-
-        <div className="bg-blue-50 rounded-xl p-6 mb-10">
-          <span className="text-blue-600 font-semibold text-sm">이벤트</span>
-          <p className="mt-1 font-bold">4월 한달간 변호사 수임료 50% 할인</p>
-        </div>
-
-        {/* Filters */}
-        <div className="flex flex-wrap gap-2 mb-10">
-          {['인기순', '추천순', '리뷰순', '분야별', '지역 찾기'].map((item) => (
-            <button
-              key={item}
-              className="px-4 py-2 rounded-full text-sm bg-gray-100 hover:bg-black hover:text-white"
-            >
-              {item}
-            </button>
-          ))}
-        </div>
-
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-        {lawyers.map((lawyer, i) => (
-         <div key={i} className="text-center">
-         <div className="aspect-[3/4] overflow-hidden rounded-xl">
-        <img
-          src={lawyer.image}
-          alt={lawyer.name}
-          className="w-full h-30 object-cover"
-          loading="lazy"
-        />
-        <h4 className="mt-3 font-bold text-sm sm:text-base">
-        {lawyer.name}
-      </h4>
-      <p className="text-xs sm:text-sm text-gray-500">
-        {lawyer.specialty}
-      </p>
-      </div>
-     </div>
-     ))}
-    </div>
-
-      </section>
+      
 
       {/* LATEST CONSULTATIONS */}
       <section className="max-w-[1280px] mx-10 sm:mx-20 px-6 pb-32">
