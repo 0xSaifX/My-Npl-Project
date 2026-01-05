@@ -194,7 +194,7 @@ export default function ThirdPage() {
 
     {/* Image */}
     <img
-      src={box}
+      src={b}
       alt="NPL special lecture"
       className="
         w-24 sm:w-32 md:w-40
