@@ -103,44 +103,49 @@ export default function SecondPage() {
       </section>
 
       {/* SERVICES */}
-       <section className="relative -mt-24">
-      <div className="max-w-[1280px] mx-auto bg-white rounded-[32px] px-16 py-20 shadow-sm">
+       <section className="relative -mt-12 sm:-mt-24">
+      <div className="max-w-[1280px] mx-auto bg-white rounded-[32px]
+      px-4 sm:px-8 lg:px-16
+      py-10 sm:py-16 lg:py-20
+      shadow-sm">
 
-      <div className="mx-20">
-      <h2 className="text-xl sm:text-2xl lg:text-3xl mb-2 font-bold">
+      {/* Header */}
+      <div className="mx-4 sm:mx-8 lg:mx-20 text-center sm:text-left">
+      <h2 className="text-lg sm:text-2xl lg:text-3xl mb-2 font-bold">
         반값 물건 시행·시공에 어려움이 있으신가요?
       </h2>
-      <p className="text-sm text-gray-500 mb-14">
+      <p className="text-sm text-gray-500 mb-10 sm:mb-14">
         각 분야의 전문가들이 처음부터 끝까지 함께합니다.
       </p>
-      </div>
+    </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 mx-20">
+    {/* Services */}
+    <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 mx-4 sm:mx-8 lg:mx-20">
       {services.map(({ title, icon: Icon }, i) => (
-        <div
-          key={i}
-          className="flex flex-col items-center text-center gap-4"
-        >
-          <div className="w-20 h-20 rounded-2xl bg-[#FFF5EB] flex items-center justify-center">
-              <Icon className="w-9 h-9 text-orange-500" strokeWidth={1.5} />
+        <div key={i} className="flex flex-col items-center text-center gap-3 sm:gap-4">
+          <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-[#FFF5EB] flex items-center justify-center">
+            <Icon className="w-7 h-7 sm:w-9 sm:h-9 text-orange-500" strokeWidth={1.5} />
           </div>
 
-          <div className="font-medium">{title}</div>
+          <div className="font-medium text-sm sm:text-base">{title}</div>
           <div className="text-xs text-gray-400">NPL 부동산 전문</div>
         </div>
       ))}
     </div>
 
-    <div className="mt-14 flex justify-center">
-      <button className="flex items-center gap-3 bg-black text-white px-7 py-4 rounded-full text-sm">
+    {/* CTA */}
+    <div className="mt-12 sm:mt-14 flex justify-center">
+      <button className="flex items-center gap-3 bg-black text-white
+        px-6 sm:px-7 py-3 sm:py-4
+        rounded-full text-sm">
         통합 컨설팅 상담 신청
         <span className="w-6 h-6 bg-white text-black rounded-full flex items-center justify-center">
           →
         </span>
       </button>
-    </div>
+      </div>
 
-    </div>
+      </div>
       </section>
 
       {/* PROJECTS */}
