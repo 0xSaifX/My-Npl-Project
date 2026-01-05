@@ -87,21 +87,26 @@ const posts = [
       </section>
 
       {/* POPULAR POSTS */}
-      <section className="py-24">
-    <div className="max-w-[1200px] mx-4 sm:mx-20 px-4">
-    <h2 className="text-xl font-bold mb-2">인기글</h2>
-    <p className="text-sm text-gray-500 mb-8">
+      <section className="py-16 sm:py-24">
+  <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+
+    <h2 className="text-xl sm:text-2xl font-bold mb-2">인기글</h2>
+    <p className="text-sm sm:text-base text-gray-500 mb-8">
       NPL·부동산 관련 인기글을 제공합니다. 풀하우스에서 나만의 기회를 발견해보세요.
     </p>
 
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
       {posts.map((post, i) => (
         <div
           key={i}
-          className="bg-white rounded-xl p-4 flex gap-4 hover:shadow-sm transition-shadow"
+          className="
+            bg-white rounded-xl p-4 
+            flex gap-4 
+            hover:shadow-sm transition-shadow
+          "
         >
           {/* Thumbnail */}
-          <div className="flex-shrink-0 w-[120px] h-[80px] rounded-lg overflow-hidden">
+          <div className="flex-shrink-0 w-24 h-16 sm:w-[120px] sm:h-[80px] rounded-lg overflow-hidden">
             <img
               src={post.image}
               alt={post.title}
@@ -111,30 +116,32 @@ const posts = [
           </div>
 
           {/* Content */}
-          <div className="flex flex-col justify-between">
+          <div className="flex flex-col justify-between min-w-0">
             <div>
               <span className="text-xs text-orange-500 font-medium flex items-center gap-1">
-                <Flame /> 인기
+                <Flame size={14} /> 인기
               </span>
-              <h3 className="font-semibold text-sm mt-1 line-clamp-2">
+              <h3 className="font-semibold text-sm sm:text-base mt-1 line-clamp-2">
                 {post.title}
               </h3>
-              <p className="text-xs text-gray-500 line-clamp-2 mt-1">
+              <p className="text-xs sm:text-sm text-gray-500 line-clamp-2 mt-1">
                 {post.desc}
               </p>
             </div>
-            <span className="text-[11px] text-gray-400">{post.date}</span>
+            <span className="text-[11px] sm:text-xs text-gray-400">
+              {post.date}
+            </span>
           </div>
         </div>
       ))}
     </div>
 
-    <button className="mx-auto mt-10 block px-6 py-2 border rounded-full text-sm hover:bg-black hover:text-white">
+    <button className="mx-auto mt-8 sm:mt-10 block px-6 py-2 border rounded-full text-sm hover:bg-black hover:text-white transition">
       더보기 +
     </button>
-    </div>
-      </section>
 
+  </div>
+</section>
 
       {/* POPULAR CAFES */}
       <section className="py-16 sm:py-24 bg-white">
