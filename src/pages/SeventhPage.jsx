@@ -137,9 +137,9 @@ const posts = [
 
 
       {/* POPULAR CAFES */}
-      <section className="py-24 bg-white">
+      <section className="py-16 sm:py-24 bg-white">
   <div className="max-w-[1200px] mx-4 sm:mx-20 px-4">
-    <h2 className="text-xl font-bold mb-6">주제별 인기 카페</h2>
+    <h2 className="text-xl sm:text-2xl font-bold mb-6">주제별 인기 카페</h2>
 
     {/* Tags */}
     <div className="flex gap-2 mb-8 overflow-x-auto">
@@ -207,7 +207,7 @@ const posts = [
           />
         </div>
       </section>
-      
+
     </div>
   );
 }
