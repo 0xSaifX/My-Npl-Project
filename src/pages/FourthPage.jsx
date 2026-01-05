@@ -315,8 +315,8 @@ const communityPosts = [
         </div>
 
         {/* BOTTOM CTA */}
-<section className="bg-[#4aa0d8] mt-16 sm:mt-24">
-  <div
+    <section className="bg-[#4aa0d8] mt-16 sm:mt-24">
+    <div
     className="
       max-w-[1280px] mx-auto
       px-4 sm:px-6 lg:px-8
@@ -325,7 +325,7 @@ const communityPosts = [
       items-start sm:items-center
       justify-between gap-6
     "
-  >
+    >
     {/* Text */}
     <div className="text-white">
       <p className="text-sm sm:text-base">
@@ -349,8 +349,8 @@ const communityPosts = [
         shrink-0
       "
     />
-  </div>
-</section>
+    </div>
+    </section>
 
 
       </div>
