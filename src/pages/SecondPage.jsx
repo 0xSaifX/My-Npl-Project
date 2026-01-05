@@ -254,26 +254,24 @@ export default function SecondPage() {
       </div>
 
       <div className="flex flex-col items-start gap-8 w-full">
-        <div className="flex h-11 justify-center items-center gap-3 w-full">
-          <div className="flex px-5 py-2.5 justify-center items-center gap-1 rounded-full bg-gray-900">
-              <div className="text-xs sm:text-sm font-bold font-pretendard text-white">NPL</div>
-          </div>
-          <div className="flex px-5 py-2.5 justify-center items-center gap-1 rounded-full bg-black/5">
-            <div className="text-xs sm:text-sm font-bold font-pretendard text-gray-900">제휴업체</div>
-          </div>
-          <div className="flex px-5 py-2.5 justify-center items-center gap-1 rounded-full bg-black/5">
-            <div className="text-xs sm:text-sm font-bold font-pretendard text-gray-900">상품 등록</div>
-          </div>
-          <div className="flex px-5 py-2.5 justify-center items-center gap-1 rounded-full bg-black/5">
-            <div className="text-xs sm:text-sm font-bold font-pretendard text-gray-900">홍보</div>
-          </div>
-          <div className="flex px-5 py-2.5 justify-center items-center gap-1 rounded-full bg-black/5">
-            <div className="text-xs sm:text-sm font-bold font-pretendard text-gray-900">이용방법</div>
-          </div>
-          <div className="flex px-5 py-2.5 justify-center items-center gap-1 rounded-full bg-black/5">
-            <div className="text-xs sm:text-sm font-bold font-pretendard text-gray-900">카페/블로그/밴드</div>
-          </div>
-        </div>
+        <div className="flex gap-3 w-full overflow-x-auto whitespace-nowrap scrollbar-hide px-2">
+    {[
+    "NPL",
+    "제휴업체",
+    "상품 등록",
+    "홍보",
+    "이용방법",
+    "카페/블로그/밴드",
+    ].map((item, i) => (
+    <div
+      key={item}
+      className={`flex px-4 sm:px-5 py-2.5 rounded-full font-bold text-xs sm:text-sm shrink-0
+        ${i === 0 ? "bg-gray-900 text-white" : "bg-black/5 text-gray-900"}`}
+    >
+      {item}
+    </div>
+      ))}
+    </div>
 
         <div className="flex flex-col w-full max-w-[1200px] mx-auto border-t border-gray-800">
           {faqs.map((faq, index) => (
