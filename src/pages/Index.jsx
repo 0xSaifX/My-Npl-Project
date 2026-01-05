@@ -28,13 +28,13 @@ export default function Index() {
   );
 }
 
-const partners = [
-  { label: "시행 · 시공", icon: Hammer },
-  { label: "인테리어", icon: Paintbrush },
-  { label: "NPL 학원", icon: GraduationCap },
-  { label: "법률자문", icon: Scale },
-  { label: "대부(사금융)", icon: Landmark },
-];
+// const partners = [
+//   { label: "시행 · 시공", icon: Hammer },
+//   { label: "인테리어", icon: Paintbrush },
+//   { label: "NPL 학원", icon: GraduationCap },
+//   { label: "법률자문", icon: Scale },
+//   { label: "대부(사금융)", icon: Landmark },
+// ];
 
 // import { Link, useLocation } from "react-router-dom";
 
