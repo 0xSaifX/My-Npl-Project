@@ -144,37 +144,67 @@ export default function SecondPage() {
       </section>
 
       {/* PROJECTS */}
-      <section className="max-w-[1280px] mx-20 px-6 mt-32">
-          <h2 className="text-xl sm:text-2xl lg:text-3xl mb-2 font-bold">전국 모든 곳의 시행·시공 노하우</h2>
-           <p className="text-sm text-gray-500 mb-8">
-              지역별 프로젝트 사례를 확인해보세요.
-           </p>
-           <div className="flex gap-2 mb-10 text-sm ">
-          {["서울/수도권", "대전", "전주", "광주", "대구", "부산"].map((c) => (
-            <button
-              key={c}
-              className="px-4 py-2 rounded-full border text-sm hover:bg-black hover:text-white"
-            >
-              {c}
-            </button>
-          ))}
-        </div>
+      <section className="mt-20 sm:mt-32">
+  <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {projects.map((p, i) => (
-            <div key={i}>
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden mb-3">
-                <img
-                  src={p.image}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="font-medium">{p.title}</div>
-              <div className="text-xs text-orange-400">★ 4.0</div>
-            </div>
-          ))}
+    {/* Title */}
+    <h2 className="text-xl sm:text-2xl lg:text-3xl mb-2 font-bold">
+      전국 모든 곳의 시행·시공 노하우
+    </h2>
+    <p className="text-sm sm:text-base text-gray-500 mb-6 sm:mb-8">
+      지역별 프로젝트 사례를 확인해보세요.
+    </p>
+
+    {/* Filters */}
+    <div className="
+      flex gap-2 mb-8 sm:mb-10 
+      overflow-x-auto scrollbar-hide
+    ">
+      {["서울/수도권", "대전", "전주", "광주", "대구", "부산"].map((c) => (
+        <button
+          key={c}
+          className="
+            px-4 py-2 rounded-full 
+            border text-sm whitespace-nowrap
+            hover:bg-black hover:text-white transition
+          "
+        >
+          {c}
+        </button>
+      ))}
+    </div>
+
+    {/* Grid */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+      {projects.map((p, i) => (
+        <div key={i} className="group">
+          <div className="
+            aspect-[4/3] rounded-2xl overflow-hidden mb-3
+          ">
+            <img
+              src={p.image}
+              alt={p.title}
+              className="
+                w-full h-full object-cover
+                group-hover:scale-105 transition-transform duration-300
+              "
+              loading="lazy"
+            />
+          </div>
+
+          <div className="font-medium text-sm sm:text-base line-clamp-2">
+            {p.title}
+          </div>
+          <div className="text-xs sm:text-sm text-orange-400">
+            ★ 4.0
+          </div>
         </div>
-      </section>
+      ))}
+    </div>
+
+  </div>
+</section>
+
 
       {/* PARTNERS SLIDER */}
       <section className="mt-32 bg-gray-100 py-20">
