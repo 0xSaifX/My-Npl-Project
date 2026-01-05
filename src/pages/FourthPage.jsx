@@ -176,28 +176,28 @@ const communityPosts = [
 
           {/* SLIDER */}
           <section className="mt-8 mx-4 sm:mx-10 lg:mx-20">
-  <h3 className="text-base font-semibold mb-4">
-    풀하우스만의 차별화된 NPL 교육
-  </h3>
+          <h3 className="text-base font-semibold mb-4">
+             풀하우스만의 차별화된 NPL 교육
+        </h3>
 
-  <div className="
-    grid
-    grid-cols-1
-    sm:grid-cols-2
-    lg:grid-cols-4
-    gap-6
-  ">
-    {academies.map((item, i) => (
-      <div key={i}>
-        {/* Image */}
-        <div className="rounded-xl overflow-hidden aspect-[4/3]">
+          <div className="
+            grid
+            grid-cols-1
+            sm:grid-cols-2
+            lg:grid-cols-4
+            gap-6
+            ">
+          {academies.map((item, i) => (
+          <div key={i}>
+          {/* Image */}
+          <div className="rounded-xl overflow-hidden aspect-[4/3]">
           <img
             src={item.image}
             alt={item.title}
             className="w-full h-full object-cover"
             loading="lazy"
           />
-        </div>
+          </div>
 
         {/* Text */}
         <div className="mt-2">
@@ -209,27 +209,42 @@ const communityPosts = [
           </h4>
           <p className="text-xs text-gray-400">{item.location}</p>
         </div>
+        </div>
+         ))}
       </div>
-    ))}
-  </div>
-</section>
+          </section>
 
 
           {/* GREEN CTA */}
-          <section className="mt-12 bg-[#e6f3c8] rounded-2xl p-6 m-20 sm:m-40 flex items-center justify-between">
-            <div>
-              <p className="text-sm font-semibold text-[#4f6f1d]">
-                NPL 실전투자
-              </p>
-              <h3 className="mt-1 font-semibold">
-                경매를 이기는 투자 바이블 놓치지 마세요!
-              </h3>
-            </div>
-            <img
-              src={home}
-              className="w-20 object-contain sm:block shrink-0"
-            />
+          <section className="mt-12 bg-[#e6f3c8] rounded-2xl">
+      <div
+      className="
+      max-w-[1280px] mx-auto
+      px-4 sm:px-8 lg:px-16
+      py-6 sm:py-8
+      flex flex-col sm:flex-row
+      items-start sm:items-center
+      justify-between gap-4
+    ">
+    {/* Text */}
+    <div>
+      <p className="text-sm font-semibold text-[#4f6f1d]">
+        NPL 실전투자
+      </p>
+      <h3 className="mt-1 font-semibold text-base sm:text-lg">
+        경매를 이기는 투자 바이블 놓치지 마세요!
+      </h3>
+    </div>
+
+    {/* Image */}
+    <img
+      src={home}
+      alt="NPL investment"
+      className="w-16 sm:w-20 object-contain hidden sm:block shrink-0"
+    />
+    </div>
           </section>
+
 
           {/* REGION */}
           <section className="mt-16 mx-4 sm:mx-10 lg:mx-20">
