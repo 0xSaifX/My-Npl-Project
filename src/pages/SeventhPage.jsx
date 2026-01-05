@@ -88,7 +88,7 @@ const posts = [
 
       {/* POPULAR POSTS */}
       <section className="py-16 sm:py-24">
-  <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
 
     <h2 className="text-xl sm:text-2xl font-bold mb-2">인기글</h2>
     <p className="text-sm sm:text-base text-gray-500 mb-8">
@@ -140,12 +140,12 @@ const posts = [
       더보기 +
     </button>
 
-  </div>
-</section>
+    </div>
+      </section>
 
       {/* POPULAR CAFES */}
       <section className="py-16 sm:py-24 bg-white">
-  <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
 
     <h2 className="text-xl sm:text-2xl font-bold mb-6">
       주제별 인기 카페
@@ -207,15 +207,15 @@ const posts = [
       더보기 +
     </button>
 
-  </div>
-</section>
+    </div>
+      </section>
 
       {/* BOTTOM BANNER */}
       <section className="bg-[#5AA6D6] py-10 sm:py-14">
-  <div className="
+   <div className="
     max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8
     flex flex-col md:flex-row items-center justify-between gap-6
-  ">
+   ">
     <div className="text-white text-center md:text-left">
       <h3 className="text-lg sm:text-xl font-bold mb-2">
         풀하우스만의 특별 상담
@@ -230,8 +230,8 @@ const posts = [
       alt="consult"
       className="w-28 sm:w-36 md:w-[160px] object-contain"
     />
-  </div>
-</section>
+    </div>
+      </section>
 
     </div>
   );
