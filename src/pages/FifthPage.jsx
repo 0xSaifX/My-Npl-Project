@@ -218,7 +218,7 @@ const lawyers = [
     </section>
 
       {/* LATEST CONSULTATIONS */}
-    <section className="pb-20 sm:pb-32">
+    <section className="pb-20 sm:pb-22">
     <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
 
     <h2 className="text-xl sm:text-2xl font-bold mb-2">최신 상담글</h2>
