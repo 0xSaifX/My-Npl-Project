@@ -147,7 +147,6 @@ export default function ThirdPage() {
     </div>
     </section>
 
-
       {/* PROJECTS */}
       <section className="max-w-[1280px] mx-20 px-6 mt-32">
         <h2 className="font-bold text-2xl mb-6">지역별</h2>
