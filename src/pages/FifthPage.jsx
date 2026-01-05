@@ -193,7 +193,7 @@ const lawyers = [
     </div>
 
     {/* Grid */}
-    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
+    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-4">
       {lawyers.map((lawyer, i) => (
         <div key={i} className="text-center">
           <div className="aspect-[4/4] overflow-hidden rounded-xl">
