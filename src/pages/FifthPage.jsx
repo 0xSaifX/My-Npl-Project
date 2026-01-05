@@ -297,7 +297,7 @@ const lawyers = [
           alt="NPL special lecture"
           className="
             w-24 sm:w-32 md:w-40
-            hidden sm:block
+             sm:block
             shrink-0
           "
         />
