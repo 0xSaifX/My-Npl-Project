@@ -217,45 +217,54 @@ const lawyers = [
     </section>
 
       {/* LATEST CONSULTATIONS */}
-      <section className="max-w-[1280px] mx-10 sm:mx-20 px-6 pb-32">
-        <h2 className="text-2xl font-bold mb-2">최신 상담글</h2>
-        <p className="text-gray-600 mb-8">
-          생생한 상담 내용과 후기들을 확인해보세요.
-        </p>
-         <div className="flex gap-2 mb-10 text-sm ">
-          {["서울/도권", "부산대구"].map((c) => (
-            <button
-              key={c}
-              className="px-4 py-2 rounded-full border bg-gray-100 text-sm hover:bg-black hover:text-white"
-            >
-              {c}
-            </button>
-          ))}
-        </div>
+    <section className="pb-20 sm:pb-32">
+    <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {[1, 2, 3, 4].map((i) => (
-            <div key={i} className="border rounded-xl p-6">
-              <span className="text-xs text-orange-500 font-semibold">
-                부동산 · 유치권
-              </span>
-              <h3 className="mt-2 font-bold">
-                지상권 등기 원인 무효와 지상권 진로 관련 문제
-              </h3>
-              <p className="mt-2 text-sm text-gray-600 line-clamp-2">
-                상담을 진행하며 발생한 복잡한 지상권 문제에 대해 조언을 구합니다.
-              </p>
-              <p className="mt-4 text-xs text-gray-400">2025.04.05</p>
-            </div>
-          ))}
-        </div>
+    <h2 className="text-xl sm:text-2xl font-bold mb-2">최신 상담글</h2>
+    <p className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8">
+      생생한 상담 내용과 후기들을 확인해보세요.
+    </p>
 
-        <div className="flex justify-center mt-10">
-          <button className="px-6 py-2 borde bg-gray-100 hover:bg-black hover:text-white rounded-full text-sm">
-            더보기 +
-          </button>
+    {/* Filters */}
+    <div className="flex gap-2 mb-8 overflow-x-auto scrollbar-hide">
+      {["서울/도권", "부산대구"].map(c => (
+        <button
+          key={c}
+          className="px-4 py-2 rounded-full bg-gray-100 text-sm hover:bg-black hover:text-white whitespace-nowrap"
+        >
+          {c}
+        </button>
+      ))}
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {[1,2,3,4].map(i => (
+        <div key={i} className="border rounded-xl p-5 sm:p-6">
+          <span className="text-xs text-orange-500 font-semibold">
+            부동산 · 유치권
+          </span>
+          <h3 className="mt-2 font-bold text-sm sm:text-base">
+            지상권 등기 원인 무효와 지상권 진로 관련 문제
+          </h3>
+          <p className="mt-2 text-sm text-gray-600 line-clamp-2">
+            상담을 진행하며 발생한 복잡한 지상권 문제에 대해 조언을 구합니다.
+          </p>
+          <p className="mt-4 text-xs text-gray-400">
+            2025.04.05
+          </p>
         </div>
-      </section>
+      ))}
+    </div>
+
+    <div className="flex justify-center mt-8 sm:mt-10">
+      <button className="px-6 py-2 bg-gray-100 hover:bg-black hover:text-white rounded-full text-sm transition">
+        더보기 +
+      </button>
+    </div>
+
+    </div>
+    </section>
+
     </main>
   );
 }
