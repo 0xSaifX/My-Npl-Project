@@ -203,24 +203,28 @@ const posts = [
   </div>
 </section>
 
-
-
       {/* BOTTOM BANNER */}
-      <section className="bg-[#5AA6D6] py-10">
-        <div className="max-w-[1200px] mx-10 sm:mx-20 px-4 flex items-center justify-between flex-col md:flex-row gap-6">
-          <div className="text-white">
-            <h3 className="text-xl font-bold mb-2">풀하우스만의 특별 상담</h3>
-            <p className="text-sm text-white/80">
-              풀하우스의 전문가와 실시간 상담을 만나보세요.
-            </p>
-          </div>
-          <img
-            src= {house}
-            alt="consult"
-            className="w-[160px] object-cover"
-          />
-        </div>
-      </section>
+      <section className="bg-[#5AA6D6] py-10 sm:py-14">
+  <div className="
+    max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8
+    flex flex-col md:flex-row items-center justify-between gap-6
+  ">
+    <div className="text-white text-center md:text-left">
+      <h3 className="text-lg sm:text-xl font-bold mb-2">
+        풀하우스만의 특별 상담
+      </h3>
+      <p className="text-sm sm:text-base text-white/80">
+        풀하우스의 전문가와 실시간 상담을 만나보세요.
+      </p>
+    </div>
+
+    <img
+      src={house}
+      alt="consult"
+      className="w-28 sm:w-36 md:w-[160px] object-contain"
+    />
+  </div>
+</section>
 
     </div>
   );
