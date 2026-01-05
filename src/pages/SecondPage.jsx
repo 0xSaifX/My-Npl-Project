@@ -77,7 +77,7 @@ export default function SecondPage() {
   { name: "Klarna", logo: klarna },
   { name: "Mastercard", logo: master },
   { name: "Skrill", logo: skirill },
-  { name: "VISA", logo: visa },
+  { name: "VISA", logo: amazon },
   { name: "Litecoin", logo: lite },
   { name: "Amex", logo: amazon }
   ];
