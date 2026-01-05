@@ -27,7 +27,7 @@ function Footer() {
 
           {/* Social icons */}
           {/* Social icons */}
-<div className="flex gap-4 md:gap-6 items-center">
+        <div className="flex gap-4 md:gap-6 items-center">
   <a
     href="#"
     aria-label="Cafe"
@@ -63,7 +63,7 @@ function Footer() {
       className="w-5 h-5 object-contain"
     />
   </a>
-</div>
+        </div>
 
         </div>
 
