@@ -19,7 +19,7 @@ function Header() {
     <header className="sticky top-0 z-50 bg-white border-b border-gray-300">
       <div className="flex items-center justify-between max-w-[1920px] mx-auto px-4 md:px-8 h-20">
         {/* Logo */}
-        <div className="text-[22px] ml-16 sm:ml-24 font-bold font-['Readex_Pro'] uppercase">
+        <div className="text-[22px] ml-16 sm:ml-26 font-bold font-['Readex_Pro'] uppercase">
           FULLHOUSE
         </div>
 
