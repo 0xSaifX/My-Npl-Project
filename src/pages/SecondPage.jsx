@@ -10,7 +10,7 @@ import image7 from "../assets/image-area(6).jpg";
 import image8 from "../assets/image-area(7).jpg";
 import image1 from "../assets/image-area.jpg";
 import klarna from "../assets/klarna.png";
-import master from "../assets/mastercard.png";
+import master from "../assets/Mastercard.png";
 import skirill from "../assets/Skrill.png";
 import lite from "../assets/lightcoin.png";
 import amazon from "../assets/amazon.png";
