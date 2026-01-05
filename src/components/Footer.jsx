@@ -1,3 +1,7 @@
+import cafe from "../assets/cafe.png";
+import blog from "../assets/blog.png";
+import youtube from "../assets/youtube.png";
+
 function Footer() {
   return (
     <footer className="bg-gray-900 text-white w-full">
