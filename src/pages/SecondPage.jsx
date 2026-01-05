@@ -203,7 +203,7 @@ export default function SecondPage() {
     </div>
 
   </div>
-</section>
+    </section>
 
       {/* PARTNERS SLIDER */}
       <section className="mt-32 bg-gray-100 py-20">
@@ -243,7 +243,7 @@ export default function SecondPage() {
     </div>
 
   </div>
-</section>
+    </section>
 
       {/* FAQ */}
     <section className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 pt-20 sm:pt-28 lg:pt-40 pb-20 sm:pb-28 lg:pb-40 flex flex-col gap-12">
