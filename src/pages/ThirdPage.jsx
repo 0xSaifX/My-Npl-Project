@@ -187,26 +187,42 @@ export default function ThirdPage() {
 
 
       {/* PRODUCTS */}
-      <section className="max-w-[1280px] mx-16 sm:mx-24 px-6 mt-32">
-        <h2 className="font-bold text-2xl mb-6">상품군</h2>
+    <section className="mt-16 sm:mt-24">
+    <div
+    className="
+      max-w-[1280px] mx-auto
+      px-4 sm:px-6 lg:px-8
+    "
+    >
+    <h2 className="font-bold text-xl sm:text-2xl mb-6">
+      상품군
+    </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-          {products.map((p, i) => (
-            <div key={i}>
-              <div className="aspect-square rounded-2xl overflow-hidden mb-4">
-                <img
-                  src={p.image}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="font-medium">{p.title}</div>
-              <div className="text-orange-500 font-semibold text-sm mt-1">
-                {p.price}
-              </div>
-            </div>
-          ))}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-10">
+      {products.map((p, i) => (
+        <div key={i} className="group">
+          <div className="aspect-square rounded-2xl overflow-hidden mb-4">
+            <img
+              src={p.image}
+              alt={p.title}
+              className="
+                w-full h-full object-cover
+                group-hover:scale-105 transition-transform
+              "
+              loading="lazy"
+            />
+          </div>
+          <div className="font-medium text-sm sm:text-base">
+            {p.title}
+          </div>
+          <div className="text-orange-500 font-semibold text-sm mt-1">
+            {p.price}
+          </div>
         </div>
-      </section>
+      ))}
+    </div>
+    </div>
+    </section>
 
       {/* BOTTOM CTA */}
      <section className="bg-[#4aa0d8] mt-16 sm:mt-24">
