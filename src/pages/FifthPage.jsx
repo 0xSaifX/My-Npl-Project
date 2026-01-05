@@ -141,24 +141,28 @@ const lawyers = [
     </section>
 
       {/* HIGHLIGHT BANNER */}
-      <section className="max-w-[1280px] mx-10 sm:mx-20 px-6 mb-24">
-        <div className="relative rounded-2xl bg-lime-200 p-10 flex flex-col md:flex-row items-center justify-between">
-          <div>
-            <span className="text-sm font-semibold">NPL 실전투자</span>
-            <h3 className="mt-2 text-xl font-bold">
-              경매를 이기는 투자 바이블 놓치지 마세요!
-            </h3>
-            <p className="mt-2 text-sm text-gray-700">
-              실전 NPL 투자, 후회 없는 선택을 도와드립니다.
-            </p>
-          </div>
-          <img
-            src= {home}
-            alt="banner"
-            className="h-[120px] mt-6 md:mt-0"
-          />
-        </div>
-      </section>
+    <section className="mb-16 sm:mb-24">
+    <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="rounded-2xl bg-lime-200 p-6 sm:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div>
+        <span className="text-sm font-semibold">NPL 실전투자</span>
+        <h3 className="mt-2 text-lg sm:text-xl font-bold">
+          경매를 이기는 투자 바이블 놓치지 마세요!
+        </h3>
+        <p className="mt-2 text-sm text-gray-700">
+          실전 NPL 투자, 후회 없는 선택을 도와드립니다.
+        </p>
+      </div>
+
+      <img
+        src={home}
+        alt="banner"
+        className="h-24 sm:h-[120px] shrink-0"
+      />
+    </div>
+     </div>
+    </section>
+
 
       {/* LAWYER SECTION */}
       <section className="max-w-[1280px] mx-10 sm:mx-20 px-6 mb-24">
