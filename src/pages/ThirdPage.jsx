@@ -148,24 +148,43 @@ export default function ThirdPage() {
     </section>
 
       {/* PROJECTS */}
-      <section className="max-w-[1280px] mx-20 px-6 mt-32">
-        <h2 className="font-bold text-2xl mb-6">지역별</h2>
+    <section className="mt-16 sm:mt-24">
+    <div
+    className="
+      max-w-[1280px] mx-auto
+      px-4 sm:px-6 lg:px-8
+    "
+    >
+    <h2 className="font-bold text-xl sm:text-2xl mb-6">
+      지역별
+    </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {projects.map((p, i) => (
-            <div key={i}>
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden mb-3">
-                <img
-                  src={p.image}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="font-medium">{p.title}</div>
-              <div className="text-xs text-orange-400">★ 4.0</div>
-            </div>
-          ))}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+      {projects.map((p, i) => (
+        <div key={i} className="group">
+          <div className="aspect-[4/3] rounded-2xl overflow-hidden mb-3">
+            <img
+              src={p.image}
+              alt={p.title}
+              className="
+                w-full h-full object-cover
+                group-hover:scale-105 transition-transform
+              "
+              loading="lazy"
+            />
+          </div>
+          <div className="font-medium text-sm sm:text-base">
+            {p.title}
+          </div>
+          <div className="text-xs sm:text-sm text-orange-400">
+            ★ 4.0
+          </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+    </section>
+
 
       {/* PRODUCTS */}
       <section className="max-w-[1280px] mx-20 px-6 mt-32">
