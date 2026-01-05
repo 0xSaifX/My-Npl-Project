@@ -160,7 +160,7 @@ const lawyers = [
         alt="banner"
         className="h-24 sm:h-[120px] shrink-0"
       />
-    </div>
+      </div>
      </div>
     </section>
 
