@@ -833,7 +833,7 @@ function PartnerSearchSection() {
               </div>
             </div>
 
-            <div className="flex justify-center items-center gap-5 overlap:5-10 w-full">
+            <div className="flex justify-center items-center gap-5 w-full">
               <div className="text-base font-medium font-pretendard text-gray-900">#시행 · 시공</div>
               <div className="text-base font-medium font-pretendard text-gray-900">#인테리어</div>
               <div className="text-base font-medium font-pretendard text-gray-900">#NPL학원</div>
