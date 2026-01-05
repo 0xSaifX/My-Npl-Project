@@ -142,12 +142,13 @@ const posts = [
     <h2 className="text-xl sm:text-2xl font-bold mb-6">주제별 인기 카페</h2>
 
     {/* Tags */}
-    <div className="flex gap-2 mb-8 overflow-x-auto">
+    <div className="flex gap-2 mb-6 sm:mb-8 overflow-x-auto">
       {["전체", "시행·시공", "인테리어", "NPL 학원", "법무", "대부(사금융)"].map(
         (tag) => (
           <button
             key={tag}
-            className="px-4 py-2 text-sm rounded-full bg-gray-100 hover:bg-black hover:text-white whitespace-nowrap"
+            className="px-4 py-2 text-sm rounded-full 
+            bg-gray-100 hover:bg-black hover:text-white whitespace-nowrap transition"
           >
             {tag}
           </button>
