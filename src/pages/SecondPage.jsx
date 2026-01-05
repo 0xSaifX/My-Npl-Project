@@ -12,7 +12,7 @@ import image1 from "../assets/image-area.jpg";
 import klarna from "../assets/klarna.png";
 import master from "../assets/Mastercard.png";
 import skirill from "../assets/Skrill.png";
-import lite from "../assets/lightcoin.png";
+import lite from "../assets/Lightcoin.png";
 import amazon from "../assets/amazon.png";
 import visa from "../assets/visa.png";
 import { useState } from "react";
