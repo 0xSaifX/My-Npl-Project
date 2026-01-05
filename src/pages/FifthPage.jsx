@@ -266,44 +266,6 @@ const lawyers = [
     </div>
     </section>
 
-    {/* BOTTOM CTA */}
-         <section className="bg-[#4aa0d8] mt-16 sm:mt-24">
-        <div
-        className="
-          max-w-[1280px] mx-auto
-          px-4 sm:px-6 lg:px-8
-          py-10 sm:py-12
-          flex flex-col sm:flex-row
-          items-start sm:items-center
-          justify-between gap-6
-        "
-      >
-        {/* Text */}
-        <div className="text-white">
-          <p className="text-sm sm:text-base">
-            NPL 특강 A to Z
-          </p>
-          <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold mt-1">
-            이영준 박사 NPL 특강 회원모집
-          </h3>
-          <p className="text-xs sm:text-sm mt-2 opacity-80">
-            2025년 4월 | 선착순 모집
-          </p>
-        </div>
-    
-        {/* Image */}
-        <img
-          src={b}
-          alt="NPL special lecture"
-          className="
-            w-24 sm:w-32 md:w-40
-             sm:block
-            shrink-0
-          "
-        />
-        </div>
-        </section>
-
     </main>
   );
 }
