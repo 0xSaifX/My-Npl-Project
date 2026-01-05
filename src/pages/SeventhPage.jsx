@@ -138,17 +138,23 @@ const posts = [
 
       {/* POPULAR CAFES */}
       <section className="py-16 sm:py-24 bg-white">
-  <div className="max-w-[1200px] mx-4 sm:mx-20 px-4">
-    <h2 className="text-xl sm:text-2xl font-bold mb-6">주제별 인기 카페</h2>
+  <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+
+    <h2 className="text-xl sm:text-2xl font-bold mb-6">
+      주제별 인기 카페
+    </h2>
 
     {/* Tags */}
-    <div className="flex gap-2 mb-6 sm:mb-8 overflow-x-auto">
+    <div className="flex gap-2 mb-6 sm:mb-8 overflow-x-auto scrollbar-hide">
       {["전체", "시행·시공", "인테리어", "NPL 학원", "법무", "대부(사금융)"].map(
         (tag) => (
           <button
             key={tag}
-            className="px-4 py-2 text-sm rounded-full 
-            bg-gray-100 hover:bg-black hover:text-white whitespace-nowrap transition"
+            className="
+              px-4 py-2 text-sm rounded-full 
+              bg-gray-100 hover:bg-black hover:text-white 
+              whitespace-nowrap transition
+            "
           >
             {tag}
           </button>
@@ -157,13 +163,16 @@ const posts = [
     </div>
 
     {/* Grid */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
       {cafes.map((cafe, i) => (
         <div
           key={i}
-          className="bg-gray-50 rounded-xl overflow-hidden hover:shadow-md transition-shadow"
+          className="
+            bg-gray-50 rounded-xl overflow-hidden 
+            hover:shadow-md transition-shadow
+          "
         >
-          <div className="aspect-[16/9] overflow-hidden">
+          <div className="aspect-video overflow-hidden">
             <img
               src={cafe.image}
               alt={cafe.title}
@@ -173,11 +182,13 @@ const posts = [
           </div>
 
           <div className="p-4">
-            <span className="text-xs text-orange-500">네이버카페</span>
-            <h3 className="text-sm font-semibold mt-1 line-clamp-2">
+            <span className="text-xs text-orange-500">
+              네이버카페
+            </span>
+            <h3 className="text-sm sm:text-base font-semibold mt-1 line-clamp-2">
               {cafe.title}
             </h3>
-            <p className="text-xs text-gray-500 mt-1">
+            <p className="text-xs sm:text-sm text-gray-500 mt-1">
               가입자수 {cafe.members.toLocaleString()}
             </p>
           </div>
@@ -185,11 +196,13 @@ const posts = [
       ))}
     </div>
 
-    <button className="mx-auto mt-10 block px-6 py-2 border hover:bg-black hover:text-white rounded-full text-sm">
+    <button className="mx-auto mt-8 sm:mt-10 block px-6 py-2 border rounded-full text-sm hover:bg-black hover:text-white transition">
       더보기 +
     </button>
+
   </div>
-      </section>
+</section>
+
 
 
       {/* BOTTOM BANNER */}
