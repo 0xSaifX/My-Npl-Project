@@ -15,7 +15,6 @@ import visa from "../assets/visa.png";
 export default function Index() {
   return (
   <div className="w-full bg-white">
-      {/* <Header /> */}
       <HeroSlider />
       <ServicesSection />
       <NPLPropertiesSection />
@@ -24,7 +23,6 @@ export default function Index() {
       <FAQSection />
       <VideosSection />
       <PartnerSearchSection />
-      {/* <Footer /> */}
     </div>
   );
 }
