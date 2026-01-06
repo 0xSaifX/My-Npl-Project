@@ -3,7 +3,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import site from '../client/assets/site.png';
 import inter from '../client/assets/interior.png';
-import PartnerSearchSection from "./PartnerSearchSection";
+// import PartnerSearchSection from "./PartnerSearchSection";
 
 import klarna from "../assets/klarna.png";
 import master from "../assets/Mastercard.png";
