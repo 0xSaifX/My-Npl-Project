@@ -6,9 +6,9 @@ import {
   Landmark,
 } from "lucide-react";
 
-/* --------------------------------------------------
+/* 
    Partner data
--------------------------------------------------- */
+ */
 const partners = [
   { label: "시행 · 시공", icon: Hammer },
   { label: "인테리어", icon: Paintbrush },
@@ -17,9 +17,9 @@ const partners = [
   { label: "대부(사금융)", icon: Landmark },
 ];
 
-/* --------------------------------------------------
+/* 
    Partner Card
--------------------------------------------------- */
+ */
 function PartnerCard({ icon: Icon, label }) {
   return (
     <div className="relative w-[200px] h-[200px] flex-shrink-0 rounded-2xl bg-white shadow-md flex flex-col items-center justify-end pb-6">
@@ -35,15 +35,15 @@ function PartnerCard({ icon: Icon, label }) {
   );
 }
 
-/* --------------------------------------------------
+/* 
    Main Section
--------------------------------------------------- */
+ */
 export default function PartnerSearchSection() {
   return (
     <section className="relative w-full my-24 overflow-hidden">
-      {/* --------------------------------------------------
+      {/* 
          Auto-scrolling marquee
-      -------------------------------------------------- */}
+       */}
       <div className="absolute top-40 left-0 w-full overflow-hidden">
         <div className="flex gap-6 animate-marquee">
           {[...partners, ...partners, ...partners].map((item, i) => (
@@ -60,9 +60,9 @@ export default function PartnerSearchSection() {
       <div className="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-white to-transparent z-20" />
       <div className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-white to-transparent z-20" />
 
-      {/* --------------------------------------------------
+      {/* 
          Search Card
-      -------------------------------------------------- */}
+       */}
       <div className="relative z-30 max-w-[1100px] mx-auto bg-white rounded-3xl shadow-lg px-6 sm:px-12 py-14">
         <div className="text-center mb-10">
           <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-bold">
