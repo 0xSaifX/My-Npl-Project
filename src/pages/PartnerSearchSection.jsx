@@ -5,8 +5,12 @@ import {
   Scale,
   Landmark,
 } from "lucide-react";
-import Amazon from "../assets/icons/amazon.svg";
-import 
+import Amazon from "../assets/icons/amazon.png";
+import visa from "../assets/icons/visa.png";
+import Klarna from "../assets/icons/klarna.png";
+import Skrill from "../assets/icons/Skrill.png";
+import Mastercard from "../assets/icons/Mastercard.png";
+import Lightcoin from "../assets/icons/Lightcoin.png";
 
 /* 
    Partner data
