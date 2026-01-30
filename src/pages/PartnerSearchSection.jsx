@@ -5,6 +5,7 @@ import {
   Scale,
   Landmark,
 } from "lucide-react";
+import amazon
 
 /* 
    Partner data
