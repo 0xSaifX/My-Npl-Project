@@ -5,20 +5,20 @@
 //   Scale,
 //   Landmark,
 // } from "lucide-react";
-import Amazon from "../assets/icons/amazon.png";
+import amazon from "../assets/icons/amazon.png";
 import visa from "../assets/icons/visa.png";
-import Klarna from "../assets/icons/klarna.png";
-import Skrill from "../assets/icons/Skrill.png";
-import Mastercard from "../assets/icons/Mastercard.png";
-import Lightcoin from "../assets/icons/Lightcoin.png";
+import klarna from "../assets/icons/klarna.png";
+import skrill from "../assets/icons/Skrill.png";
+import mastercard from "../assets/icons/Mastercard.png";
+import lightcoin from "../assets/icons/Lightcoin.png";
 
 const icons = [
-  { src: Amazon, alt: "Amazon" },
+  { src: amazon, alt: "amazon" },
   { src: visa, alt: "Visa" },
-  { src: Klarna, alt: "Klarna" },
-  { src: Skrill, alt: "Skrill" },
-  { src: Mastercard, alt: "Mastercard" },
-  { src: Lightcoin, alt: "Lightcoin" },
+  { src: klarna, alt: "Klarna" },
+  { src: skrill, alt: "Skrill" },
+  { src: mastercard, alt: "Mastercard" },
+  { src: lightcoin, alt: "Lightcoin" },
 ];
 
 export default function PartnerSearchSection() {
