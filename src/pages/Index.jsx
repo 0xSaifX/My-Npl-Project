@@ -145,7 +145,7 @@ function HeroSlider() {
         <div className="flex flex-col gap-[92px] w-[520px] flex-shrink-0">
           <div className="flex flex-col gap-10">
             <div className="flex flex-col gap-3">
-              <div className="text-[28px] leading-[150%] md:text-[20px] sm:text-[23px] font-pretendard text-[#1C232C] whitespace-pre-line break-words">
+              <div className="text-[28px] leading-[150%] md:text-[20px] sm:text-[13px] font-pretendard text-[#1C232C] whitespace-pre-line break-words">
                 {slides[selectedIndex].title}
               </div>
               <div className="text-5xl leading-[150%] font-bold font-ibm">
