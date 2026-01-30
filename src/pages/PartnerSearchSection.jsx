@@ -1,122 +1,109 @@
-import React from "react";
-import amazon from "../assets/amazon.png";
-import klarna from "../assets/klarna.png";
-import lightcoin from "../assets/lightcoin.png";
-import mastercard from "../assets/mastercard.png";
-import skrill from "../assets/skrill.png";
-import visa from "../assets/visa.png";
+import {
+  Hammer,
+  Paintbrush,
+  GraduationCap,
+  Scale,
+  Landmark,
+} from "lucide-react";
 
-const icons = [
-  { src: amazon, alt: "Amazon" },
-  { src: klarna, alt: "Klarna" },
-  { src: visa, alt: "Visa" },
-  { src: skrill, alt: "Skrill" },
-  { src: lightcoin, alt: "Lightcoin" },
-  { src: mastercard, alt: "Mastercard" },
+/* 
+   Partner data
+ */
+const partners = [
+  { label: "시행 · 시공", icon: Hammer },
+  { label: "인테리어", icon: Paintbrush },
+  { label: "NPL 학원", icon: GraduationCap },
+  { label: "법률자문", icon: Scale },
+  { label: "대부(사금융)", icon: Landmark },
 ];
 
-export default function PartnerSearchSection() {
-  // Repeat icons to fill scrolling cards
-  const marqueeItems = Array.from({ length: 12 }).map((_, i) => icons[i % icons.length]);
-
+/* 
+   Partner Card
+ */
+function PartnerCard({ icon: Icon, label }) {
   return (
-    <section className="relative h-[700px] w-full my-20">
-      {/* Marquee Boxes with Icons */}
-      <div className="absolute left-0 top-48 w-full h-[200px] overflow-hidden">
-        <div className="flex animate-marquee gap-6">
-          {marqueeItems.map((icon, i) => (
-            <div
+    <div className="relative w-[200px] h-[200px] flex-shrink-0 rounded-2xl bg-white shadow-md flex flex-col items-center justify-end pb-6">
+      {/* Floating Icon */}
+      <div className="absolute -top-8 w-16 h-16 rounded-2xl bg-orange-100 flex items-center justify-center shadow">
+        <Icon className="w-8 h-8 text-orange-500" strokeWidth={1.5} />
+      </div>
+
+      <span className="text-sm font-semibold text-gray-900">
+        {label}
+      </span>
+    </div>
+  );
+}
+
+/* 
+   Main Section
+ */
+export default function PartnerSearchSection() {
+  return (
+    <section className="relative w-full my-24 overflow-hidden">
+      {/* 
+         Auto-scrolling marquee
+       */}
+      <div className="absolute top-40 left-0 w-full overflow-hidden">
+        <div className="flex gap-6 animate-marquee">
+          {[...partners, ...partners, ...partners].map((item, i) => (
+            <PartnerCard
               key={i}
-              className="w-[200px] h-[150px] flex-shrink-0 rounded-2xl bg-white shadow-md flex items-center justify-center"
-            >
-              <img src={icon.src} alt={icon.alt} className="w-50 h-50 object-contain" />
-            </div>
-          ))}
-          {/* Duplicate for smooth infinite scroll */}
-          {marqueeItems.map((icon, i) => (
-            <div
-              key={i + marqueeItems.length}
-              className="w-[200px] h-[200px] flex-shrink-0 rounded-2xl bg-white shadow-md flex items-center justify-center"
-            >
-              <img src={icon.src} alt={icon.alt} className="w-16 h-16 object-contain" />
-            </div>
+              icon={item.icon}
+              label={item.label}
+            />
           ))}
         </div>
       </div>
 
-      {/* Main Search Card */}
-      <div className="absolute left-0 top-30 w-full flex justify-center z-10">
-        <div className="flex max-w-[1800px] px-0 py-12 flex-col items-center gap-12 bg-white rounded-[14px] shadow-lg">
-          {/* Title */}
-          <div className="flex flex-col items-center gap-2 px-18">
-            <h2 className="text-[40px] leading-[150%] font-bold font-ibm text-gray-900">
-              제휴 업체 찾기
-            </h2>
-            <p className="text-lg font-pretendard text-gray-900">
-              전국에 있는 풀하우스 제휴업체를 만나보세요.
-            </p>
-          </div>
+      {/* Gradient fade edges */}
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-white to-transparent z-20" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-white to-transparent z-20" />
 
-          {/* Search Input */}
-          <div className="flex flex-col items-center gap-7">
-            <div className="flex flex-col items-start w-[680px]">
-              <div className="flex flex-col items-start gap-1.5 w-full">
-                <div className="flex h-16 max-h-16 px-7 py-4.5 items-center w-[500px] rounded-full bg-gray-300 ml-[90px]">
-                  <div className="flex-1 text-lg font-pretendard text-gray-500">
-                    검색어를 입력하세요.
-                  </div>
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M10 4C6.68629 4 4 6.68629 4 10C4 13.3137 6.68629 16 10 16C13.3137 16 16 13.3137 16 10C16 6.68629 13.3137 4 10 4ZM2 10C2 5.58172 5.58172 2 10 2C14.4183 2 18 5.58172 18 10C18 11.8487 17.3729 13.5509 16.3199 14.9056L21.7071 20.2929C22.0976 20.6834 22.0976 21.3166 21.7071 21.7071C21.3166 22.0976 20.6834 22.0976 20.2929 21.7071L14.9057 16.3198C13.551 17.3729 11.8487 18 10 18C5.58172 18 2 14.4183 2 10Z"
-                      fill="#616161"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
+      {/* 
+         Search Card
+       */}
+      <div className="relative z-30 max-w-[1100px] mx-auto bg-white rounded-3xl shadow-lg px-6 sm:px-12 py-14">
+        <div className="text-center mb-10">
+          <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-bold">
+            제휴 업체 찾기
+          </h2>
+          <p className="mt-2 text-sm sm:text-base text-gray-600">
+            전국에 있는 풀하우스 제휴업체를 만나보세요.
+          </p>
+        </div>
 
-            {/* Hashtags */}
-            <div className="flex justify-center items-center gap-5 w-full flex-wrap">
-              {[
-                "#시행 · 시공",
-                "#인테리어",
-                "#NPL학원",
-                "#법률자문",
-                "#대부(사금융)",
-              ].map((tag, i) => (
-                <div
-                  key={i}
-                  className="text-base font-medium font-pretendard text-gray-900"
-                >
-                  {tag}
-                </div>
-              ))}
-            </div>
+        {/* Search input */}
+        <div className="max-w-[680px] mx-auto mb-8">
+          <div className="flex items-center gap-3 h-14 px-6 rounded-full bg-gray-100">
+            <input
+              type="text"
+              placeholder="검색어를 입력하세요."
+              className="flex-1 bg-transparent outline-none text-sm"
+            />
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M10 4C6.686 4 4 6.686 4 10C4 13.314 6.686 16 10 16C13.314 16 16 13.314 16 10C16 6.686 13.314 4 10 4ZM2 10C2 5.582 5.582 2 10 2C14.418 2 18 5.582 18 10C18 11.85 17.373 13.551 16.32 14.906L21.707 20.293C22.098 20.683 22.098 21.317 21.707 21.707C21.317 22.098 20.683 22.098 20.293 21.707L14.906 16.32C13.551 17.373 11.85 18 10 18C5.582 18 2 14.418 2 10Z"
+                fill="#616161"
+              />
+            </svg>
           </div>
         </div>
-      </div>
 
-      {/* Tailwind marquee animation */}
-      <style>
-        {`
-          @keyframes marquee {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-          }
-          .animate-marquee {
-            display: flex;
-            gap: 1.5rem;
-            animation: marquee 20s linear infinite;
-          }
-        `}
-      </style>
+        {/* Hashtags */}
+        <div className="flex flex-wrap justify-center gap-4 text-sm">
+          {partners.map((p) => (
+            <span
+              key={p.label}
+              className="font-medium text-gray-800"
+            >
+              #{p.label}
+            </span>
+          ))}
+        </div>
+      </div>
     </section>
   );
 }
