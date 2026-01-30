@@ -5,7 +5,8 @@ import {
   Scale,
   Landmark,
 } from "lucide-react";
-import amazon
+import Amazon from "../assets/icons/amazon.svg";
+import 
 
 /* 
    Partner data
