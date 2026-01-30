@@ -134,7 +134,7 @@ function HeroSlider() {
                   <img
                     src={slide.image}
                     alt={`Slide ${index + 1}`}
-                    className="w-full h-[350px] object-cover rounded-3xl"
+                    className="w-full h-auto object-contain rounded-3xl"
                   />
                 </div>
               ))}
@@ -261,8 +261,10 @@ function ServicesSection() {
       active: false
     }
   ];
-    const [activeIndex, setActiveIndex] = useState(2); // start with 3rd active
-    const nextService = () => {
+  
+  const [activeIndex, setActiveIndex] = useState(2);
+  
+  const nextService = () => {
     setActiveIndex((prev) => (prev + 1) % services.length);
   };
   
@@ -287,20 +289,23 @@ function ServicesSection() {
                   className={`
                     flex-shrink-0 rounded-3xl transition-all duration-700
                     ${isActive
-                      ? "w-[320px] h-[380px] bg-[#FFFAF7] scale-100 shadow-xl"
-                      : "w-[260px] h-[320px] bg-[#FBFBFC] scale-90 opacity-70"}
+                      ? "w-[320px] h-[480px] bg-[#FFFAF7] scale-100 shadow-xl"
+                      : "w-[260px] h-[420px] bg-[#FBFBFC] scale-90 opacity-70"}
                   `}
                 >
-                  <div className="h-full p-8 flex flex-col justify-end gap-4">
-                    <div  className={`
-                     w-[80px] h-[80px]
-                     transition-transform duration-700
-                      ${isActive ? "scale-110 -translate-y-6" : "scale-100 -translate-y-4"}
+                  <div className="h-full p-8 flex flex-col gap-6">
+                    {/* Icon container - positioned at top */}
+                    <div className="flex-shrink-0 flex items-center justify-start">
+                      <div className={`
+                        transition-transform duration-700
+                        ${isActive ? "scale-110" : "scale-100"}
                       `}>
-                      {service.icon}
+                        {service.icon}
+                      </div>
                     </div>
 
-                    <div className="flex flex-col gap-3">
+                    {/* Text content - positioned below icon */}
+                    <div className="flex flex-col gap-3 flex-grow">
                       <h3
                         className={`text-xl font-bold ${
                           isActive ? "text-gray-900" : "text-gray-500"
