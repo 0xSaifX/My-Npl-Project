@@ -3,7 +3,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import site from '../client/assets/site.png';
 import inter from '../client/assets/interior.png';
-import PartnerSearchSection from "./PartnerSearchSection";
+// import PartnerSearchSection from "./PartnerSearchSection";
 
 import klarna from "../assets/klarna.png";
 import master from "../assets/Mastercard.png";
@@ -27,61 +27,61 @@ export default function Index() {
   );
 }
 
-const partners = [
-  { label: "시행 · 시공", icon: Hammer },
-  { label: "인테리어", icon: Paintbrush },
-  { label: "NPL 학원", icon: GraduationCap },
-  { label: "법률자문", icon: Scale },
-  { label: "대부(사금융)", icon: Landmark },
-];
+// const partners = [
+//   { label: "시행 · 시공", icon: Hammer },
+//   { label: "인테리어", icon: Paintbrush },
+//   { label: "NPL 학원", icon: GraduationCap },
+//   { label: "법률자문", icon: Scale },
+//   { label: "대부(사금융)", icon: Landmark },
+// ];
 
-import { Link, useLocation } from "react-router-dom";
+// import { Link, useLocation } from "react-router-dom";
 
-export default function Header() {
-  const location = useLocation();
+// export default function Header() {
+//   const location = useLocation();
   
-  const menuItems = [
-    { path: "/construction", label: "시행・시공" },
-    { path: "/interior", label: "인테리어" },
-    { path: "/academy", label: "NPL 학원" },
-    { path: "/legal", label: "법률자문" },
-    { path: "/finance", label: "금융 상담" },
-  ];
+//   const menuItems = [
+//     { path: "/construction", label: "시행・시공" },
+//     { path: "/interior", label: "인테리어" },
+//     { path: "/academy", label: "NPL 학원" },
+//     { path: "/legal", label: "법률자문" },
+//     { path: "/finance", label: "금융 상담" },
+//   ];
 
-  return (
-    <header className="flex justify-center items-center py-[30px] bg-white">
-      <div className="flex max-w-[1280px] px-10 justify-between items-center flex-1">
-        <div className="flex items-center gap-5">
-          <Link to="/" className="text-[22px] font-bold font-['Readex_Pro'] uppercase text-gray-900">
-            FULLHOUSE
-          </Link>
-        </div>
-        <div className="flex items-center gap-[52px]">
-          <nav className="flex items-center gap-10">
-            {menuItems.map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                className={`flex justify-center items-center ${
-                  location.pathname === item.path
-                    ? "text-orange-primary font-bold"
-                    : "text-gray-900 font-bold hover:text-orange-primary"
-                } font-pretendard text-base leading-[150%]`}
-              >
-                {item.label}
-              </Link>
-            ))}
-          </nav>
-          <button className="w-7 h-7">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-              <path fillRule="evenodd" clipRule="evenodd" d="M2.3335 6.99967C2.3335 6.35534 2.85583 5.83301 3.50016 5.83301H24.5002C25.1445 5.83301 25.6668 6.35534 25.6668 6.99967C25.6668 7.64401 25.1445 8.16634 24.5002 8.16634H3.50016C2.85583 8.16634 2.3335 7.64401 2.3335 6.99967ZM2.3335 13.9997C2.3335 13.3553 2.85583 12.833 3.50016 12.833H24.5002C25.1445 12.833 25.6668 13.3553 25.6668 13.9997C25.6668 14.644 25.1445 15.1663 24.5002 15.1663H3.50016C2.85583 15.1663 2.3335 14.644 2.3335 13.9997ZM2.3335 20.9997C2.3335 20.3553 2.85583 19.833 3.50016 19.833H24.5002C25.1445 19.833 25.6668 20.3553 25.6668 20.9997C25.6668 21.644 25.1445 22.1663 24.5002 22.1663H3.50016C2.85583 22.1663 2.3335 21.644 2.3335 20.9997Z" fill="#141414"/>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </header>
-  );
-}
+//   return (
+//     <header className="flex justify-center items-center py-[30px] bg-white">
+//       <div className="flex max-w-[1280px] px-10 justify-between items-center flex-1">
+//         <div className="flex items-center gap-5">
+//           <Link to="/" className="text-[22px] font-bold font-['Readex_Pro'] uppercase text-gray-900">
+//             FULLHOUSE
+//           </Link>
+//         </div>
+//         <div className="flex items-center gap-[52px]">
+//           <nav className="flex items-center gap-10">
+//             {menuItems.map((item) => (
+//               <Link
+//                 key={item.path}
+//                 to={item.path}
+//                 className={`flex justify-center items-center ${
+//                   location.pathname === item.path
+//                     ? "text-orange-primary font-bold"
+//                     : "text-gray-900 font-bold hover:text-orange-primary"
+//                 } font-pretendard text-base leading-[150%]`}
+//               >
+//                 {item.label}
+//               </Link>
+//             ))}
+//           </nav>
+//           <button className="w-7 h-7">
+//             <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+//               <path fillRule="evenodd" clipRule="evenodd" d="M2.3335 6.99967C2.3335 6.35534 2.85583 5.83301 3.50016 5.83301H24.5002C25.1445 5.83301 25.6668 6.35534 25.6668 6.99967C25.6668 7.64401 25.1445 8.16634 24.5002 8.16634H3.50016C2.85583 8.16634 2.3335 7.64401 2.3335 6.99967ZM2.3335 13.9997C2.3335 13.3553 2.85583 12.833 3.50016 12.833H24.5002C25.1445 12.833 25.6668 13.3553 25.6668 13.9997C25.6668 14.644 25.1445 15.1663 24.5002 15.1663H3.50016C2.85583 15.1663 2.3335 14.644 2.3335 13.9997ZM2.3335 20.9997C2.3335 20.3553 2.85583 19.833 3.50016 19.833H24.5002C25.1445 19.833 25.6668 20.3553 25.6668 20.9997C25.6668 21.644 25.1445 22.1663 24.5002 22.1663H3.50016C2.85583 22.1663 2.3335 21.644 2.3335 20.9997Z" fill="#141414"/>
+//             </svg>
+//           </button>
+//         </div>
+//       </div>
+//     </header>
+//   );
+// }
 
 function HeroSlider() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
