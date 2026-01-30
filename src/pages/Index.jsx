@@ -113,7 +113,7 @@ function HeroSlider() {
       image: "https://api.builder.io/api/v1/image/assets/TEMP/8c636a20e0a7da240128759d6247e023149e24a2?width=1200",
       title: "전문가 집단이 함께하는",
       highlight: "NPL 특수물건",
-      subtitle: " 투자의 모든 것"
+      subtitle: " 투자의 모든"
     },
     {
       image: "https://api.builder.io/api/v1/image/assets/TEMP/056329b4121d7d9e0012df411c7c4b41a31ea075?width=940",
