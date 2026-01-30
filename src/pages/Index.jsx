@@ -134,7 +134,7 @@ function HeroSlider() {
                   <img
                     src={slide.image}
                     alt={`Slide ${index + 1}`}
-                    className="w-full h-auto object-contain rounded-3xl"
+                    className="w-full h-full object-contain rounded-3xl"
                   />
                 </div>
               ))}
