@@ -126,7 +126,6 @@ function HeroSlider() {
   return (
     <section className="flex justify-center items-center gap-36 pt-20 px-8">
       <div className="w-full max-w-[1920px] flex items-center gap-36">
-        {/* Image Slider */}
         <div className="flex-1">
           <div className="overflow-hidden rounded-3xl" ref={emblaRef}>
             <div className="flex">
@@ -143,14 +142,13 @@ function HeroSlider() {
           </div>
         </div>
 
-        {/* Text Content */}
-        <div className="flex flex-col gap-[92px] w-[520px] flex-shrink-0">
+        <div className="flex flex-col gap-[92px] w-[520px]">
           <div className="flex flex-col gap-10">
             <div className="flex flex-col gap-3">
-              <div className="text-[28px] leading-[150%] font-pretendard text-[#1C232C] whitespace-pre-line break-words">
+              <div className="text-[28px] leading-[150%] font-pretendard text-[#1C232C]">
                 {slides[selectedIndex].title}
               </div>
-              <div className="text-5xl leading-[150%] font-bold font-ibm break-words">
+              <div className="text-5xl leading-[150%] font-bold font-ibm">
                 <span className="text-orange-light">{slides[selectedIndex].highlight}</span>
                 <span className="text-[#1C232C]">{slides[selectedIndex].subtitle}</span>
               </div>
@@ -206,7 +204,7 @@ function ServicesSection() {
   const services = [
     {
       icon: (
-        <svg width="60" height="60" viewBox="0 0 14 100" fill="none" className="w-[60px] h-[60px]">
+        <svg width="100" height="100" viewBox="0 0 14 100" fill="none">
           <path d="M14 99.9999V0L-86 99.9999H14Z" fill="url(#paint0_linear)" />
           <defs>
             <linearGradient id="paint0_linear" x1="-36" y1="197.945" x2="-101.883" y2="23.3124">
@@ -217,45 +215,50 @@ function ServicesSection() {
         </svg>
       ),
       title: "시행 · 시공",
-      description: "NPL 특수물건과 관련된 개발 및 건설 프로젝트를 전문적으로 기획하고 실행하는 서비스로, 고객의 니즈에 맞는 맞춤형 솔루션을 제공합니다."
+      description: "NPL 특수물건과 관련된 개발 및 건설 프로젝트를 전문적으로 기획하고 실행하는 서비스로, 고객의 니즈에 맞는 맞춤형 솔루션을 제공합니다.",
+      active: false
     },
     {
       icon: (
-        <svg width="60" height="60" viewBox="0 0 82 100" fill="none" className="w-[60px] h-[60px]">
+        <svg width="82" height="100" viewBox="0 0 82 100" fill="none">
           <path d="M39.6404 16.6667C46.5721 16.6667 52.1914 22.3442 52.1914 29.3478L52.1914 87.3189C52.1914 94.3225 46.5721 100 39.6404 100C32.7086 100 27.0894 94.3225 27.0894 87.3189L27.0894 29.3478C27.0894 22.3442 32.7086 16.6667 39.6404 16.6667Z" fill="#7C7C7C"/>
         </svg>
       ),
       title: "인테리어",
-      description: "특수물건의 가치를 극대화하기 위한 전문 인테리어 서비스로, 공간의 활용성을 높이고 투자 가치를 향상시키는 고급 인테리어를 제공합니다."
+      description: "특수물건의 가치를 극대화하기 위한 전문 인테리어 서비스로, 공간의 활용성을 높이고 투자 가치를 향상시키는 고급 인테리어를 제공합니다.",
+      active: false
     },
     {
       icon: (
-        <div className="relative w-[60px] h-[60px]">
-          <div className="absolute left-[28px] top-[18px] w-[30px] h-[42px] bg-[#FE9A0C]"></div>
-          <div className="absolute left-0 top-0 w-[38px] h-[60px] bg-gradient-to-br from-[rgba(254,154,12,0.01)] to-[rgba(254,154,12,0.12)]"></div>
-          <div className="absolute left-[22px] top-[28px] w-[16px] h-[32px] bg-gradient-to-b from-white to-transparent"></div>
+        <div className="relative w-[148px] h-[200px]">
+          <div className="absolute left-[71px] top-[46px] w-[77px] h-[154px] bg-[#FE9A0C]"></div>
+          <div className="absolute left-0 top-0 w-[99px] h-[200px] bg-gradient-to-br from-[rgba(254,154,12,0.01)] to-[rgba(254,154,12,0.12)]"></div>
+          <div className="absolute left-[56px] top-[93px] w-[43px] h-[107px] bg-gradient-to-b from-white to-transparent"></div>
         </div>
       ),
       title: "NPL 특수물건 학원",
-      description: "NPL 특수물건에 대한 전문 지식과 시장 흐름을 익히는 교육을 운영하며, 실무 중심 강의로 전문가 성장을 돕습니다."
+      description: "NPL 특수물건에 대한 전문 지식과 시장 흐름을 익히는 교육을 운영하며, 실무 중심 강의로 전문가 성장을 돕습니다.",
+      active: true
     },
     {
       icon: (
-        <svg width="60" height="60" viewBox="0 0 98 100" fill="none" className="w-[60px] h-[60px]">
+        <svg width="98" height="100" viewBox="0 0 98 100" fill="none">
           <path d="M97.5093 33.0371C97.5093 46.8442 86.2591 58.0371 72.3811 58.0371C58.5032 58.0371 47.2529 46.8442 47.2529 33.0371C47.2529 19.23 58.5032 8.03711 72.3811 8.03711C86.2591 8.03711 97.5093 19.23 97.5093 33.0371Z" fill="#7C7C7C"/>
         </svg>
       ),
       title: "부동산 법률 자문",
-      description: "NPL 특수물건과 관련된 복잡한 법률 문제를 해결하기 위해 전문가의 맞춤형 자문 서비스를 제공합니다. 안정적인 거래와 투자를 지원합니다."
+      description: "NPL 특수물건과 관련된 복잡한 법률 문제를 해결하기 위해 전문가의 맞춤형 자문 서비스를 제공합니다. 안정적인 거래와 투자를 지원합니다.",
+      active: false
     },
     {
       icon: (
-        <svg width="60" height="60" viewBox="0 0 103 101" fill="none" className="w-[60px] h-[60px]">
+        <svg width="103" height="100" viewBox="0 0 103 101" fill="none">
           <path d="M83.3039 53.8242L98.5784 68.6693L98.5098 68.7359C104.83 76.2328 104.39 87.3129 97.1898 94.3108C89.9895 101.309 78.5888 101.736 70.8751 95.5937L70.8065 95.6604L55.532 80.8153C47.863 73.3619 47.863 61.2776 55.532 53.8242C63.201 46.3708 75.6349 46.3708 83.3039 53.8242Z" fill="#7C7C7C"/>
         </svg>
       ),
       title: "대부 (사금융)",
-      description: "NPL 특수물건 투자 자금 지원을 통해 원활한 조달을 돕고, 신뢰 기반의 안전하고 유연한 금융 솔루션을 제공합니다."
+      description: "NPL 특수물건 투자 자금 지원을 통해 원활한 조달을 돕고, 신뢰 기반의 안전하고 유연한 금융 솔루션을 제공합니다.",
+      active: false
     }
   ];
   
@@ -286,15 +289,15 @@ function ServicesSection() {
                   className={`
                     flex-shrink-0 rounded-3xl transition-all duration-700
                     ${isActive
-                      ? "w-[320px] h-[420px] bg-[#FFFAF7] scale-100 shadow-xl"
-                      : "w-[260px] h-[360px] bg-[#FBFBFC] scale-90 opacity-70"}
+                      ? "w-[320px] h-[480px] bg-[#FFFAF7] scale-100 shadow-xl"
+                      : "w-[260px] h-[420px] bg-[#FBFBFC] scale-90 opacity-70"}
                   `}
                 >
-                  <div className="h-full p-8 flex flex-col justify-between">
+                  <div className="h-full p-8 flex flex-col gap-6">
                     {/* Icon container - positioned at top */}
-                    <div className="flex-shrink-0 mb-4">
+                    <div className="flex-shrink-0 flex items-center justify-start">
                       <div className={`
-                        transition-all duration-700
+                        transition-transform duration-700
                         ${isActive ? "scale-110" : "scale-100"}
                       `}>
                         {service.icon}
@@ -302,9 +305,9 @@ function ServicesSection() {
                     </div>
 
                     {/* Text content - positioned below icon */}
-                    <div className="flex flex-col gap-3">
+                    <div className="flex flex-col gap-3 flex-grow">
                       <h3
-                        className={`text-xl font-bold transition-colors duration-700 ${
+                        className={`text-xl font-bold ${
                           isActive ? "text-gray-900" : "text-gray-500"
                         }`}
                       >
@@ -312,7 +315,7 @@ function ServicesSection() {
                       </h3>
 
                       <p
-                        className={`text-sm leading-relaxed transition-colors duration-700 break-words ${
+                        className={`text-sm leading-relaxed ${
                           isActive ? "text-gray-700" : "text-gray-400"
                         }`}
                       >
