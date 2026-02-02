@@ -150,7 +150,7 @@ export default function InquiryModal() {
         {/* Submit */}
         <div className="flex justify-center">
           <button className="w-[220px] h-14 rounded-full bg-black text-white text-sm font-medium"
-          onClick={() => alert("문의가 접수되었습니다.")}>
+          onClick={() => navigate(-1)}>
             신청하기
           </button>
         </div>
