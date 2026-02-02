@@ -68,7 +68,7 @@ export default function InquiryModal() {
             <div className="border-t pt-4 mt-4 flex justify-between items-center">
               <span className="text-gray-500">예상 견적가</span>
               <span className="text-lg font-bold text-black">
-                6,300만원
+                6,300 만원
               </span>
             </div>
           </div>
