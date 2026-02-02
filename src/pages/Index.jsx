@@ -691,6 +691,9 @@ function FAQSection() {
 <div className="text-2xl sm:text-3xl lg:text-[40px] leading-tight sm:leading-[150%] font-bold font-ibm text-gray-900">
     자주 묻는 질문
   </div>
+  <div className="text-sm sm:text-base lg:text-lg font-pretendard text-gray-900">
+      풀하우스에 대해 궁금한 점을 확인해보세요.
+  </div>
       </div>
 
       <div className="flex flex-col items-start gap-8 w-full">
